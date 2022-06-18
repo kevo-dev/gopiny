@@ -1,5 +1,5 @@
-/* eslint-disable prettier/prettier */
-import React from 'react';
+import Image from 'next/image';
+
 
 import { Plus, Circle } from '../../svgs';
 
@@ -14,7 +14,7 @@ interface CardProps {
 const Card = ({ title, subtitle, image, buttonLabel, reversed }: CardProps) => {
   return (
     <div
-      className="card relative m-15 p-2 flex items-center"
+      className="card relative flex items-center h-screen mt-0"
       style={{ flexDirection: reversed ? 'row-reverse' : 'row' }}
     >
       {reversed ? (
@@ -42,7 +42,12 @@ const Card = ({ title, subtitle, image, buttonLabel, reversed }: CardProps) => {
           </div>
         </>
       )}
-      <img src={image} alt={title} />
+      <Image
+    width={350}
+    height={350} 
+    className="object-fill w-1/2"
+    src={image} alt={title} />
+
       <div className="w-1/2">
         <p className="text-2xl font-semibold">{title}</p>
         <p className="text-xl mt-1 mr-0 mb-3 ml-0 w-9/12 text-gray-800">

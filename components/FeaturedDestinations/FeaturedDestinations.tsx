@@ -25,12 +25,12 @@ const destinations = [
 ];
 
 const FeaturedDestinations = () => (
-  <div className="mt-18 bg-purple-400 ">
+  <div className="mt-18 flex-wrap bg-purple-400 ">
     <p className="text-3xl">Featured destinations</p>
     <div className="flex flex-wrap">
       {destinations.map(({ name, country, image }, index) => (
         <div className="desination-wrapper p-3 mt-1 mr-auto" key={index}>
-          <div className="destination relative w-60 h-90 ">
+          <div className="destination relative w-60 h-80 border-2 rounded-md cursor-pointer bg-slate-800">
             <img src={image} alt={name} />
             <div className="content absolute bottom-0 h-5 min-w-10">
               <p className="text-xl text-gray-800 font-semibold">{name}</p>
