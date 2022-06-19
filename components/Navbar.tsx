@@ -43,7 +43,7 @@ export default function Navbar() {
                   />
                   <img
                     className="hidden lg:block h-8 w-auto"
-                    src="/logo-dark.svg"
+                    src="/rzlogo.svg"
                     alt="Workflow"
                   />
                 </div>

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-export default function GameGif() {
+export default function FishingGif() {
   const ref = useRef(null);
   React.useEffect(() => {
     import("@lottiefiles/lottie-player");
@@ -14,7 +14,7 @@ export default function GameGif() {
           autoplay
           loop
           mode="normal"
-          src="https://assets4.lottiefiles.com/packages/lf20_gb5bmwlm.json"
+          src="/lotter/fishing-bye-bye.json"
           style={{ width: "400px", height: "400px" }}
         ></lottie-player>
       

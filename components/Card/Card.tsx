@@ -14,7 +14,7 @@ interface CardProps {
 const Card = ({ title, subtitle, image, buttonLabel, reversed }: CardProps) => {
   return (
     <div
-      className="card relative flex items-center h-screen mt-0"
+      className="card relative flex items-center h-screen -mt-10"
       style={{ flexDirection: reversed ? 'row-reverse' : 'row' }}
     >
       {reversed ? (

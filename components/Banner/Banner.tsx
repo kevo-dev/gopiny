@@ -2,13 +2,13 @@ import Image from 'next/image';
 
 import { Circle, Plus } from '../../svgs';
 
-const locations = ['Geneva', 'Milan', 'Paris'];
-const activities = ['Travelling', 'Swimming', 'Outdoor games'];
+const locations = ['Ndere Island', 'Impala Sanctuary', 'Hippo Point', 'Dunga Beach'];
+const activities = ['Boat Rides', 'Island Trips', 'Bird-watching', 'Game-viewing'];
 const grades = ['Grade 1', 'Grade 2', 'Grade 3'];
 const regions = ['Region 1', 'Region 2', 'Region 3'];
 
 const Banner = () => (
-  <div className="flex items-center h-screen">
+  <div className="flex items-center h-screen -mt-20">
     <div className="w-1/2 relative">
       <div className="circle-1">
         <Circle size={20} />
@@ -68,7 +68,7 @@ const Banner = () => (
     alt="Vercel Logo" 
     width={550}
     height={550} 
-    className="object-fill w-1/2"
+    className="object-fill w-1/2 -mt-15"
     />
   </div>
 );

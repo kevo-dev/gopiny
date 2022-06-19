@@ -31,8 +31,8 @@ const FeaturedDestinations = () => (
       {destinations.map(({ name, country, image }, index) => (
         <div className="desination-wrapper p-3 mt-1 mr-auto" key={index}>
           <div className="destination relative w-60 h-80 border-2 rounded-md cursor-pointer bg-slate-800">
-            <img src={image} alt={name} className="absolute object-fit" />
-            <div className="content absolute bottom-0 h-12 min-w-full">
+            <img src={image} alt={name} className="absolute object-contain" />
+            <div className="content bg-white p-1 bottom-0 h-12 min-w-full">
               <p className="text-xl text-gray-800 font-semibold">{name}</p>
               <p className="text-lg text-gray-800">{country}</p>
             </div>
