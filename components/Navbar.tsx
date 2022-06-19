@@ -34,7 +34,7 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex mx-auto items-center justify-center bg-black sm:items-stretch sm:justify-start">
+              <div className="flex-1 flex mx-auto items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
@@ -43,7 +43,7 @@ export default function Navbar() {
                   />
                   <img
                     className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                    src="/logo-dark.svg"
                     alt="Workflow"
                   />
                 </div>

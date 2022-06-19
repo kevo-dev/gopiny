@@ -1,5 +1,7 @@
 import type{ NextPage } from 'next';
 
+
+
 import {
   Banner,
   Trending,
@@ -15,13 +17,12 @@ const Home: NextPage = () => {
   <>
     <div className="max-w-7xl mx-auto">
       <Navbar />
-
       <Banner />
       <Card
-        title="A new way to explore the world"
+        title="Explore the Lakeside city"
         buttonLabel="Learn more"
         subtitle="For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect trip, but now, they can also let Lonely Planet Experiences lead the way"
-        image="/images/explore.png"
+        image="/lotter/100767-travel-tour.gif"
       />
       <FeaturedDestinations />
       <Card

@@ -43,9 +43,9 @@ const Card = ({ title, subtitle, image, buttonLabel, reversed }: CardProps) => {
         </>
       )}
       <Image
-    width={350}
-    height={350} 
-    className="object-fill w-1/2"
+    width={500}
+    height={500} 
+    className="object-cover"
     src={image} alt={title} />
 
       <div className="w-1/2">

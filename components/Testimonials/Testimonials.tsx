@@ -16,12 +16,10 @@ const Testimonials = () => (
             ))}
         </div>
         <p className="mt-10 mr-0 w-10/12">
-          “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus
-          ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis
-          nec”
+          “I was not expecting this level of fun”
         </p>
         <p className="mt-4">Edward Newgate</p>
-        <p className="text-gray-800 text-xl">Founder Circle</p>
+        
       </div>
       <div className="image">
         <img src="assets/images/testimonial.png" alt="" />

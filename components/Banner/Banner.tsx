@@ -19,9 +19,10 @@ const Banner = () => (
       <div className="plus">
         <Plus size={20} />
       </div>
-      <p className="text-4xl font-bold text-purple-800 mt-10 mb-20 ml-4">Explore</p>
-      <p className="text-2xl text-purple-800 ml-4">Holiday finder</p>
+      <p className="text-4xl font-bold text-purple-800 mt-10 mb-20 ml-4">Explore Kisumu</p>
       <div className="w-25 h-2 bg-purple-800 mt-2 mr-0 " />
+      <p className="text-2xl text-purple-800 ml-4">Package finder</p>
+      
       <div className="mt-3">
         <div className="flex">
           <select className="w-30 h-10 m-2 pr-1 border-2 rounded-lg">
@@ -63,7 +64,7 @@ const Banner = () => (
       <button className="bg-orange-500 h-10 w-30 p-2 m-4 border-2 rounded-lg">Explore</button>
     </div>
     <Image
-    src="/images/banner.png" 
+    src="/lotter/82445-travelers-walking-using-travelrmap-application.gif" 
     alt="Vercel Logo" 
     width={550}
     height={550} 
