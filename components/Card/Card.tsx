@@ -19,27 +19,11 @@ const Card = ({ title, subtitle, image, buttonLabel, reversed }: CardProps) => {
     >
       {reversed ? (
         <>
-          <div className="absolute z-1 bottom-2 left-1">
-            <Plus size={24} />
-          </div>
-          <div className="absolute z-1 top-9 left-4">
-            <Plus size={24} />
-          </div>
-          <div className="absolute z-1 bottom-12 left-19">
-            <Circle size={24} />
-          </div>
+          
         </>
       ) : (
         <>
-          <div className="icon plus-3">
-            <Plus size={24} />
-          </div>
-          <div className="icon plus-4">
-            <Plus size={24} />
-          </div>
-          <div className="icon circle-2">
-            <Circle size={24} />
-          </div>
+
         </>
       )}
       <Image

@@ -2,23 +2,14 @@ import Image from 'next/image';
 
 import { Circle, Plus } from '../../svgs';
 
-const locations = ['Ndere Island', 'Impala Sanctuary', 'Hippo Point', 'Dunga Beach'];
+const locations = ['Ndere Island', 'Impala Sanctuary', 'Hippo Point', 'Dunga Bay','Kit Mikayi'];
 const activities = ['Boat Rides', 'Island Trips', 'Bird-watching', 'Game-viewing'];
 const grades = ['Grade 1', 'Grade 2', 'Grade 3'];
 const regions = ['Region 1', 'Region 2', 'Region 3'];
 
 const Banner = () => (
   <div className="flex flex-wrap items-center h-full mt-0">
-    <div className="w-1/2 relative mt-40">
-      <div className="circle-1">
-        <Circle size={20} />
-      </div>
-      <div className="circle-2">
-        <Circle size={20} />
-      </div>
-      <div className="plus">
-        <Plus size={20} />
-      </div>
+    <div className="w-1/2 relative mt-20">
       <p className="text-4xl font-bold text-purple-800 mb-20 mt-0 ">Explore Kisumu</p>
       <div className="w-25 h-2 bg-purple-800 mt-2 mr-0 " />
       <p className="text-2xl text-purple-800 ml-4">Package finder</p>

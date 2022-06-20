@@ -28,7 +28,7 @@ const Home: NextPage = () => {
       <FeaturedDestinations />
       <Card
         reversed
-        title="Guides by "
+        title="Guides by Port Florence Lake Tours"
         buttonLabel="Download"
         subtitle="Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip."
         image="/images/guide.png"

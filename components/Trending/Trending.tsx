@@ -35,7 +35,7 @@ const Trending = () => (
       {stories.map(({ title, description, image }, index) => (
         <div className="p-10 mt-5 mr-auto" key={index}>
           <div className="story w-60 bg-purple">
-            <img src={image} alt={title} className="w-full object-cover" />
+            <img src={image} alt={title} className="object-cover w-full h-full " />
             <div className="pr-10">
               <p className="label text-xl mt-2">{title}</p>
               <p className="description text-md mt-1 text-gray-800 h-12">
