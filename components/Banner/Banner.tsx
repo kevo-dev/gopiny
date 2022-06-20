@@ -8,8 +8,8 @@ const grades = ['Grade 1', 'Grade 2', 'Grade 3'];
 const regions = ['Region 1', 'Region 2', 'Region 3'];
 
 const Banner = () => (
-  <div className="flex items-center h-screen -mt-20">
-    <div className="w-1/2 relative">
+  <div className="flex flex-wrap items-center h-full mt-0">
+    <div className="w-1/2 relative mt-40">
       <div className="circle-1">
         <Circle size={20} />
       </div>
@@ -19,7 +19,7 @@ const Banner = () => (
       <div className="plus">
         <Plus size={20} />
       </div>
-      <p className="text-4xl font-bold text-purple-800 mt-10 mb-20 ml-4">Explore Kisumu</p>
+      <p className="text-4xl font-bold text-purple-800 mb-20 mt-0 ">Explore Kisumu</p>
       <div className="w-25 h-2 bg-purple-800 mt-2 mr-0 " />
       <p className="text-2xl text-purple-800 ml-4">Package finder</p>
       
@@ -68,7 +68,7 @@ const Banner = () => (
     alt="Vercel Logo" 
     width={550}
     height={550} 
-    className="object-fill w-1/2 -mt-15"
+    className="object-fill w-1/2 -mt-15 sm:hidden "
     />
   </div>
 );

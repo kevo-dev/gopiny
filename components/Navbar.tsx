@@ -6,9 +6,10 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { LoginIcon , MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const navigation = [
-  { name: 'Tours', href: '#', current: false },
+  { name: 'Things to do', href: '#', current: false },
+  { name: 'Places to visit', href: '#', current: false },
   { name: 'About us', href: '#', current: false },
-  { name: 'Contact us', href: '#', current: false },
+  { name: 'Contact us', href: '#', current: false },  
   { name: 'Book Now', href: '#', current: true }
 ];
 
