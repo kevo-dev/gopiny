@@ -5,27 +5,27 @@ const destinations = [
   {
     name: 'Island Trip',
     location: 'Ndere Island',
-    image: '/native/ndere-island-national (1).jpg',
+    image: '/native/ndere-2.jpg',
   },
   {
     name: 'Impala Sanctuary',
     location: 'Lakeside',
-    image: '/images/destination-2.jpg',
+    image: '/native/impalas.jpg',
   },
   {
     name: 'Kisumu Museum',
     location: 'Lakeside',
-    image: '/images/destination-3.jpg',
+    image: '/native/kisumu-museum.jpg',
   },
   {
     name: 'Kit Mikayi',
     location: 'Landside',
-    image: '/images/destination-4.jpg',
+    image: '/native/kit-mikayi.jpg',
   },
 ];
 
 const FeaturedDestinations = () => (
-  <div className="mt-18 flex-wrap h-75 bg-purple-400 ">
+  <div className="my-4 flex-wrap px-14 ">
     <p className="text-2xl text-center font-semibold">Featured destinations</p>
     <div className="flex flex-wrap">
       {destinations.map(({ name, location, image }, index) => (

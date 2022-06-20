@@ -4,7 +4,7 @@ import React from 'react';
 import { Star, Plus, Circle } from '../../svgs';
 
 const Testimonials = () => (
-  <div className="mt-2 mx-auto">
+  <div className="max-w-7xl mt-2 px-14">
     <p className="text-2xl font-semibold">Testimonials</p>
     <div className="flex items-center space-between">
       <div className="width-1/2 pt-10">
@@ -23,12 +23,7 @@ const Testimonials = () => (
       </div>
       <div className="image">
         <img src="assets/images/testimonial.png" alt="" />
-        <div className="circle">
-          <Circle size={30} />
-        </div>
-        <div className="plus">
-          <Plus size={30} />
-        </div>
+        
       </div>
     </div>
   </div>

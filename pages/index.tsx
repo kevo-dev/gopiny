@@ -15,7 +15,7 @@ import Navbar from '../components/Navbar';
 const Home: NextPage = () => {
   return(
   <>
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto py-2">
       <Navbar />
       <Banner />
       <Card
