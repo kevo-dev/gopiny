@@ -29,16 +29,16 @@ const stories = [
 ];
 
 const Trending = () => (
-  <div className="max-w-7xl mt-6 mr-0 ">
-    <p className="text-2xl font-semibold ">Trending stories</p>
+  <div className="mx-auto">
+    <p className="relative text-2xl font-semibold">Trending stories</p>
     <div className="flex flex-wrap">
       {stories.map(({ title, description, image }, index) => (
         <div className="p-10 mt-5 mr-auto" key={index}>
-          <div className="story w-60 bg-purple py-2 mx-auto">
-            <img src={image} alt={title} className="object-contain h-full w-full" />
-            <div className="p-10 relative">
+          <div className="story w-60 bg-purple  mx-auto">
+            <img src={image} alt={title} className="object-cover h-full w-full" />
+            <div className=" relative">
               <p className="label text-xl mt-2">{title}</p>
-              <p className="description text-md mt-1 text-gray-800 h-12">
+              <p className="description text-md mt-1 text-gray-800">
                 {description}
               </p>
               <p className="link mt-20 text-orange-800">Read more</p>
