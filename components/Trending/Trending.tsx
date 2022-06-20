@@ -9,21 +9,21 @@ const stories = [
     image: '/images/story-1.jpg',
   },
   {
-    title: 'The best Kyoto restaurant to try Japanese food',
+    title: "3 Kenyan Luxury Hotels Ranked Among World's Most Unique Lodges",
     description:
       'From tofu to teahouses, here’s our guide to Kyoto’s best restaurants to visit...',
     image: '/images/story-2.jpg',
   },
   {
-    title: 'Skip Chichen Itza and head to this remote Yucatan',
+    title: 'Solo-holidays-double-following-pandemic-women-opt-travel-alone',
     description:
       'It’s remote and challenging to get, but braving the jungle and exploring these ruins without the...',
     image: '/images/story-3.jpg',
   },
   {
-    title: 'Surf’s up at these beginner spots around the world',
+    title: 'Adventure; a tourism product offers options beyond wildlife ',
     description:
-      'If learning to surf has in on your to-do list for a while, the good news is: it’s never too late...',
+      'Tourists- both local and international, are looking for new experiences and more value for their money.  Adventure tourism is one of the fastest growing products and sector players are building synergies to promote the product.',
     image: '/images/story-4.jpg',
   },
 ];

@@ -26,7 +26,7 @@ const destinations = [
 
 const FeaturedDestinations = () => (
   <div className="my-4 flex-wrap px-14 ">
-    <p className="text-2xl text-center font-semibold">Featured destinations</p>
+    <p className="text-2xl text-center font-semibold">Featured Tours</p>
     <div className="flex flex-wrap">
       {destinations.map(({ name, location, image }, index) => (
         <div className="desination-wrapper p-3 mt-1 mr-auto" key={index}>

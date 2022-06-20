@@ -49,7 +49,7 @@ export default function Navbar() {
                   />
                 </div>
                 <div className="hidden absolute right-20 sm:block sm:ml-6">
-                  <div className="flex space-x-4">
+                  <div className="flex space-x-4 border-lg">
                     {navigation.map((item) => (
                       <a
                         key={item.name}

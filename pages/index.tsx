@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         buttonLabel="Learn more"
         subtitle="Kisumu is the third largest city in Kenya. Strategically located by the lakeside, activites for tourists range from minute long boatrides to hour long island trips
         as well as fishing, bird-wacthing, you name it.......!"
-        image="/lotter/28245-fishing-bowl.gif"
+        image="/lotter/95019-fishing-bye-bye.gif"
       />
       <FeaturedDestinations />
       <Card
