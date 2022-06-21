@@ -12,17 +12,15 @@ import {
   Logo,
 } from '../../svgs';
 
-const destinations = ['Africa', 'Antartica', 'Asia', 'Europe', 'America'];
+const destinations = ['Ndere Island', 'Impala Sanctuary', 'Dunga Bay', 'Kisumu Museum', 'Kit Mikayi'];
 const shop = [
   'Destination Guides',
-  'Pictorial & Gifts',
   'Special Offers',
-  'Delivery times',
   'FAQs',
 ];
 const interests = [
   'Adventure Travel',
-  'Art and Custure',
+  'Art and Culture',
   'Wildlife And Nature',
   'Family holidays',
   'Food and drink',
@@ -37,17 +35,17 @@ const socialLinks = [
 ];
 
 const Footer = () => (
-  <footer className="max-w-7xl bg-blue-800 mx-auto">
-    <div className="row flex flex-wrap pt-5">
-      <div className="wrapper px-10">
-        <div className="section">
-          <Logo size={40} />
-          <p className="advice mb-15 mt-4 items-start text-lg">
+  <footer className="max-w-7xl bg-blue-800 mx-auto p-12">
+    <div className="row flex flex-wrap p-12">
+      <div className="wrapper px-2">
+        <div className="section ">
+          <img src="/logo-white.svg" className="object-contain w-1/4"/>
+          <p className="advice p-2 mt-4 items-start text-xl font-semibold">
             Plan and book your perfect trip with expert advice, travel tips
             destination information from us
           </p>
-          <p className="text ">
-            &copy;2020 Thousand Sunny. All rights reserved
+          <p className="text m-12">
+            &copy;2022 Port Florence Lake Tours.
           </p>
         </div>
       </div>
