@@ -29,7 +29,7 @@ const stories = [
 ];
 
 const Trending = () => (
-  <div className="mx-auto">
+  <div className="mt-15 mr-0">
     <p className="relative text-2xl font-semibold">Trending stories</p>
     <div className="flex flex-wrap">
       {stories.map(({ title, description, image }, index) => (
