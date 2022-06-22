@@ -1,5 +1,5 @@
 import type{ NextPage } from 'next';
-
+import { Carousel1 } from '../components/Carousel'
 
 
 import {
@@ -16,6 +16,7 @@ const Home: NextPage = () => {
   return(
   <>
     <div className="max-w-7xl mx-auto py-2">
+      <Carousel1 />
       <Navbar />
       <Banner />
       <Card

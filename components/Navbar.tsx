@@ -146,7 +146,7 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel className="sm:hidden h-screen">
-            <div className="px-44 py-24 space-y-8 h-full">
+            <div className="px-24 py-12 space-y-8 h-full">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}

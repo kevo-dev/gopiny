@@ -36,7 +36,7 @@ const socialLinks = [
 
 const Footer = () => (
   <footer className="max-w-7xl bg-blue-800 mx-auto p-12">
-    <div className="row flex flex-wrap p-12">
+    <div className="row flex flex-col">
       <div className="wrapper px-2">
         <div className="section ">
           <img src="/logo-white.svg" className="object-contain w-1/4"/>
@@ -49,7 +49,7 @@ const Footer = () => (
           </p>
         </div>
       </div>
-      <div className="wrapper pr-10">
+      <div className="wrapper flex mx-auto">
         <div className="section mb-3 ">
           <p className="label mb-2">Links</p>
           {destinations.map((link, index) => (
@@ -59,7 +59,7 @@ const Footer = () => (
           ))}
         </div>
       </div>
-      <div className="wrapper pr-10">
+      <div className="wrapper mx-auto">
         <div className="section mb-3 max-w-xl">
           <p className="label mb-2">Support</p>
           {shop.map((link, index) => (
@@ -69,7 +69,7 @@ const Footer = () => (
           ))}
         </div>
       </div>
-      <div className="wrapper pr-10">
+      <div className="wrapper mx-auto">
         <div className="section mb-8 max-w-md">
           <p className="label mb-2">Links</p>
           {interests.map((link, index) => (
