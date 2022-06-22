@@ -73,7 +73,7 @@ export const Carousel1 = (_props: any) => {
           autoPlaySpeed={2000}
           centerMode={false}
           className=""
-          containerClass="mx-2"
+          containerClass="mx-2 sm:block"
         
           
           focusOnSelect={false}
