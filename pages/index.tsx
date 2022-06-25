@@ -11,6 +11,7 @@ import {
   Card,
 } from '../components';
 import Navbar from '../components/Navbar';
+import { PeopleReview } from '../components/Review';
 
 const Home: NextPage = () => {
   return(
@@ -29,12 +30,12 @@ const Home: NextPage = () => {
       <FeaturedDestinations />
       <Card
         reversed
-        title="Guides by Port Florence Lake Tours"
-        buttonLabel="Download"
-        subtitle="Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip."
+        title="Plan your epic tour with us"
+        buttonLabel="Book"
+        subtitle="Traverse this lake-side city by boat or car, we've got you covered"
         image="/images/guide.png"
       />
-      <Testimonials />
+      <PeopleReview />
       <Trending />
     </div>
     <Footer />

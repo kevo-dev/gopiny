@@ -1,7 +1,7 @@
 
 import Carousel from 'react-multi-carousel';
 
-import 'react-multi-carousel/lib/styles.css';
+
 
 export const Carousel1 = (_props: any) => {
   const mainImgs = [
@@ -47,7 +47,7 @@ export const Carousel1 = (_props: any) => {
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 500, min: 500 },
+      breakpoint: { max: 500, min: 0 },
       items: 1,
     },
   };
@@ -66,14 +66,14 @@ export const Carousel1 = (_props: any) => {
           showDots={false}
           infinite={true}
           
-          dotListClass="custom-dot-list-style"
+          dotListClass=""
           itemClass=""
           additionalTransfrom={0}
           autoPlay={true}
           autoPlaySpeed={2000}
           centerMode={false}
           className=""
-          containerClass="mx-2 sm:block"
+          containerClass=""
         
           
           focusOnSelect={false}
@@ -86,14 +86,14 @@ export const Carousel1 = (_props: any) => {
           
         >
           {mainImgs.map((item, _key) => (
-            <div className="">
+            <div className="text-center w-full">
               <img
                 src={item.image_url}
                 alt=""
-                className="relative h-screen w-screen object-center "
+                className=" h-screen w-screen object-cover "
                />
-              <h4 className="top-60 fixed bg-blue-300 text-2xl font-bold my-auto">{item.name}</h4>
-              <p className="top-72 w-1/4 fixed leading-relaxed italic font-semibold text-xl text-purple-800">
+              <h4 className="fixed top-60 text-purple-800 mr-20 text-2xl font-bold text-white">{item.name}</h4>
+              <p className="fixed top-72  leading-relaxed italic font-semibold text-lg text-white">
                   {item.description}
               </p>
             </div>
