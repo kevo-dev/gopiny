@@ -72,7 +72,7 @@ export const Carousel1 = (_props: any) => {
           autoPlay={true}
           autoPlaySpeed={2000}
           centerMode={false}
-          className=""
+          className="max-w-screen mx-4"
           containerClass=""
         
           
@@ -92,8 +92,8 @@ export const Carousel1 = (_props: any) => {
                 alt=""
                 className=" h-screen w-screen object-cover "
                />
-              <h4 className="fixed top-60 text-purple-800 mr-20 text-2xl font-bold text-white">{item.name}</h4>
-              <p className="fixed top-72  leading-relaxed italic font-semibold text-lg text-white">
+              <h4 className="fixed top-60 mx-6 text-purple-800 mx-auto text-2xl font-bold bg-purple-100 text-purple-900">{item.name}</h4>
+              <p className="fixed top-72  leading-relaxed italic bg-purple-900 text-lg text-purple-200">
                   {item.description}
               </p>
             </div>
