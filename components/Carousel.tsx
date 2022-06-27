@@ -72,8 +72,8 @@ export const Carousel1 = (_props: any) => {
           autoPlay={true}
           autoPlaySpeed={2000}
           centerMode={false}
-          className="max-w-screen mx-4"
-          containerClass=""
+          className=""
+          containerClass="top-4"
         
           
           focusOnSelect={false}
@@ -86,14 +86,14 @@ export const Carousel1 = (_props: any) => {
           
         >
           {mainImgs.map((item, _key) => (
-            <div className="text-center w-full">
+            <div className="">
               <img
                 src={item.image_url}
                 alt=""
-                className=" h-screen w-screen object-cover "
+                className="object-fill"
                />
-              <h4 className="fixed top-60 mx-6 text-purple-800 text-2xl font-bold ">{item.name}</h4>
-              <p className="fixed top-72  leading-relaxed italic bg-purple-900 text-lg text-purple-200">
+              <h4 className="relative text-purple-800 text-2xl font-bold ">{item.name}</h4>
+              <p className=" leading-relaxed italic bg-purple-900 text-lg text-purple-200">
                   {item.description}
               </p>
             </div>

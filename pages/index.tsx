@@ -16,7 +16,7 @@ import { PeopleReview } from '../components/Review';
 const Home: NextPage = () => {
   return(
   <>
-    <div className="max-w-7xl py-2">
+    <div className="mr-0 overflow-hidden">
       <Navbar />
       <Carousel1 />
       <Banner />

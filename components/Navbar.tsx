@@ -19,7 +19,7 @@ function classNames(...classes:any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="w-full sticky top-0 bg-purple-800 z-50 transition-[opacity-50]">
+    <Disclosure as="nav" className="mr-0 sticky top-0 bg-purple-800 z-50 ">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
