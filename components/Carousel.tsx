@@ -92,7 +92,7 @@ export const Carousel1 = (_props: any) => {
                 alt=""
                 className=" h-screen w-screen object-cover "
                />
-              <h4 className="fixed top-60 mx-6 text-purple-800 mx-auto text-2xl font-bold bg-purple-100 text-purple-900">{item.name}</h4>
+              <h4 className="fixed top-60 mx-6 text-purple-800 text-2xl font-bold ">{item.name}</h4>
               <p className="fixed top-72  leading-relaxed italic bg-purple-900 text-lg text-purple-200">
                   {item.description}
               </p>

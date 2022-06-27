@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
+import { Section } from '../layout/Section';
 
 const destinations = [
   {
@@ -25,9 +26,11 @@ const destinations = [
 ];
 
 const FeaturedDestinations = () => (
-  <div className="my-4 flex-wrap px-14 ">
-    <p className="text-2xl text-center font-semibold">Featured Tours</p>
-    <div className="flex flex-wrap">
+  <Section
+  title="Featured Tours"
+  description="Awesome destinations"
+  >
+      <div className="flex flex-wrap">
       {destinations.map(({ name, location, image }, index) => (
         <div className="desination-wrapper p-3 mt-1 mr-auto" key={index}>
           <div className="destination relative w-60 h-80 border-2 rounded-md cursor-pointer">
@@ -40,7 +43,8 @@ const FeaturedDestinations = () => (
         </div>
       ))}
     </div>
-  </div>
+  
+  </Section>
 );
 
 export default FeaturedDestinations;

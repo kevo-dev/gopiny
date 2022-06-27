@@ -35,7 +35,7 @@ const socialLinks = [
 ];
 
 const Footer = () => (
-  <footer className="max-w-7xl bg-blue-800 mx-auto p-12">
+  <footer className="max-w-7xl bg-blue-800 mx-auto p-12 h-75">
     <div className="row flex flex-col">
       <div className="wrapper px-2">
         <div className="section ">

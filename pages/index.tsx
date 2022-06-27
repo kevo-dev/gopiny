@@ -16,9 +16,9 @@ import { PeopleReview } from '../components/Review';
 const Home: NextPage = () => {
   return(
   <>
-    <div className="max-w-7xl mx-auto py-2">
-      <Carousel1 />
+    <div className="max-w-7xl py-2">
       <Navbar />
+      <Carousel1 />
       <Banner />
       <Card
         title="Explore the Lakeside city"

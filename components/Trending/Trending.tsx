@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
+import { Section } from '../layout/Section';
 
 const stories = [
   {
@@ -29,7 +30,8 @@ const stories = [
 ];
 
 const Trending = () => (
-  <div className="mt-15 mx-auto text-center bg-black">
+  <Section >
+  <div className="mt-15 mx-auto text-center">
     <p className="relative text-center text-2xl font-semibold">Trending stories</p>
     <div className="flex flex-wrap">
       {stories.map(({ title, description, image }, index) => (
@@ -48,6 +50,7 @@ const Trending = () => (
       ))}
     </div>
   </div>
+  </Section>
 );
 
 export default Trending;

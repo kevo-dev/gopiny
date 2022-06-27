@@ -23,11 +23,11 @@ const Section = (props: ISectionProps) => (
       <div className="mb-12 text-center">
         
         {props.description && (
-          <div className=" font-mono mt-4 text-2xl md:px-20">{props.description}</div>
+          <div className=" font-mono mt-4 text-xl md:px-20">{props.description}</div>
         )}
 
 {props.title && (
-          <h2 className="text-4xl text-gray-800 font-bold">{props.title}</h2>
+          <h2 className="text-2xl text-gray-800 font-bold">{props.title}</h2>
         )}
       </div>
     )}
