@@ -46,7 +46,7 @@ export const PeopleReview = (_props: any) => {
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 500, min: 500 },
+      breakpoint: { max: 500, min: 0 },
       items: 1,
     },
   };
@@ -57,7 +57,7 @@ export const PeopleReview = (_props: any) => {
     description="Client reviews"
     
     >
-      <div className="mt-4">
+      
         <Carousel
           responsive={responsive}
           swipeable={true}
@@ -65,13 +65,13 @@ export const PeopleReview = (_props: any) => {
           arrows={false}
           showDots={false}
           infinite={true}
-          containerClass="carousel-container"
+          containerClass=""
           dotListClass="custom-dot-list-style"
-          itemClass="pr-8"
+          itemClass=""
         >
           {dataReview.map((item, _key) => (
-            <div className="bg-white p-6 rounded-lg">
-              <p className="leading-relaxed italic font-semibold text-sm">
+            <div className="bg-white rounded-lg">
+              <p className="leading-relaxed italic font-thin text-sm">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis.”
@@ -81,7 +81,7 @@ export const PeopleReview = (_props: any) => {
                   <img
                     src={item.image_url}
                     alt=""
-                    className="h-20 w-20 object-cover"
+                    className="h-20 w-20 rounded-xl p-2 object-cover"
                   />
                   <h4 className="ml-5">{item.name}</h4>
                 </div>
@@ -89,7 +89,7 @@ export const PeopleReview = (_props: any) => {
             </div>
           ))}
         </Carousel>
-      </div>
+      
     </Section>
   );
 };

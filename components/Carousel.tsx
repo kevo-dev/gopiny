@@ -56,7 +56,7 @@ export const Carousel1 = (_props: any) => {
 
     
     
-      <div className="h-80 bg-slate-800">
+      
         <Carousel
           responsive={responsive}
         
@@ -67,13 +67,13 @@ export const Carousel1 = (_props: any) => {
           infinite={true}
           
           dotListClass=""
-          itemClass="w-full h-full"
+          itemClass=""
           additionalTransfrom={0}
           autoPlay={true}
           autoPlaySpeed={2000}
           centerMode={false}
-          className="bg-black h-full top-5"
-          containerClass=" bg-green-800 h-72"
+          className="bg-black "
+          containerClass="max-w-7xl mx-auto bg-green-800 h-50"
           rewindWithAnimation={true}
           focusOnSelect={false}
           keyBoardControl
@@ -87,10 +87,10 @@ export const Carousel1 = (_props: any) => {
               <img
                 src={item.image_url}
                 alt=""
-                className="object-cover"
+                className="h-80 w-full object-fill"
                />
-              <h4 className="absolute top-40 text-2xl text-white font-bold ">{item.name}</h4>
-              <p className="absolute top-48 leading-relaxed  text-white text-lg">
+              <h4 className="absolute top-48 text-2xl text-white font-bold ">{item.name}</h4>
+              <p className="absolute top-60 leading-relaxed  text-white text-lg">
                   {item.description}
               </p>
             </div>
@@ -98,6 +98,6 @@ export const Carousel1 = (_props: any) => {
             
           ))}
         </Carousel>
-      </div>
+      
   );
 };
