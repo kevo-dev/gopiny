@@ -10,23 +10,23 @@ import { Section } from './layout/Section';
 export const PeopleReview = (_props: any) => {
   const dataReview = [
     {
-      image_url: '/assets/images/allison.jpg',
+      image_url: '/images/client3.jpg',
       name: 'Allison',
     },
     {
-      image_url: 'assets/images/allson.jpg',
+      image_url: '/images/client2.jpg',
       name: 'Kattie',
     },
     {
-      image_url: 'assets/images/letty.jpg',
+      image_url: '/images/client5.jpg',
       name: 'Letty',
     },
     {
-      image_url: 'assets/images/lettty.jpg',
+      image_url: '/images/client3.jpg',
       name: 'Letty',
     },
     {
-      image_url: 'assets/images/katie.jpg',
+      image_url: '/images/client5.jpg',
       name: 'Letty',
     },
   ];
@@ -57,7 +57,7 @@ export const PeopleReview = (_props: any) => {
     description="Client reviews"
     
     >
-      <div className="mt-20">
+      <div className="mt-4">
         <Carousel
           responsive={responsive}
           swipeable={true}
@@ -71,7 +71,7 @@ export const PeopleReview = (_props: any) => {
         >
           {dataReview.map((item, _key) => (
             <div className="bg-white p-6 rounded-lg">
-              <p className="leading-relaxed italic font-bold text-xl">
+              <p className="leading-relaxed italic font-semibold text-sm">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis.”

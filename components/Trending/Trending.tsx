@@ -30,9 +30,10 @@ const stories = [
 ];
 
 const Trending = () => (
-  <Section >
-  <div className="mt-15 mx-auto text-center">
-    <p className="relative text-center text-2xl font-semibold">Trending stories</p>
+  <Section 
+  title="Trending"
+  description="Latest news">
+  
     <div className="flex flex-wrap">
       {stories.map(({ title, description, image }, index) => (
         <div className="p-10 mt-5 mr-auto" key={index}>
@@ -49,7 +50,7 @@ const Trending = () => (
         </div>
       ))}
     </div>
-  </div>
+  
   </Section>
 );
 

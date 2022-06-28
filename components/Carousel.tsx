@@ -21,7 +21,7 @@ export const Carousel1 = (_props: any) => {
       description: `Take a three hours cruise to one of Africa's tropical islands.`,
     },
     {
-      image_url: '/native/birdwatch.jpg',
+      image_url: '/native/robin-chat.jpg',
       name: 'Bird watchers paradise',      
       description: `Get thrilled by hundreds of indigenous African bird species`,
     },
@@ -56,7 +56,7 @@ export const Carousel1 = (_props: any) => {
 
     
     
-      <div className="">
+      <div className="h-80 bg-slate-800">
         <Carousel
           responsive={responsive}
         
@@ -67,18 +67,15 @@ export const Carousel1 = (_props: any) => {
           infinite={true}
           
           dotListClass=""
-          itemClass=""
+          itemClass="w-full h-full"
           additionalTransfrom={0}
           autoPlay={true}
           autoPlaySpeed={2000}
           centerMode={false}
-          className=""
-          containerClass="top-4"
-        
-          
+          className="bg-black h-full top-5"
+          containerClass=" bg-green-800 h-72"
+          rewindWithAnimation={true}
           focusOnSelect={false}
-          
-          
           keyBoardControl
           minimumTouchDrag={80}
           renderButtonGroupOutside={false}
@@ -90,10 +87,10 @@ export const Carousel1 = (_props: any) => {
               <img
                 src={item.image_url}
                 alt=""
-                className="object-fill"
+                className="object-cover"
                />
-              <h4 className="relative text-purple-800 text-2xl font-bold ">{item.name}</h4>
-              <p className=" leading-relaxed italic bg-purple-900 text-lg text-purple-200">
+              <h4 className="absolute top-40 text-2xl text-white font-bold ">{item.name}</h4>
+              <p className="absolute top-48 leading-relaxed  text-white text-lg">
                   {item.description}
               </p>
             </div>

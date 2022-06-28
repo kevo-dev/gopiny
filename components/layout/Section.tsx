@@ -16,18 +16,18 @@ type ISectionProps = {
 
 const Section = (props: ISectionProps) => (
   <div
-    className={` mx-auto  ${props.yPadding ? props.yPadding : 'py-5'} ${props.xPadding}`}
+    className={`min-w-3xl mx-auto ${props.yPadding ? props.yPadding : 'py-5'} ${props.xPadding}`}
   >
    
     {(props.title || props.description) && (
       <div className="mb-12 text-center">
         
         {props.description && (
-          <div className=" font-mono mt-4 text-xl md:px-20">{props.description}</div>
+          <div className=" font-mono mt-4 text-lg md:px-20">{props.description}</div>
         )}
 
 {props.title && (
-          <h2 className="text-2xl text-gray-800 font-bold">{props.title}</h2>
+          <h2 className="text-xl text-gray-800 font-bold">{props.title}</h2>
         )}
       </div>
     )}
