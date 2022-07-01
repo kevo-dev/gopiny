@@ -68,6 +68,9 @@ export const PeopleReview = (_props: any) => {
           containerClass=""
           dotListClass="custom-dot-list-style"
           itemClass=""
+          autoPlay={true}
+          autoPlaySpeed={3000}
+          
         >
           {dataReview.map((item, _key) => (
             <div className="bg-white rounded-lg px-20">

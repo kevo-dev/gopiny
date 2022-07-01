@@ -34,14 +34,14 @@ const Trending = () => (
   title="Trending"
   description="Latest news">
   
-    <div className="flex flex-wrap px-20">
+    <div className="flex flex-wrap px-20 mt-8">
       {stories.map(({ title, description, image }, index) => (
         <div className="p-10 mt-5 mr-auto" key={index}>
           <div className="story w-60 bg-purple  mx-auto">
-            <img src={image} alt={title} className="object-cover h-full w-full" />
+            <img src={image} alt={title} className="object-cover rounded-xl h-full w-full" />
             <div className=" relative">
-              <p className="label text-xl mt-2">{title}</p>
-              <p className="description text-md mt-1 text-gray-800">
+              <p className="label text-xl font-semibold mt-4 py-2">{title}</p>
+              <p className="description text-md mt-1 text-gray-800 mb-4">
                 {description}
               </p>
               <p className="link mt-20 text-orange-800">Read more</p>
