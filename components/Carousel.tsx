@@ -86,7 +86,7 @@ export const Carousel1 = (_props: any) => {
               <img
                 src={item.image_url}
                 alt=""
-                className="block h-full w-full object-cover"
+                className="block h-80 w-full object-cover"
                />
               <div className="absolute -my-40 lg:top-72  " >
                 <h4 className="text-4xl text-red-900 font-semibold lg:text-6xl ">{item.name}</h4>
