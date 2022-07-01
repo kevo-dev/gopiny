@@ -88,10 +88,10 @@ export const Carousel1 = (_props: any) => {
                 alt=""
                 className="block h-80 w-full object-cover"
                />
-              <div className="absolute -my-40 lg:top-72  " >
+              <div className="absolute -my-40 mx-auto w-8/12 lg:top-72  " >
                 <h4 className="text-4xl text-white font-semibold lg:text-6xl ">{item.name}</h4>
               
-              <p className=" leading-relaxed text-2xl font-bold text-white text-lg pt-6 lg:text-4xl">
+              <p className=" leading-relaxed text-2xl font-bold text-white text-lg pt-2 lg:text-4xl">
                   {item.description}
               </p>
               </div>

@@ -10,8 +10,8 @@ const regions = ['Region 1', 'Region 2', 'Region 3'];
 
 const Banner = () => (
   <Section>
-  <div className="flex">
-    <div className="relative ml-8">
+  <div className="flex bg-black px-2 w-full -mt-40 ">
+    <div className="relative w/12 ml-16">
       <p className="text-3xl font-bold text-purple-800 my-10 ml-5 font-mono lg:mt-10 lg:mr-0 ">Explore Kisumu</p>
       <p className="text-md text-purple-800 ml-4">Package finder</p>
       <div className="w-8 h-1 bg-purple-800 mt-4 mr-0 ml-6" />
@@ -38,7 +38,7 @@ const Banner = () => (
       </div>
       <button className="bg-orange-500 h-10 w-30 p-2 m-8 rounded-lg ">Explore</button>
     </div>
-    <div className="bg-black w-1/2 ml-0 hidden lg:block">
+    <div className="bg-black w-1/2 ml-40 hidden lg:block">
     <Image
     src="/lotter/82445-travelers-walking-using-travelrmap-application.gif" 
     alt="Vercel Logo" 
