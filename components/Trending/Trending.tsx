@@ -34,7 +34,7 @@ const Trending = () => (
   title="Trending"
   description="Latest news">
   
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap px-20">
       {stories.map(({ title, description, image }, index) => (
         <div className="p-10 mt-5 mr-auto" key={index}>
           <div className="story w-60 bg-purple  mx-auto">

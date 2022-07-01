@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable prettier/prettier */
 import React from 'react';
+import { Section } from '../layout/Section'
 
 import {
   YouTube,
@@ -35,6 +36,7 @@ const socialLinks = [
 ];
 
 const Footer = () => (
+  <Section>
   <footer className=" bg-blue-800 py-6 px-2">
     <div className="flex ">
       <div className="wrapper w-1/2 px-2">
@@ -80,6 +82,7 @@ const Footer = () => (
       ))}
     </div>
   </footer>
+  </Section>
 );
 
 export default Footer;

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Section} from '../layout/Section'
 
 import { Circle, Plus } from '../../svgs';
 
@@ -8,7 +9,8 @@ const grades = ['Grade 1', 'Grade 2', 'Grade 3'];
 const regions = ['Region 1', 'Region 2', 'Region 3'];
 
 const Banner = () => (
-  <div className="flex  mx-auto">
+  <Section>
+  <div className="flex  mx-auto -mt-20">
     <div className="relative w-4/12 mr-0">
       <p className="text-3xl font-bold text-purple-800 my-10 ml-5 font-mono lg:mt-10 lg:mr-0 ">Explore Kisumu</p>
       <p className="text-md text-purple-800 ml-4">Package finder</p>
@@ -46,6 +48,7 @@ const Banner = () => (
     />
     </div>
   </div>
+  </Section>
 );
 
 export default Banner;

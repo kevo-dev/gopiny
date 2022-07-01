@@ -30,9 +30,9 @@ const FeaturedDestinations = () => (
   title="Featured Tours"
   description="Awesome destinations"
   >
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap ">
       {destinations.map(({ name, location, image }, index) => (
-        <div className="desination-wrapper p-3 mt-1 mr-auto" key={index}>
+        <div className="p-3 mt-1 mx-auto" key={index}>
           <div className="destination relative w-60 h-80 border-2 rounded-md cursor-pointer">
             <img src={image} alt={name} className="absolute block object-cover w-full h-full " />
             <div className="content absolute bg-white p-1 bottom-0 min-w-full">

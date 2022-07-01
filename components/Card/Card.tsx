@@ -14,7 +14,7 @@ interface CardProps {
 const Card = ({ title, subtitle, image, buttonLabel, reversed }: CardProps) => {
   return (
     <div
-      className="card relative flex items-center -mt-14"
+      className="relative flex items-center mx-auto mt-4 mb-8"
       style={{ flexDirection: reversed ? 'row-reverse' : 'row' }}
     >
       {reversed ? (
@@ -35,8 +35,8 @@ const Card = ({ title, subtitle, image, buttonLabel, reversed }: CardProps) => {
     </div>
 
       <div className="w-full flex-col mx-auto p-10 sm:w-1/2">
-        <p className="text-xl font-semibold ">{title}</p>
-        <p className="text-md mt-2 py-4 w-9/12 text-gray-800 lg:w-8/10 ">
+        <p className="text-3xl font-semibold ">{title}</p>
+        <p className="text-xl mt-2 py-4 w-9/12 text-gray-800 lg:w-8/10 ">
           {subtitle}
         </p>
         <button className="bg-orange-700 h-10 w-30 p-2">{buttonLabel}</button>

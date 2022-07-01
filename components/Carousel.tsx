@@ -6,7 +6,7 @@ import Carousel from 'react-multi-carousel';
 export const Carousel1 = (_props: any) => {
   const mainImgs = [
     {
-      image_url: '/native/boatrides (3).jpg',
+      image_url: '/hero/heros (1).jpg',
       name: 'Boat-rides',
       description: `Feel the adrenaline rush as the wobbles beneath your feet.`,
     },
@@ -21,12 +21,12 @@ export const Carousel1 = (_props: any) => {
       description: `Take a three hours cruise to one of Africa's tropical islands.`,
     },
     {
-      image_url: '/native/robin-chat.jpg',
+      image_url: '/hero/heros (6).jpg',
       name: 'Bird watchers paradise',      
       description: `Get thrilled by hundreds of indigenous African bird species`,
     },
     {
-      image_url: 'native/impalas.jpg',
+      image_url: '/hero/heros (2).jpg',
       name: 'Game Viewing',   
       description: `Hippos, Lions, Cheetahs Impalas, Ostriches, Zebras, Monkeys`,
     },
@@ -52,9 +52,7 @@ export const Carousel1 = (_props: any) => {
     },
   };
 
-  return (
-
-    
+  return (   
     
       
         <Carousel
@@ -67,32 +65,37 @@ export const Carousel1 = (_props: any) => {
           infinite={true}
           
           dotListClass=""
-          itemClass=""
+          itemClass="text-center"
           additionalTransfrom={0}
           autoPlay={true}
           autoPlaySpeed={2000}
           centerMode={false}
-          className="bg-black "
-          containerClass="max-w-7xl mx-auto bg-green-800 h-50"
+          className="bg-black text-center mx-auto"
+          containerClass="max-w-7xl "
           rewindWithAnimation={true}
           focusOnSelect={false}
           keyBoardControl
           minimumTouchDrag={80}
           renderButtonGroupOutside={false}
           renderDotsOutside={false}
-          
+                   
         >
           {mainImgs.map((item, _key) => (
             <div className="">
+             
               <img
                 src={item.image_url}
                 alt=""
-                className="h-80 w-full object-fill"
+                className="block h-full w-full object-cover"
                />
-              <h4 className="absolute top-48 text-2xl text-white font-bold ">{item.name}</h4>
-              <p className="absolute top-60 leading-relaxed  text-white text-lg">
+              <div className="absolute -my-40 lg:top-72  " >
+                <h4 className="text-4xl text-red-900 font-semibold lg:text-6xl ">{item.name}</h4>
+              
+              <p className=" leading-relaxed text-2xl font-bold text-white text-lg pt-6 lg:text-4xl">
                   {item.description}
               </p>
+              </div>
+              
             </div>
               
             

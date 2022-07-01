@@ -70,7 +70,7 @@ export const PeopleReview = (_props: any) => {
           itemClass=""
         >
           {dataReview.map((item, _key) => (
-            <div className="bg-white rounded-lg">
+            <div className="bg-white rounded-lg px-20">
               <p className="leading-relaxed italic font-thin text-sm">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
