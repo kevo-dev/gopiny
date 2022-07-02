@@ -10,7 +10,7 @@ const regions = ['Region 1', 'Region 2', 'Region 3'];
 
 const Banner = () => (
   <Section>
-  <div className="flex bg-black px-2 w-full -mt-40 ">
+  <div className="flex px-2 w-full -mt-40 ">
     <div className="relative w/12 ml-16">
       <p className="text-3xl font-bold text-purple-800 my-10 ml-5 font-mono lg:mt-10 lg:mr-0 ">Explore Kisumu</p>
       <p className="text-md text-purple-800 ml-4">Package finder</p>
