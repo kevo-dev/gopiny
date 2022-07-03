@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Section } from './../layout/Section'
 
 
 import { Plus, Circle } from '../../svgs';
@@ -13,8 +14,9 @@ interface CardProps {
 
 const Card = ({ title, subtitle, image, buttonLabel, reversed }: CardProps) => {
   return (
+    <Section>
     <div
-      className="bg-white p-24 flex justify-end items-center"
+      className="bg-white flex mx-8"
       style={{ flexDirection: reversed ? 'row-reverse' : 'row' }}
     >
       {reversed ? (
@@ -43,6 +45,7 @@ const Card = ({ title, subtitle, image, buttonLabel, reversed }: CardProps) => {
         <button className="inline-block bg-blue-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4">{buttonLabel}</button>
       </div>
     </div>
+    </Section>
   );
 };
 
