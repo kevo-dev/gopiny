@@ -10,10 +10,10 @@ const regions = ['Region 1', 'Region 2', 'Region 3'];
 
 const Banner = () => (
   <Section>
-  <div className="flex px-2 w-full -mt-40 ">
-    <div className="relative w/12 ml-16">
-      <p className="text-3xl font-bold text-purple-800 my-10 ml-5 font-mono lg:mt-10 lg:mr-0 ">Explore Kisumu</p>
-      <p className="text-md text-purple-800 ml-4">Package finder</p>
+  <div className="flex w-full mx-8 border-2 rounded-lg ">
+    <div className="relative w/12 mx-auto">
+      <p className="font-display font-bold text-4xl mb-6">Explore Kisumu</p>
+      <p className="font-light text-gray-600 mb-6 leading-relaxed">Package finder</p>
       <div className="w-8 h-1 bg-purple-800 mt-4 mr-0 ml-6" />
       <div className="flex mt-6 mb-24">
         <div className="flex mx-auto ">
@@ -36,7 +36,7 @@ const Banner = () => (
         </div>
 
       </div>
-      <button className="bg-orange-500 h-10 w-30 p-2 m-8 rounded-lg ">Explore</button>
+      <button className="inline-block bg-yellow-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4">Explore</button>
     </div>
     <div className="bg-black w-1/2 ml-40 hidden lg:block">
     <Image

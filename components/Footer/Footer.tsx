@@ -37,7 +37,7 @@ const socialLinks = [
 
 const Footer = () => (
   <Section>
-  <footer className=" bg-blue-800 py-6 px-2">
+  <footer className=" bg-blue-800 text-white text-opacity-40 font-semibold uppercase text-xs tracking-widest bg-opacity-80 px-12">
     <div className="flex ">
       <div className="wrapper w-1/2 px-2">
         <div className="section ">

@@ -53,6 +53,7 @@ export const Carousel1 = (_props: any) => {
   };
 
   return (   
+
     
       
         <Carousel
@@ -81,21 +82,21 @@ export const Carousel1 = (_props: any) => {
                    
         >
           {mainImgs.map((item, _key) => (
-            <div className="">
+            <div className="-mt-24 relative w-full py-12 px-12 bg-yellow-900">
              
-              <img
-                src={item.image_url}
-                alt=""
-                className="block h-80 w-full object-cover"
-               />
-              <div className="absolute -my-40 mx-auto w-8/12 lg:top-72  " >
-                <h4 className="text-4xl text-white font-semibold lg:text-6xl ">{item.name}</h4>
               
-              <p className=" leading-relaxed text-2xl font-bold text-white text-lg pt-2 lg:text-4xl">
+              <div className="relative z-10 text-center py-48" >
+                <h1 className="text-white text-center text-6xl font-display font-bold mb-12">{item.name}</h1>
+              
+              <p className=" leading-relaxed  font-bold text-white text-lg pt-2 lg:text-4xl">
                   {item.description}
               </p>
               </div>
-              
+              <img
+                src={item.image_url}
+                alt=""
+                className="w-full h-full absolute inset-0 object-cover opacity-70"
+               />
             </div>
               
             
