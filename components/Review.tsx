@@ -73,8 +73,8 @@ export const PeopleReview = (_props: any) => {
           
         >
           {dataReview.map((item, _key) => (
-            <div className="bg-white rounded-lg px-20">
-              <p className="leading-relaxed italic font-thin text-sm">
+            <div className="bg-white rounded-lg px-20 h-screen">
+              <p className="leading-relaxed italic font-thin text-xl">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis.”
@@ -84,7 +84,7 @@ export const PeopleReview = (_props: any) => {
                   <img
                     src={item.image_url}
                     alt=""
-                    className="h-20 w-20 rounded-xl p-2 object-cover"
+                    className="h-80 w-80 rounded-xl p-2 object-cover"
                   />
                   <h4 className="ml-5">{item.name}</h4>
                 </div>

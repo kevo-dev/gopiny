@@ -7,7 +7,7 @@ export const Carousel1 = (_props: any) => {
   const mainImgs = [
     {
       image_url: '/hero/heros (1).jpg',
-      name: 'Boat-rides',
+      name: 'Boat rides',
       description: `Feel the adrenaline rush as the wobbles beneath your feet.`,
     },
     {
@@ -22,7 +22,7 @@ export const Carousel1 = (_props: any) => {
     },
     {
       image_url: '/hero/heros (6).jpg',
-      name: 'Bird watchers paradise',      
+      name: 'Bird watching',      
       description: `Get thrilled by hundreds of indigenous African bird species`,
     },
     {
@@ -72,7 +72,7 @@ export const Carousel1 = (_props: any) => {
           autoPlaySpeed={2000}
           centerMode={false}
           className="bg-black text-center mx-auto"
-          containerClass="max-w-7xl "
+          containerClass="max-w-7xl h-9/12 "
           rewindWithAnimation={true}
           focusOnSelect={false}
           keyBoardControl
@@ -82,7 +82,7 @@ export const Carousel1 = (_props: any) => {
                    
         >
           {mainImgs.map((item, _key) => (
-            <div className="-mt-24 relative w-full py-12 px-12 bg-yellow-900">
+            <div className="-mt-24 relative w-full py-12 px-12 bg-blue-900">
              
               
               <div className="relative z-10 text-center py-48" >

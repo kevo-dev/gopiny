@@ -37,7 +37,7 @@ const socialLinks = [
 
 const Footer = () => (
   <Section>
-  <footer className=" bg-blue-800 text-white text-opacity-40 font-semibold uppercase text-xs tracking-widest bg-opacity-80 px-12">
+  <footer className=" bg-blue-800 text-white text-opacity-40 font-semibold uppercase text-xs tracking-widest bg-opacity-80 px-12 py-6">
     <div className="flex ">
       <div className="wrapper w-1/2 px-2">
         <div className="section ">
@@ -54,7 +54,7 @@ const Footer = () => (
       <div className="w-1/2 flex flex-wrap">
       <div className="wrapper mx-auto">
         <div className="section mb-3 ">
-          <p className="label mb-2 font-semibold">Support</p>
+          <p className="font-display text-white uppercase text-sm tracking-widest mb-6">Support</p>
           {shop.map((link, index) => (
             <p className="link cursor-pointer mb-1" key={index}>
               {link}
@@ -64,7 +64,7 @@ const Footer = () => (
       </div>
       <div className="wrapper mx-auto">
         <div className="section mb-8 max-w-md">
-          <p className="label mb-2 font-semibold">Links</p>
+          <p className="font-display text-white uppercase text-sm tracking-widest mb-6">Links</p>
           {interests.map((link, index) => (
             <p className="link cursor-pointer mb-1" key={index}>
               {link}

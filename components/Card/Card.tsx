@@ -34,12 +34,13 @@ const Card = ({ title, subtitle, image, buttonLabel, reversed }: CardProps) => {
     src={image} alt={title} />
     </div>
 
-      <div className="w-full flex-col mx-auto p-10 sm:w-1/2">
-        <p className="text-xl font-semibold ">{title}</p>
-        <p className="text-md mt-2 py-4 w-9/12 text-gray-800 lg:w-8/10 ">
+      <div className="max-w-md">
+      <div className="w-24 h-2 bg-blue-800 mb-4"></div>
+        <h2 className="font-display font-bold text-4xl mb-6">{title}</h2>
+        <p className="font-light text-gray-600 mb-6 leading-relaxed">
           {subtitle}
         </p>
-        <button className="inline-block bg-yellow-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4">{buttonLabel}</button>
+        <button className="inline-block bg-blue-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4">{buttonLabel}</button>
       </div>
     </div>
   );

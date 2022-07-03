@@ -19,10 +19,10 @@ function classNames(...classes:any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="mr-0 sticky top-0 bg-purple-800 z-50 ">
+    <Disclosure as="nav" className="mr-0 sticky top-0 bg-blue-800 z-50 h-24">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-transparent">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
@@ -145,7 +145,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden h-screen w-screen">
+          <Disclosure.Panel className="sm:hidden h-screen w-screen bg-blue-800">
             <div className="px-24 py-12 space-y-8 h-full">
               {navigation.map((item) => (
                 <Disclosure.Button
