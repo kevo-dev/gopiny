@@ -3,6 +3,13 @@ import Carousel from 'react-multi-carousel';
 
 
 
+const locations = ['Ndere Island', 'Impala Sanctuary', 'Hippo Point', 'Dunga Bay','Kit Mikayi'];
+const activities = ['Wildlife', 'Sight-seeing'];
+const grades = ['Grade 1', 'Grade 2', 'Grade 3'];
+const regions = ['Region 1', 'Region 2', 'Region 3'];
+
+
+
 export const Carousel1 = (_props: any) => {
   const mainImgs = [
     {
@@ -53,9 +60,7 @@ export const Carousel1 = (_props: any) => {
   };
 
   return (   
-
-    
-      
+        <div className="h-8/12">
         <Carousel
           responsive={responsive}
         
@@ -71,8 +76,8 @@ export const Carousel1 = (_props: any) => {
           autoPlay={true}
           autoPlaySpeed={2000}
           centerMode={false}
-          className="bg-black text-center mx-auto"
-          containerClass="max-w-7xl h-9/12 "
+          className="h-8/12 text-center mx-auto lg:h-full"
+          containerClass=" "
           rewindWithAnimation={true}
           focusOnSelect={false}
           keyBoardControl
@@ -82,10 +87,10 @@ export const Carousel1 = (_props: any) => {
                    
         >
           {mainImgs.map((item, _key) => (
-            <div className="-mt-24 relative w-full py-12 px-12 bg-blue-900">
+            <div className=" bg-blue-900 h-full">
              
               
-              <div className="relative z-10 text-center py-48" >
+              <div className="relative z-10 text-center py-80" >
                 <h1 className="text-white text-center text-6xl font-display font-bold mb-12">{item.name}</h1>
               
               <p className=" leading-relaxed  font-bold text-white text-lg pt-2 lg:text-4xl">
@@ -95,13 +100,48 @@ export const Carousel1 = (_props: any) => {
               <img
                 src={item.image_url}
                 alt=""
-                className="w-full h-full absolute inset-0 object-cover opacity-70"
+                className="w-full h-full absolute inset-0 object-fit opacity-70"
                />
             </div>
-              
+
+                          
             
           ))}
         </Carousel>
+        <div className="relative max-w-7xl mx-10 px-2 bg-white border-4 rounded-lg w/12 lg:mx-auto -mt-16">
+      <div className="flex flex-col mx-auto md:flex-row mt-6">
+
+      <fieldset className="h-full w-full md:w-1/4 mb-4">
+      <label className="block text-md text-gray-900 mb-2">Where to</label>
+		  <input id="destination" type="text" className="block w-11/12 rounded-sm  bg-white py-2 px-3 text-xl" name="destination" placeholder="Enter key-words" />
+      </fieldset>
+      
+      <fieldset className="w-full md:w-1/4 mb-4">
+      <label className="block text-sm text-gray-900 mb-2">When</label>
+		  <input id="date" type="date" className="block w-11/12 rounded-sm  bg-white py-2 px-3 text-xl" name="date" />
+      </fieldset>
+         
+      <fieldset className="w-full md:w-1/4 mb-4">
+      <label className="block text-sm text-gray-900 mb-2">Type</label>
+      <select className="block w-11/12 rounded-sm bg-white py-2 px-3 text-xl">
+      <option>Adventure</option>
+      {activities.map((activity, index) => (
+       <option value={activity} key={index}>
+                {activity}
+              </option>
+            ))}
+          </select>
+      </fieldset>
+      <button className="inline-block w-full md:w-1/4 bg-blue-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4">Explore</button>
+    
+        </div>
+
+      
+    
+    
+  </div>
+        
+        </div>
       
   );
 };

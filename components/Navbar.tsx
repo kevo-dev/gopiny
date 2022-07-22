@@ -6,10 +6,11 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { LoginIcon , MenuIcon, XIcon } from '@heroicons/react/outline';
 
 const navigation = [
-  { name: 'Things to do', href: '#', current: false },
-  { name: 'Places to visit', href: '#', current: false },
+  { name: 'Home', href: '/', current: false },
+  { name: 'Destination', href: '#', current: false },
+  { name: 'Tours', href: '#', current: false },
   { name: 'About us', href: '/about', current: false },
-  { name: 'Contact us', href: '#', current: false },  
+  { name: 'Contact us', href: '/contact', current: false },  
   { name: 'Book Now', href: '#', current: true }
 ];
 
@@ -19,7 +20,7 @@ function classNames(...classes:any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="mr-0 sticky top-0 bg-blue-800 z-50 h-24">
+    <Disclosure as="nav" className="mr-0 sticky top-0 bg-blue-800 z-50 h-28 py-6">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-transparent">
@@ -38,13 +39,13 @@ export default function Navbar() {
               <div className="flex-1 flex mx-auto items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
-                    className="block lg:hidden h-8 w-auto"
-                    src="/logo-dark.svg"
+                    className="block lg:hidden h-28 w-auto"
+                    src="/svgs/dark_main_logo_clear.svg"
                     alt="Workflow"
                   />
                   <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="/logo-text-dark.svg"
+                    className="hidden lg:block h-28 w-auto"
+                    src="/svgs/dark_main_logo_clear.svg"
                     alt="Workflow"
                   />
                 </div>
@@ -56,8 +57,8 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? 'bg-gray-900 text-white'
-                            : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                            ? 'bg-blue-900 text-white'
+                            : 'text-gray-300 hover:bg-gray-700 hover:text-white  ',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -71,7 +72,7 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
-                  className="bg-gray-800 p-1 rounded-sm text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  className="bg-gray-800 p-1 rounded-sm  text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
                   <span className="sr-only">View notifications</span>
                   <LoginIcon className="h-6 w-4" aria-hidden="true" />
@@ -145,8 +146,8 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden h-screen w-screen bg-blue-800">
-            <div className="px-24 py-12 space-y-8 h-full">
+          <Disclosure.Panel className="sm:hidden h-screen w-screen bg-blue-800 ">
+            <div className="px-24 py-12 space-y-8 h-full ">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -154,8 +155,8 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? 'bg-gray-900 text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      ? 'bg-gray-900 text-white w-1/2 text-center'
+                      : 'text-gray-300 hover:bg-gray-700 hover:text-white ',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

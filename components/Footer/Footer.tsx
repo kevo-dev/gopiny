@@ -37,21 +37,21 @@ const socialLinks = [
 
 const Footer = () => (
   <Section>
-  <footer className=" bg-blue-800 text-white text-opacity-40 font-semibold uppercase text-xs tracking-widest bg-opacity-80 px-12 py-6">
+  <footer className=" bg-blue-800 max-w-7xl mx-auto text-white text-opacity-120 font-semibold uppercase text-sm tracking-widest bg-opacity-80">
     <div className="flex ">
       <div className="wrapper w-1/2 px-2">
         <div className="section ">
-          <img src="/logo-white.svg" className="object-contain w-20 h-20"/>
+          <img src="/logo-white.svg" className="object-contain p-2 mt-4 w-28 h-28"/>
           <p className="advice p-2 mt-4 font-semibold">
             Plan and book your perfect trip with expert advice, travel tips
             destination information from us
           </p>
-          <p className="mb-2 mt-4">
+          <p className="p-2 mt-4">
             &copy;2022 Port Florence Lake Tours.
           </p>
         </div>
       </div>
-      <div className="w-1/2 flex flex-wrap">
+      <div className="w-1/2 flex flex-wrap mt-4">
       <div className="wrapper mx-auto">
         <div className="section mb-3 ">
           <p className="font-display text-white uppercase text-sm tracking-widest mb-6">Support</p>
@@ -62,7 +62,7 @@ const Footer = () => (
           ))}
         </div>
       </div>
-      <div className="wrapper mx-auto">
+      <div className="wrapper mx-auto ">
         <div className="section mb-8 max-w-md">
           <p className="font-display text-white uppercase text-sm tracking-widest mb-6">Links</p>
           {interests.map((link, index) => (

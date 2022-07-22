@@ -5,12 +5,14 @@ import { Carousel1 } from '../components/Carousel'
 import {
   Banner,
   Trending,
-  FeaturedDestinations,
   Testimonials,
   Footer,
   Card,
+  FeaturedTours,
 } from '../components';
 import Navbar from '../components/Navbar';
+import { Featured } from '../components/Featured';
+
 import { PeopleReview } from '../components/Review';
 
 const Home: NextPage = () => {
@@ -19,23 +21,19 @@ const Home: NextPage = () => {
     <div className="w-screen ">
       <Navbar />
       <Carousel1 />
-      <Banner />
+    
+      <Featured />      
+      
       <Card
-        title="Explore the Lakeside city"
-        buttonLabel="Learn more"
-        subtitle="Kisumu is the third largest city in Kenya. Strategically located by the lakeside, activites for tourists range from minute long boatrides to hour long island trips
-        as well as fishing, bird-wacthing, you name it.......!"
-        image="/lotter/95019-fishing-bye-bye.gif"
-      />
-      <FeaturedDestinations />
-      <Card
-        reversed
+        
         title="Plan your epic tour with us"
-        buttonLabel="Book"
-        subtitle="Traverse this lake-side city by boat or car, we've got you covered"
-        image="/images/guide.png"
+        buttonLabel="Book with us"
+        subtitle="There are many variations of passages of available but the majority have suffered alteration in some form, by injected hum randomised words which don't look even slightly."
+        image="/images/testimonial.png"
       />
+      <FeaturedTours />
       <PeopleReview />
+      
       <Trending />
     </div>
     <Footer />

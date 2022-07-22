@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable prettier/prettier */
 import Carousel from 'react-multi-carousel';
+import { Star, Plus, Circle } from '../svgs';
 
 import 'react-multi-carousel/lib/styles.css';
 import { Section } from './layout/Section';
@@ -57,6 +58,7 @@ export const PeopleReview = (_props: any) => {
     description="Client reviews"
     
     >
+
       
         <Carousel
           responsive={responsive}
@@ -65,33 +67,61 @@ export const PeopleReview = (_props: any) => {
           arrows={false}
           showDots={false}
           infinite={true}
-          containerClass=""
+          containerClass="mt-4"
           dotListClass="custom-dot-list-style"
-          itemClass=""
+          itemClass="rounded-lg "
           autoPlay={true}
-          autoPlaySpeed={3000}
+          autoPlaySpeed={6000}
           
         >
           {dataReview.map((item, _key) => (
-            <div className="bg-white rounded-xl px-20 h-screen">
-              <p className="leading-relaxed italic font-thin text-xl">
+            <div className="bg-white py-2 px-4 mx-auto ">
+              <img
+                    src={item.image_url}
+                    alt=""
+                    className="h-60 w-60 rounded-full mx-auto object-cover"
+              />
+                    <div className="flex items-center mx-auto py-4 justify-center">
+          {Array(5)
+            .fill(0)
+            .map((_, index) => (
+              <Star size={16} color="#FFBB0C" key={index} />
+            ))}
+        </div>
+              <p className="leading-relaxed italic font-thin text-xl p-6">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis.”
-              </p>
-              <div className="mt-2">
-                <div className="flex items-center">
-                  <img
-                    src={item.image_url}
-                    alt=""
-                    className="h-80 w-80 rounded-xl p-2 object-cover"
-                  />
-                  <h4 className="ml-5">{item.name}</h4>
-                </div>
-              </div>
+              </p>              
+              
+                  <h4 className="-mt-2 text-xl font-bold text-center w-1/4 mx-auto">{item.name}</h4>
             </div>
+              
+      
           ))}
         </Carousel>
+        
+        <div className="lg:grid grid-cols-5 grid-rows-1 gap-5 py-2 mx-6 mt-12">
+            <div className="flex-1 w-full h-80 py-4 relative">
+                <img src="/native/night_life.jpg" className="object-fit w-full h-full rounded-lg"/>
+            </div>
+            <div className="flex-1 h-full py-4 relative">
+                <img src="/hero/heroset.jpg" className="object-fit w-full h-full rounded-lg" />
+            </div>
+            <div className="flex-1 h-full py-4 relative">
+                <img src="/hero/heroseau.jpg" className="object-fit w-full h-full rounded-lg"/>
+            </div>
+            <div className="flex-1 h-full py-4 relative hidden lg:block">
+                <img src="/hero/herop.jpg" className="object-fit w-full h-full rounded-lg" />
+            </div>
+            <div className="flex-1 h-full py-4 relative hidden lg:block">
+                <img src="/native/robin-chat.jpg" className="object-fit w-full h-full rounded-lg" />
+            </div>
+            <div className="hidden absolute inset-0 w-full h-full  z-20 items-center justify-center">
+                <a href="#" className="bg-white px-8 py-3 text-sm tracking-widest font-heading">@novolio</a>
+            </div>
+        </div>
+  
       
     </Section>
   );
