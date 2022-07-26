@@ -33,7 +33,7 @@ const Card = ({ title, subtitle, image, children, buttonLabel, reversed }: CardP
         <p className="font-light text-gray-600 mb-6 leading-relaxed">
           {subtitle}
         </p>
-        <button className="block md:inline-block text-center font-semibold rounded-lg bg-[#02044A] no-underline text-white px-5 py-3 border-2 border-blue-900 hover:bg-blue-900 hover:text-blue-100">{buttonLabel}</button>
+        <button className="block md:inline-block text-center font-semibold rounded-lg bg-[#02044A] no-underline text-white px-5 py-3 mb-8 border-2 border-blue-900 hover:bg-blue-900 hover:text-blue-100">{buttonLabel}</button>
       </div>
       <div className="lg:block">
       <Image

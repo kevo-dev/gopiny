@@ -76,8 +76,8 @@ export const Carousel1 = (_props: any) => {
           autoPlay={true}
           autoPlaySpeed={2000}
           centerMode={false}
-          className="h-8/12 text-center mx-auto lg:h-full"
-          containerClass=" "
+          className=" text-center mx-auto lg:h-full"
+          containerClass=" h-1/2"
           rewindWithAnimation={true}
           focusOnSelect={false}
           keyBoardControl
@@ -87,11 +87,11 @@ export const Carousel1 = (_props: any) => {
                    
         >
           {mainImgs.map((item, _key) => (
-            <div className=" bg-blue-900 h-full">
+            <div className=" bg-blue-900 ">
              
               
               <div className="relative z-10 text-center py-80" >
-                <h1 className="text-white text-center text-6xl font-display font-bold mb-12">{item.name}</h1>
+                <h1 className="text-white text-center text-6xl font-display font-bold mb-12 animate-fade-in-down">{item.name}</h1>
               
               <p className=" leading-relaxed  font-bold text-white text-lg pt-2 lg:text-4xl">
                   {item.description}
@@ -112,18 +112,18 @@ export const Carousel1 = (_props: any) => {
       <div className="flex flex-col mx-auto md:flex-row mt-6">
 
       <fieldset className="h-full w-full md:w-1/4 mb-4">
-      <label className="block text-md text-gray-900 mb-2">Where to</label>
-		  <input id="destination" type="text" className="block w-11/12 rounded-sm  bg-white py-2 px-3 text-xl" name="destination" placeholder="Enter key-words" />
+      <label htmlFor="where" className="block text-md text-gray-900 mb-2">Where to</label>
+		  <input id="where" type="text" className="block w-11/12 rounded-sm  bg-white py-2 px-3 text-xl" name="destination" placeholder="Enter key-words" />
       </fieldset>
       
       <fieldset className="w-full md:w-1/4 mb-4">
-      <label className="block text-sm text-gray-900 mb-2">When</label>
-		  <input id="date" type="date" className="block w-11/12 rounded-sm  bg-white py-2 px-3 text-xl" name="date" />
+      <label htmlFor="when" className="block text-sm text-gray-900 mb-2">When</label>
+		  <input id="when" type="date" className="block w-11/12 rounded-sm  bg-white py-2 px-3 text-xl" name="date" />
       </fieldset>
          
       <fieldset className="w-full md:w-1/4 mb-4">
-      <label className="block text-sm text-gray-900 mb-2">Type</label>
-      <select className="block w-11/12 rounded-sm bg-white py-2 px-3 text-xl">
+      <label htmlFor="type" className="block text-sm text-gray-900 mb-2">Type</label>
+      <select id="type" className="block w-11/12 rounded-sm bg-white py-2 px-3 text-xl">
       <option>Adventure</option>
       {activities.map((activity, index) => (
        <option value={activity} key={index}>

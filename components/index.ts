@@ -1,4 +1,4 @@
-export { default as Header } from "./Header/Header"
+export { Hero } from "./Hero"
 export { default as Footer } from "./Footer/Footer"
 export { default as Banner } from "./Banner/Banner"
 export { default as Testimonials } from "./Testimonials/Testimonials"

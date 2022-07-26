@@ -16,7 +16,7 @@ type ISectionProps = {
 
 const Section = (props: ISectionProps) => (
   <div
-    className={`max-w-screen ${props.yPadding ? props.yPadding : 'py-5'} ${props.xPadding}`}
+    className={`max-w-screen ${props.yPadding ? props.yPadding : 'py-2'} ${props.xPadding}`}
   >
    
     {(props.title || props.description) && (

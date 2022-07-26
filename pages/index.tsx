@@ -11,6 +11,7 @@ import {
   FeaturedTours,
 } from '../components';
 import Navbar from '../components/Navbar';
+import { Hero } from '../components/Hero';
 import { Featured } from '../components/Featured';
 
 import { PeopleReview } from '../components/Review';
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
   <>
     <div className="w-screen ">
       <Navbar />
-      <Carousel1 />
+      <Hero />
     
       <Featured />      
       

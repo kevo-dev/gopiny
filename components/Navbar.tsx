@@ -20,7 +20,7 @@ function classNames(...classes:any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="mr-0 sticky top-0 bg-blue-800 z-50 h-28 py-6">
+    <Disclosure as="nav" className="mr-0 sticky top-0 bg-blue-800 z-50 h-24 py-6">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-transparent">
@@ -39,12 +39,12 @@ export default function Navbar() {
               <div className="flex-1 flex mx-auto items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
-                    className="block lg:hidden h-28 w-auto"
+                    className="block lg:hidden h-20 w-auto"
                     src="/svgs/dark_main_logo_clear.svg"
                     alt="Workflow"
                   />
                   <img
-                    className="hidden lg:block h-28 w-auto"
+                    className="hidden lg:block h-20 w-auto"
                     src="/svgs/dark_main_logo_clear.svg"
                     alt="Workflow"
                   />
