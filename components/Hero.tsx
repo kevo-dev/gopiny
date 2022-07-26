@@ -30,7 +30,7 @@ const Hero = () => (
 
     		<div className="w-full h-75 bg-blue-600">
 
-			<div className="w-full h-full relative flex items-center justify-center py-24">
+			<div className="w-full h-full relative flex items-center justify-center py-44">
 
 				<img aria-label="no idea" src="/native/cleanlake.jpg" className="absolute object-cover w-full h-full"/>
 

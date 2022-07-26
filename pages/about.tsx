@@ -7,9 +7,20 @@ const About = () => {
     return(
     <>
     <Base>
-    <Section
-    title="About Us"
-    description="">
+    <Section>
+    <div className="w-full h-full bg-blue-600">
+
+<div className="w-full h-full relative flex items-center justify-center py-24">
+
+  <img aria-label="no idea" src="/native/cleanlake.jpg" className="absolute object-cover w-full h-full"/>
+
+  <div className="px-6 max-w-4xl relative z-10 text-center">
+    <h1 className="text-3xl md:text-4xl font-black text-[#02044A] leading-tight pl-0 mb-2">About Us</h1>
+  </div>
+
+</div>
+
+</div>
    
    	<div className="relative z-10 rounded-md shadow-md bg-[#02044A] p-4 max-w-7xl mx-auto mt-4">
        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

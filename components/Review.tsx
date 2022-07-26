@@ -101,9 +101,9 @@ export const PeopleReview = (_props: any) => {
           ))}
         </Carousel>
         
-        <div className="lg:grid grid-cols-5 grid-rows-1 gap-5 py-2 mx-6 mt-12">
+        <div className="lg:grid grid-cols-5 grid-rows-1 gap-2 py-2 mx-6 mt-12 ">
             <div className="flex-1 w-full h-80 py-4 relative">
-                <img src="/native/night_life.jpg" className="object-fit w-full h-full rounded-lg"/>
+                <img src="/native/sunsetboat.jpg" className="object-fit w-full h-full rounded-lg"/>
             </div>
             <div className="flex-1 h-full py-4 relative">
                 <img src="/hero/heroset.jpg" className="object-fit w-full h-full rounded-lg" />
