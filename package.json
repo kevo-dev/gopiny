@@ -1,4 +1,5 @@
 {
+  "name":"adeymax",
   "private": true,
   "scripts": {
     "dev": "next dev",

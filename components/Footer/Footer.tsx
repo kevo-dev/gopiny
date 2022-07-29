@@ -15,16 +15,12 @@ import {
 
 const destinations = ['Ndere Island', 'Impala Sanctuary', 'Dunga Bay', 'Kisumu Museum', 'Kit Mikayi'];
 const shop = [
-  'Destination Guides',
-  'Special Offers',
+  'About',
+  'Careers',
   'FAQs',
 ];
 const interests = [
-  'Adventure Travel',
-  'Art and Culture',
-  'Wildlife And Nature',
-  'Family holidays',
-  'Food and drink',
+  'Gallery',
 ];
 
 const socialLinks = [
