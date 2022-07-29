@@ -14,28 +14,28 @@ export const Carousel1 = (_props: any) => {
   const mainImgs = [
     {
       image_url: '/hero/heros (1).jpg',
-      name: 'Boat rides',
-      description: `Feel the adrenaline rush as the wobbles beneath your feet.`,
+      name: 'BUILDING CONTRACTORS',
+      description: `We build your dreams.`,
     },
     {
-      image_url: 'native/kisumu-museum.jpg',
-      name: 'Culture',
-      description: `Take a peek into the history and culture of the Lakeside people.`,
+      image_url: '/hero/heros (4).jpg',
+      name: 'BUILDING CONTRACTORS',
+      description: `Certified and Professional.`,
     },
     {
-      image_url: '/native/ndere-1.jpg',
-      name: 'Island trips',
-      description: `Take a three hours cruise to one of Africa's tropical islands.`,
+      image_url: '/hero/heros (7).jpg',
+      name: 'BUILDING CONTRACTORS',
+      description: `Construction done right.`,
     },
     {
-      image_url: '/hero/heros (6).jpg',
-      name: 'Bird watching',      
-      description: `Get thrilled by hundreds of indigenous African bird species`,
+      image_url: '/hero/heros (8).jpg',
+      name: 'BUILDING CONTRACTORS',
+      description: `Construction done right.`,
     },
     {
-      image_url: '/hero/heros (2).jpg',
-      name: 'Game Viewing',   
-      description: `Hippos, Lions, Cheetahs Impalas, Ostriches, Zebras, Monkeys`,
+      image_url: '/hero/heros (4).jpg',
+      name: 'BUILDING CONTRACTORS',
+      description: `Construction done right.`,
     },
   ];
 
@@ -60,7 +60,7 @@ export const Carousel1 = (_props: any) => {
   };
 
   return (   
-        <div className="h-8/12">
+        <div className="">
         <Carousel
           responsive={responsive}
         
@@ -70,27 +70,27 @@ export const Carousel1 = (_props: any) => {
           showDots={false}
           infinite={true}
           
-          dotListClass=""
+          dotListClass="bg-black"
           itemClass="text-center"
           additionalTransfrom={0}
           autoPlay={true}
           autoPlaySpeed={2000}
           centerMode={false}
-          className=" text-center mx-auto lg:h-full"
-          containerClass=" h-1/2"
+          className=" text-center mx-auto lg:h-1/2"
+          containerClass=""
           rewindWithAnimation={true}
           focusOnSelect={false}
           keyBoardControl
           minimumTouchDrag={80}
           renderButtonGroupOutside={false}
-          renderDotsOutside={false}
+          renderDotsOutside={true}
                    
         >
           {mainImgs.map((item, _key) => (
             <div className=" bg-blue-900 ">
              
               
-              <div className="relative z-10 text-center py-80" >
+              <div className="relative z-10 text-center py-40 " >
                 <h1 className="text-white text-center text-6xl font-display font-bold mb-12 animate-fade-in-down">{item.name}</h1>
               
               <p className=" leading-relaxed  font-bold text-white text-lg pt-2 lg:text-4xl">
@@ -108,8 +108,8 @@ export const Carousel1 = (_props: any) => {
             
           ))}
         </Carousel>
-        <div className="relative max-w-7xl mx-10 px-2 bg-white border-4 rounded-lg w/12 lg:mx-auto -mt-16">
-      <div className="flex flex-col mx-auto md:flex-row mt-6">
+        {/*  <div className="relative max-w-7xl mx-10 px-2 bg-white border-4 rounded-lg w/12 lg:mx-auto -mt-16">
+     <div className="flex flex-col mx-auto md:flex-row mt-6">
 
       <fieldset className="h-full w-full md:w-1/4 mb-4">
       <label htmlFor="where" className="block text-md text-gray-900 mb-2">Where to</label>
@@ -134,12 +134,12 @@ export const Carousel1 = (_props: any) => {
       </fieldset>
       <button className="inline-block w-full md:w-1/4 bg-blue-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4">Explore</button>
     
-        </div>
+      </div> 
 
       
     
     
-  </div>
+  </div>*/}
         
         </div>
       

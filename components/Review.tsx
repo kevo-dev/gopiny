@@ -3,6 +3,7 @@
 /* eslint-disable prettier/prettier */
 import Carousel from 'react-multi-carousel';
 import { Star, Plus, Circle } from '../svgs';
+import { NewspaperIcon, StarIcon, ThumbUpIcon } from '@heroicons/react/outline';
 
 import 'react-multi-carousel/lib/styles.css';
 import { Section } from './layout/Section';
@@ -54,10 +55,11 @@ export const PeopleReview = (_props: any) => {
 
   return (
     <Section
-    title="What they are saying"
-    description="Client reviews"
-    
+    text="Explore"
+    description="Client Reviews"
+    title="What the are saying"
     >
+
 
       
         <Carousel
@@ -67,7 +69,7 @@ export const PeopleReview = (_props: any) => {
           arrows={false}
           showDots={false}
           infinite={true}
-          containerClass="mt-4"
+          containerClass="mt-4 max-w-7xl mx-auto"
           dotListClass="custom-dot-list-style"
           itemClass="rounded-lg "
           autoPlay={true}

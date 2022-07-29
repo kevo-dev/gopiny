@@ -8,7 +8,7 @@ const About = () => {
     <>
     <Base>
     <Section>
-    <div className="w-full h-full bg-blue-600">
+    <div className="w-full h-full bg-blue-800">
 
 <div className="w-full h-full relative flex items-center justify-center py-24">
 
@@ -22,7 +22,7 @@ const About = () => {
 
 </div>
    
-   	<div className="relative z-10 rounded-md shadow-md bg-[#02044A] p-4 max-w-7xl mx-auto mt-4">
+   	<div className="relative z-10 rounded-md shadow-md  p-4 max-w-7xl mx-auto mt-4">
        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:ml-4">
           <img
@@ -39,7 +39,7 @@ const About = () => {
         <p className="mb-4"><span className="font-bold text-2xl md:text-4xl">A Simply Perfect Place to Get Lost</span> </p>
         <p className="mb-6 leading-normal text-lg md:text-base">We are trusted by our clients and have a reputation for the best services in the field. </p>
         <p className="mb-6 leading-normal text-lg md:text-base">{AppConfig.about.description}<a href="#more" className="text-orange-800 text-md">Read More</a></p>
-        <a href="#" className="block md:inline-block text-center no-underline text-blue-900 px-5 py-3 border-2 border-blue-900 hover:bg-blue-900 hover:text-blue-100">Explore</a>
+        <a href="#" className="block md:inline-block text-center no-underline bg-[#FCD900] transform transition hover:scale-105 duration-300 ease-in-out text-[#035397] uppercase text-lg tracking-widest font-heading px-4 py-4 items-end border-2 border-blue-900 hover:bg-blue-900 hover:text-blue-100">Explore</a>
     </div>
         </div>
         </div>

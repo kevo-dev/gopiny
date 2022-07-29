@@ -37,10 +37,10 @@ const socialLinks = [
 
 const Footer = () => (
   <Section>
-  <footer className=" bg-blue-800 max-w-7xl mx-auto text-white text-opacity-120 font-semibold uppercase text-sm tracking-widest bg-opacity-80">
-    <div className="flex ">
-      <div className="wrapper w-1/2 px-2">
-        <div className="section ">
+  <footer className="gradient  bg-no-repeat bg-fill w-full mx-auto text-white text-opacity-120 font-semibold uppercase text-sm tracking-widest relative -z-1000">
+    <div className="flex max-w-7xl  bg-local mx-auto">
+      <div className="wrapper w-1/2 pl-12">
+        <div className="section bg-blur-xl">
           <img src="/logo-white.svg" className="object-contain p-2 mt-4 w-28 h-28"/>
           <p className="advice p-2 mt-4 font-semibold">
             Plan and book your perfect trip with expert advice, travel tips
@@ -74,7 +74,7 @@ const Footer = () => (
       </div>
     </div>
     </div>
-    <div className="social-links flex items-center justify-center pt-5 pr-0">
+    <div className="flex items-center justify-center pt-5 pr-0">
       {socialLinks.map((icon, index) => (
         <div className="p-5" key={index}>
           {icon}

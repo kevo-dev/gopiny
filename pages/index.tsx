@@ -11,31 +11,33 @@ import {
   FeaturedTours,
 } from '../components';
 import Navbar from '../components/Navbar';
+import { Hero2 } from '../components/Hero2';
 import { Hero } from '../components/Hero';
 import { Featured } from '../components/Featured';
 
 import { PeopleReview } from '../components/Review';
+import Card2 from '../components/Card/Card2';
 
 const Home: NextPage = () => {
   return(
   <>
-    <div className="w-screen ">
-      <Navbar />
-      <Hero />
-    
-      <Featured />      
+    <div className=" ">
       
-      <Card
+      <Navbar />
+      <Carousel1 />   
+          
+      
+      <Card2
         
         title="Plan your epic tour with us"
         buttonLabel="Book with us"
         subtitle="There are many variations of passages of available but the majority have suffered alteration in some form, by injected hum randomised words which don't look even slightly."
-        image="/images/testimonial.png"
+        image="/hero/worker.jpg"
       />
-      <FeaturedTours />
-      <PeopleReview />
+    
+    
       
-      <Trending />
+    
     </div>
     <Footer />
   </>
