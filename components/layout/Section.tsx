@@ -11,20 +11,24 @@ type ISectionProps = {
   className?:string;
   flex?:string;
   color?:string;
+  text?:string;
   
 };
 
 const Section = (props: ISectionProps) => (
   <div
-    className={`max-w-screen ${props.yPadding ? props.yPadding : 'py-2'} ${props.xPadding}`}
+    className={`max-w-screen gradient text-[#035397] border-b ${props.yPadding ? props.yPadding : 'py-8'} ${props.xPadding}`}
   >
    
     {(props.title || props.description) && (
-      <div className="mb-2 tracking-widest text-center">
+      <div className="mb-2 tracking-widest text-center flex justify-between">
          {props.description && (
-          <div className=" font-mono mt-4 text-2xl underline md:px-20">{props.description}</div>
+          <div className="absolute font-acrosmyth h-20 -mt-10 lg:ml-80 text-xl bg-gray-200 underline">{props.description}</div>
         )} {props.title && (
-          <h2 className="text-4xl tracking-widest text-gray-800 font-bold">{props.title}</h2>
+          <>
+          <h2 className="text-2xl md:text-4xl tracking-widest text-gray-800 text-center font-bold w-full mt-20 ml-20">{props.title}</h2>
+          <button className="border-4 px-4 bg-[#FCD900] transform transition hover:scale-105 duration-300 ease-in-out text-[#035397] uppercase text-lg tracking-widest font-heading h-16 md:h-8 mr-20">{props.text}</button>
+          </>
         )}
 
       </div>

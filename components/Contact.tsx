@@ -11,15 +11,18 @@ const Contact = (props: IContactProps) => {
 
   return (
     <>
-    <Section>
-    <div className="w-full h-full bg-blue-600">
+    <Section
+    
+    
+    >
+    <div className="w-full h-full ">
 
 <div className="w-full h-full relative flex items-center justify-center py-24">
 
   <img aria-label="no idea" src="/native/cleanlake.jpg" className="absolute object-cover w-full h-full"/>
 
   <div className="px-6 max-w-4xl relative z-10 text-center">
-    <h1 className="text-3xl md:text-4xl font-black text-[#02044A] leading-tight pl-0 mb-2">Contact Us</h1>
+    <h1 className="text-3xl md:text-4xl font-black text-[#02044A] leading-tight mb-2">Contact Us</h1>
   </div>
 
 </div>
@@ -29,7 +32,7 @@ const Contact = (props: IContactProps) => {
       
    
    <div className="relative z-10 rounded-md shadow-md bg-[#02044A] p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-[url(/native/dunga-bay.jpg)] bg-blur-xl">
           <div className="md:ml-4">
             <header className="">
               <h1 className="text-gray-50 font-semibold text-2xl">

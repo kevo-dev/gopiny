@@ -62,11 +62,14 @@ const FeaturedTours = (_props: any) => {
   };
 
   return (
-    <Section
-    title="Most Popular Tours"
-    description="Featured Tours"
     
+    <Section
+    
+    description="Featured "
+    title="Most Popular Tours"    
     >
+      
+
       
         <Carousel
           responsive={responsive}

@@ -36,7 +36,7 @@ const Banner = () => (
             ))}
           </select>
       </fieldset>
-      <button className="inline-block w-full md:w-1/4 bg-blue-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4">Explore</button>
+      <button className="inline-block w-full md:w-1/4  bg-[#0FCD900] text-white uppercase text-sm tracking-widest font-heading px-8 py-4">Explore</button>
     
         </div>
 

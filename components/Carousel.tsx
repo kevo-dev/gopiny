@@ -70,7 +70,7 @@ export const Carousel1 = (_props: any) => {
           showDots={false}
           infinite={true}
           
-          dotListClass=""
+          dotListClass="bg-black"
           itemClass="text-center"
           additionalTransfrom={0}
           autoPlay={true}
@@ -83,14 +83,14 @@ export const Carousel1 = (_props: any) => {
           keyBoardControl
           minimumTouchDrag={80}
           renderButtonGroupOutside={false}
-          renderDotsOutside={false}
+          renderDotsOutside={true}
                    
         >
           {mainImgs.map((item, _key) => (
             <div className=" bg-blue-900 ">
              
               
-              <div className="relative z-10 text-center py-80" >
+              <div className="relative z-10 text-center py-40 lg:py-80" >
                 <h1 className="text-white text-center text-6xl font-display font-bold mb-12 animate-fade-in-down">{item.name}</h1>
               
               <p className=" leading-relaxed  font-bold text-white text-lg pt-2 lg:text-4xl">

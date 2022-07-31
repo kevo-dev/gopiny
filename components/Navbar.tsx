@@ -8,10 +8,10 @@ import { LoginIcon , MenuIcon, XIcon } from '@heroicons/react/outline';
 const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Destination', href: '#', current: false },
-  { name: 'Tours', href: '#', current: false },
+  { name: 'Tours', href: '/tours', current: false },
   { name: 'About us', href: '/about', current: false },
   { name: 'Contact us', href: '/contact', current: false },  
-  { name: 'Book Now', href: '#', current: true }
+  { name: 'Partner', href: '#', current: false }
 ];
 
 function classNames(...classes:any) {
@@ -20,7 +20,7 @@ function classNames(...classes:any) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="mr-0 sticky top-0 bg-blue-800 z-50 h-24 py-6">
+    <Disclosure as="nav" className="mr-0 sticky top-0  gradient z-50 h-24 py-2 mb-8">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-transparent">
@@ -39,18 +39,18 @@ export default function Navbar() {
               <div className="flex-1 flex mx-auto items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
-                    className="block lg:hidden h-20 w-auto"
+                    className="block lg:hidden h-16 w-auto"
                     src="/svgs/dark_main_logo_clear.svg"
                     alt="Workflow"
                   />
                   <img
-                    className="hidden lg:block h-20 w-auto"
+                    className="hidden lg:block h-16 w-auto"
                     src="/svgs/dark_main_logo_clear.svg"
                     alt="Workflow"
                   />
                 </div>
                 <div className="hidden absolute right-20 sm:block sm:ml-6">
-                  <div className="flex space-x-4 border-lg">
+                  <div className="flex space-x-4 ">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -58,8 +58,8 @@ export default function Navbar() {
                         className={classNames(
                           item.current
                             ? 'bg-blue-900 text-white'
-                            : 'text-gray-300 hover:bg-gray-700 hover:text-white  ',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                            : 'text-gray-300 hover:bg-gray-700 hover:text-white ',
+                          'px-6 py-6 rounded-md text-md font-medium hover:border-4'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >

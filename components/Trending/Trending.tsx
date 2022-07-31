@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import { Section } from '../layout/Section';
+import { CameraIcon, MapIcon, NewspaperIcon } from '@heroicons/react/outline';
 
 const stories = [
   {
@@ -24,23 +25,22 @@ const stories = [
 ];
 
 const Trending = () => (
-  <Section>
+  <Section
+  text="View all"
+  description="From the blog posts"
+  title="News and Articles">
 
-  <div className="max-w-7xl  flex mx-auto" >
-  <p className=" mt-4 p-2  bg-gray-200 ">From the Blog Post</p>
-  <h4 className="mt-4 text-2xl font-bold py-2 w-9/12 ">News and Articles</h4>
-  
-  <button className=" w-1/4 md:w-1/4 bg-blue-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4 items-end">View All Posts</button>
-  </div>
+
+
     <div className="lg:grid grid-cols-3 grid-rows-1 gap-2 py-2 mx-auto mt-12 max-w-7xl">
       {stories.map(({ title, description, image }, index) => (
         <div className="mt-5 mx-auto" key={index}>
           <div className="w-full h-full mx-auto">
             <img src={image} alt={title} className="object-contain rounded-lg mx-auto" />
             <div className=" relative">
-              <p className="label text-2xl font-bold mt-4 w-3/4 mx-auto">{title}</p>
+              <p className="label text-2xl text-white font-bold mt-4 w-3/4 mx-auto">{title}</p>
               
-              <p className="mt-4 text-lg text-orange-800 w-1/4 mx-auto">Read more</p>
+              <p className="mt-4 text-lg text-orange-800 w-1/4  ml-16 mx-auto">Read more</p>
             </div>
           </div>
         </div>

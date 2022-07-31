@@ -4,8 +4,8 @@ export const AppConfig = {
   description: 'Kisumu Boat-rides, Island trips, Hippopotamus, Game-viewing, Bird-watching, Kisumu adventure, Kisumu culture, Lake Victoria',
   locale: 'en',
   email: "info.portflorencelaketours.com",
-  phone: "+254 701 802515",
-  address: "Marcus Garvey Road, Nairobi.",
+  phone: "+254 720607010",
+  address: "Marcus Garvey Road, Kisumu.",
 
 
   about: {
