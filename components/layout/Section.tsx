@@ -27,7 +27,6 @@ const Section = (props: ISectionProps) => (
         )} {props.title && (
           <>
           <h2 className="text-2xl md:text-4xl tracking-widest text-gray-800 text-center font-bold w-full mt-20 ml-20">{props.title}</h2>
-          <button className="border-4 px-4 bg-[#FCD900] transform transition hover:scale-105 duration-300 ease-in-out text-[#035397] uppercase text-lg tracking-widest font-heading h-16 md:h-8 mr-20">{props.text}</button>
           </>
         )}
 
