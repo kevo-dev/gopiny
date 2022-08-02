@@ -79,7 +79,7 @@ const product = {
 }
 const reviews = { href: '#', average: 4, totalCount: 117 }
 
-function classNames(...classes: string[]) {
+function classNames(...classes:any) {
   return classes.filter(Boolean).join(' ')
 }
 
