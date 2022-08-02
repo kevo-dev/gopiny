@@ -1,3 +1,5 @@
+import { Star } from "../svgs";
+
 /*
   This example requires Tailwind CSS v2.0+ 
   
@@ -26,37 +28,71 @@ const products = [
     },
     // More products...
   ]
+
+  const dataReview = [
+    {
+      image_url: '/native/ndere-island.jpg',
+      name: '$-100',
+      description:'Island',
+      duration:'9 HOURS',
+    },
+    {
+      image_url: '/native/kit-mikayi.jpg',
+      name: '$-100',
+      description:'Culture',
+      duration:'9 HOURS',
+    },
+    {
+      image_url: '/native/game-park.jpg',
+      name: '$-100',
+      description:'Game',
+      duration:'9 HOURS',
+    },
+    {
+      image_url: '/hero/herop.jpg',
+      name: '$-100',
+      description:'Hippos',
+      duration:'9 HOURS',
+    },
+    {
+      image_url: '/native/city_walk.jpeg',
+      name: '$-100',
+      description:'City',
+      duration:'9 HOURS',
+    },
+  ];
   
   export default function Example() {
     return (
       <div className="bg-white">
-        <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Customers also purchased</h2>
+        <div className="max-w-4xl mx-auto lg:max-w-7xl ">
+          <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Most Popular Tours</h2>
   
-          <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            {products.map((product) => (
-              <div key={product.id} className="group relative">
-                <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                  <img
-                    src={product.imageSrc}
-                    alt={product.imageAlt}
-                    className="w-full h-full object-center object-cover lg:w-full lg:h-full"
-                  />
-                </div>
-                <div className="mt-4 flex justify-between">
-                  <div>
-                    <h3 className="text-sm text-gray-700">
-                      <a href={product.href}>
-                        <span aria-hidden="true" className="absolute inset-0" />
-                        {product.name}
-                      </a>
-                    </h3>
-                    <p className="mt-1 text-sm text-gray-500">{product.color}</p>
-                  </div>
-                  <p className="text-sm font-medium text-gray-900">{product.price}</p>
-                </div>
-              </div>
+          <div className="mt-6 grid grid-cols-1 gap-y-4 gap-x-2 sm:grid-cols-2 lg:grid-cols-3 ">
+          {dataReview.map((item, _key) => (
+            <div className="bg-white mx-4 border-2 border-blue rounded-lg">
+              <img
+                    src={item.image_url}
+                    alt=""
+                    className="h-80 w-full  mx-auto object-fit rounded-lg"
+              />
+                    <div className="flex items-center py-4 justify-left">
+          {Array(5)
+            .fill(0)
+            .map((_, index) => (
+              <Star size={16} color="#FFBB0C" key={index} />
             ))}
+        </div>
+              <p className="absolute leading-relaxed italic font-bold text-blue-800 bg-white  text-2xl mt-4">
+                {item.description}
+              </p>              
+              
+                  <h4 className="mt-16 text-xl font-bold py-2">{item.name}<span className="font-thin">/Per Person</span></h4>
+                  <p className="mt-4 py-2 pl-2 mx-auto bg-gray-200 w-1/2 ml-0">{item.duration}</p>
+            </div>
+              
+      
+          ))}
           </div>
         </div>
       </div>

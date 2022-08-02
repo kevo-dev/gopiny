@@ -4,6 +4,7 @@ import { Section }  from '../components/layout/Section'
 import { AppConfig } from '../utils/AppConfig';
 import CategoryFilter from './CategoryFilter';
 import CategoryPreview from './CategoryPreview';
+import { FeaturedTours } from './FeaturedDestinations/FeaturedTours';
 import ProductList from './ProductList';
 import ProductListSimple from './ProductListSimple';
 import ProductOverview from './ProductOverview';
@@ -72,11 +73,7 @@ const Tours = () => {
 
 </div>
    
-   	<CategoryFilter />
-   	<CategoryPreview />
-   	<ProductOverview />
-   	<ProductList />
-   	<ProductListSimple />
+   <FeaturedTours />
 
     </Section>
 
