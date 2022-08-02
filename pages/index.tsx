@@ -23,9 +23,7 @@ const Home: NextPage = () => {
   <>
     <div className=" ">
       
-      <Header />
-      <Hero /> 
-      <Featured />      
+      <Header /> 
       
       <Card
         
