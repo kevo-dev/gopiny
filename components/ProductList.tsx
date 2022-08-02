@@ -33,7 +33,7 @@ const products = [
     {
       image_url: '/native/ndere-island.jpg',
       name: '$-100',
-      description:'Island',
+      description:'Day break in Lake Victoria',
       duration:'9 HOURS',
     },
     {
