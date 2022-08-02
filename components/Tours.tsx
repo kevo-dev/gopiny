@@ -2,6 +2,11 @@
 import { Base }  from '../components/layout/Base'
 import { Section }  from '../components/layout/Section'
 import { AppConfig } from '../utils/AppConfig';
+import CategoryFilter from './CategoryFilter';
+import CategoryPreview from './CategoryPreview';
+import ProductList from './ProductList';
+import ProductListSimple from './ProductListSimple';
+import ProductOverview from './ProductOverview';
 
 
 
@@ -67,35 +72,11 @@ const Tours = () => {
 
 </div>
    
-   	<div className="relative w-screen z-10 rounded-md shadow-md bg-[#02044A] p-4 max-w-7xl mx-auto mt-4 flex">
-     
-       
-       
-       
-       <div className="w-full grid grid-cols-1  md:grid-cols-3 gap-4">
-       {dataReview.map((item, _key) => (
-            <div className="bg-white py-2 px-4 mx-auto">
-              <a classsName="pointer ">
-              <img
-                    src={item.image_url}
-                    alt=""
-                    className="h-80 w-full rounded-lg mx-auto object-fit"
-              />
-              </a>
-              <p className="absolute leading-relaxed italic font-bold text-blue-800 bg-white text-xl -mt-8">
-                {item.description}
-              </p>              
-              
-                  <h4 className="mt-4 text-xl font-bold py-2">{item.name}<span className="font-thin">/Per Person</span></h4>
-                  <p className="mt-4 py-2 pl-2 mx-auto bg-gray-200 w-1/2 ml-0">{item.duration}</p>
-            </div>
-              
-      
-          ))}
-
-
-    </div>
-    </div>
+   	<CategoryFilter />
+   	<CategoryPreview />
+   	<ProductOverview />
+   	<ProductList />
+   	<ProductListSimple />
 
     </Section>
 

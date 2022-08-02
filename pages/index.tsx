@@ -16,14 +16,15 @@ import { Hero } from '../components/Hero';
 import { Featured } from '../components/Featured';
 
 import { PeopleReview } from '../components/Review';
+import Header from '../components/Header';
 
 const Home: NextPage = () => {
   return(
   <>
     <div className=" ">
       
-      <Navbar />
-      <Carousel1 />   
+      <Header />
+      <Hero /> 
       <Featured />      
       
       <Card

@@ -5,6 +5,7 @@ import Carousel from 'react-multi-carousel';
 
 import 'react-multi-carousel/lib/styles.css';
 import { Section } from '../layout/Section';
+import { Star } from '../svgs';
 
 
 const FeaturedTours = (_props: any) => {
@@ -78,25 +79,32 @@ const FeaturedTours = (_props: any) => {
           arrows={false}
           showDots={false}
           infinite={true}
-          containerClass=" "
+          containerClass="max-w-8xl mx-auto"
           dotListClass="custom-dot-list-style"
-          itemClass="rounded-lg"
+          itemClass="rounded-lg justify-around"
           autoPlay={true}
           autoPlaySpeed={6000}
           
         >
           {dataReview.map((item, _key) => (
-            <div className="bg-white py-2 px-4 mx-auto">
+            <div className="bg-white mx-4 border-2 border-blue rounded-lg">
               <img
                     src={item.image_url}
                     alt=""
-                    className="h-80 w-full rounded-lg mx-auto object-fit"
+                    className="h-80 w-full  mx-auto object-fit rounded-lg"
               />
-              <p className="absolute leading-relaxed italic font-bold text-blue-800 bg-white w-1/4 text-xl -mt-8">
+                    <div className="flex items-center py-4 justify-left">
+          {Array(5)
+            .fill(0)
+            .map((_, index) => (
+              <Star size={16} color="#FFBB0C" key={index} />
+            ))}
+        </div>
+              <p className="absolute leading-relaxed italic font-bold text-blue-800 bg-white w-1/4 text-2xl mt-4">
                 {item.description}
               </p>              
               
-                  <h4 className="mt-4 text-xl font-bold py-2">{item.name}<span className="font-thin">/Per Person</span></h4>
+                  <h4 className="mt-16 text-xl font-bold py-2">{item.name}<span className="font-thin">/Per Person</span></h4>
                   <p className="mt-4 py-2 pl-2 mx-auto bg-gray-200 w-1/2 ml-0">{item.duration}</p>
             </div>
               

@@ -4,6 +4,7 @@ import  Footer  from '../Footer/Footer';
 import { ReactNode } from 'react';
 import { Meta } from './Meta';
 import { AppConfig } from '../../utils/AppConfig';
+import Header from '../Header';
 
 type IBaseProps={
     children: ReactNode;
@@ -16,7 +17,7 @@ const Base = (props: IBaseProps) =>{
         <>
          <Meta title={AppConfig.title} description={AppConfig.description}/>
          <main>
-         <Navbar />
+         <Header />
         <div>{props.children}</div>
          <Footer />      
          </main>
