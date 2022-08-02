@@ -20,21 +20,21 @@ import { ChevronDownIcon } from '@heroicons/react/solid'
 const solutions = [
   {
     name: 'Tours',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
+    description: '',
+    href: '/tours',
     icon: ChartBarIcon,
   },
   {
     name: 'Tours List',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    description: '',
     href: '#',
     icon: CursorClickIcon,
   },
-  { name: 'Tours Detail', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
+  { name: 'Tours Detail', description: "", href: '#', icon: ShieldCheckIcon },
 
 ]
 const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
+  { name: 'Watch Video', href: '#', icon: PlayIcon },
   { name: 'Contact Sales', href: '#', icon: PhoneIcon },
 ]
 const resources = [
@@ -63,7 +63,7 @@ function classNames(...classes: string[]) {
 
 export default function Example() {
   return (
-    <Popover className="relative gradient z-10000">
+    <Popover className="relative gradient">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -84,19 +84,19 @@ export default function Example() {
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
 
-          <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Pricing
+          <a href="#" className="text-lg font-extrabold text-white ">
+              About us
             </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Docs
+            <a href="#" className="text-lg font-extrabold  text-white ">
+              Contact us
             </a>
             <Popover className="relative">
               {({ open }) => (
                 <>
                   <Popover.Button
                     className={classNames(
-                      open ? 'text-gray-900' : 'text-gray-500',
-                      'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                      open ? 'text-gray-900' : 'text-white',
+                      'group  rounded-md inline-flex items-center text-lg font-extrabold  hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                     )}
                   >
                     <span>Tours</span>
@@ -162,14 +162,14 @@ export default function Example() {
                 <>
                   <Popover.Button
                     className={classNames(
-                      open ? 'text-gray-900' : 'text-gray-500',
-                      'group gradient rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                      open ? 'text-gray-900' : 'text-white',
+                      'group  rounded-md inline-flex items-center text-lg font-extrabold hover:text-gray-900 '
                     )}
                   >
                     <span>Destinations</span>
                     <ChevronDownIcon
                       className={classNames(
-                        open ? 'text-gray-600' : 'text-gray-400',
+                        open ? 'text-white' : 'text-white',
                         'ml-2 h-5 w-5 group-hover:text-gray-500'
                       )}
                       aria-hidden="true"
@@ -194,7 +194,6 @@ export default function Example() {
                               href={item.href}
                               className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                             >
-                              <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -230,7 +229,7 @@ export default function Example() {
             </Popover>
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="#" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-900">
               Sign in
             </a>
             <a
@@ -252,8 +251,8 @@ export default function Example() {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <Popover.Panel focus className="h-screen  top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+        <Popover.Panel focus className="top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+          <div className="h-screen justify-around rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
@@ -278,8 +277,8 @@ export default function Example() {
                       href={item.href}
                       className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                     >
-                      <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
-                      <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
+                      
+                      <span className="ml-3 text-md font-medium text-gray-900">{item.name}</span>
                     </a>
                   ))}
                 </nav>
@@ -287,12 +286,12 @@ export default function Example() {
             </div>
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                <a href="#" className="text-md font-medium text-gray-900 hover:text-gray-700">
                   Pricing
                 </a>
 
                 <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Docs
+                  Last Minute Deals
                 </a>
                 {resources.map((item) => (
                   <a
