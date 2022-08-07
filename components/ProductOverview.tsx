@@ -1,29 +1,21 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    theme: {
-      extend: {
-        gridTemplateRows: {
-          '[auto,auto,1fr]': 'auto auto 1fr',
-        },
-      },
-    },
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
-import { useState } from 'react'
+
+import { ReactNode, useState } from 'react'
 import { StarIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
+
+
+  type IExampleProps = {
+    name?: string,
+    img?: string,
+    price?: string,
+    title?: string,
+    description?: string,
+    _id?: string
+
+    
+  };
+  
+
 
 const product = {
   name: 'Basic Tee 6-Pack',
@@ -83,7 +75,7 @@ function classNames(...classes:any) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+const Example = (props:IExampleProps) => {
   const [selectedColor, setSelectedColor] = useState(product.colors[0])
   const [selectedSize, setSelectedSize] = useState(product.sizes[2])
 
@@ -333,3 +325,5 @@ export default function Example() {
     </div>
   )
 }
+
+export default { Example };
