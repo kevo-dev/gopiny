@@ -74,7 +74,7 @@ export const Carousel1 = (_props: any) => {
           itemClass="text-center -z-1000"
           additionalTransfrom={0}
           autoPlay={true}
-          autoPlaySpeed={2000}
+          autoPlaySpeed={3000}
           centerMode={false}
           className=" absolute text-center mx-auto lg:h-full -z-1000"
           containerClass="absolute h-1/2"
@@ -84,6 +84,7 @@ export const Carousel1 = (_props: any) => {
           minimumTouchDrag={80}
           renderButtonGroupOutside={false}
           renderDotsOutside={true}
+          
                    
         >
           {mainImgs.map((item, _key) => (
@@ -91,9 +92,9 @@ export const Carousel1 = (_props: any) => {
              
               
               <div className="relative z-10 text-center py-40 lg:py-80" >
-                <h1 className="text-white text-center text-6xl font-display font-bold mb-12 animate-fade-in-down">{item.name}</h1>
+                <h1 className="animate-headingz text-white text-center text-6xl font-display font-bold mb-12 animate-fade-in-down">{item.name}</h1>
               
-              <p className=" leading-relaxed  font-bold text-white text-lg pt-2 lg:text-4xl">
+              <p className="leading-relaxed  font-bold text-white text-lg pt-2 lg:text-4xl">
                   {item.description}
               </p>
               </div>
