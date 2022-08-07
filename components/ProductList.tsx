@@ -168,8 +168,8 @@ const dataReview = [
           ))}
           </div>
         </div>
-        <ProductOverview />
         
+
       </div>
       
     )
