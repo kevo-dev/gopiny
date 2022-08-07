@@ -1,60 +1,60 @@
 
 [
     {
-        "name": "Bahamas",
-        "title": "7 Days Tour",
+        "name": "Day break in Lake Victoria",
+        "title": "3 Hours Tour",
         "img": "https://i.ibb.co/cgBZ9yc/141431-5e1f2ee891448.jpg",
-        "price":800,
-        "description": "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming."
+        "price":100,
+        "description": "Watch the sunrise. Board a boat at 6:00 am from---- Cruise in the lake for about an hour. Watch this as you enjoy the morning breeze in the calm waters. Mingle with the fishermen coming from night-fishing, see the hippos from their grazing, and watch birds leave their nests in the wetlands. Cruise Up an 8 1/2 km river to a local fish market. At the clients request we do a village tour."
     },
     {
-        "name": "Australia",
-        "title": "9 Days Tour",
+        "name": "Forest trip",
+        "title": "6 Hours Tour",
         "img": "https://i.ibb.co/h1h4R3S/141295-968682b5.jpg",
-        "price":300,
-        "description": "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming."
+        "price":200,
+        "description": "A trip to Kakamega forest. The leftover of the rain forest that stretched all the way from west Africa. Its trees species, its birds, its monkeys, lovely its memories."
     },
     {
-        "name": "Mediterranean",
-        "title": "12 Days Tour",
+        "name": "Tabaka soapstone mines",
+        "title": "6 Hours",
         "img": "https://i.ibb.co/JdXcF0C/140659-5f1d57cd59f1a.jpg",
         "price":200,
-        "description": "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming."
+        "description": "Leave Kisumu in the morning via Kendubay stop at Obama center to see craft work, women working on doom then a quick visit to a nearby pottery women group. Leave for the soap stones mines situated on the beautiful Kisii hills, see the, mines and craft shape. Trip back across the beautiful hills."
     },
     {
-        "name": "Caribbean",
-        "title": "4 Days Tour",
+        "name": "A day in Kericho",
+        "title": "6 Hours",
         "img": "https://i.ibb.co/j4knGRQ/137994-02d18646.jpg",
         "price":170,
-        "description": "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming."
+        "description": "A day trip to Kericho tea plantations and a tea factory on your way back its sugar cane fields and a visit to the famous Luanda Magere shrine and Luanda falls where he used to bath. The falls are breathtaking."
     },
     {
-        "name": "Vietnam",
-        "title": "4 Days Tour",
+        "name": "Island Trips",
+        "title": "8 Hours",
         "img": "https://i.ibb.co/ChnLRyB/136848-79bcd3f4.jpg",
         "price":180,
-        "description": "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming."
+        "description": "A boat trip to Ndere island national park or a fishing trip around the archipelago of six smaller islands."
     },
     {
-        "name": "Caribbean",
-        "title": "6 Days Tour",
+        "name": "Hike to the Monkey Rocks",
+        "title": "6 Hours",
         "img": "https://i.ibb.co/Vj6f2HY/136783-fad6ce63.jpg",
         "price":200,
-        "description": "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming."
+        "description": "A hike to the monkey rock (1895) on the Nandi hills meeting donkeys carrying goods to the market plus a lovely waterfall on to the way, to the top and have a birds view of the whole city and lake."
     },
     {
-        "name": "Taj Mahal",
-        "title": "6 Days Tour",
+        "name": "City Walk",
+        "title": "6 Hours",
         "img": "https://i.ibb.co/LtRn5mk/126812-e4ac7819.jpg",
-        "price":190,
-        "description": "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming."
+        "price":100,
+        "description": "City tour into the slums. Then in the afternoon head to the equator at Maseno on your way ba stop at kit Mikayi rock to watch the sun drop into the lake as you take a beer or something of your taste."
     },
     {
-        "name": "Best of Vietnam & Cambodia",
-        "title": "18 Days Tour",
+        "name": "Sango Bay day trip",
+        "title": "6 Hours",
         "img": "https://i.ibb.co/Fzym9Lk/117809-3918e538.jpg",
         "price":375,
-        "description": "Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming."
+        "description": "Leave Kisumu at 5:30am head to Luanda K'Otieno and catch a ferry boat to Mbita point. to Bird Island on your way to Takawiri with its white sand and crystals clear water. Here you swim safely. Break for lunch and later head back to Kisumu via Mbita through Homabay and Kendubay."
     },
     {
         "name": "Taj Mahal and Wildlife with Royal Stay at Castles",
