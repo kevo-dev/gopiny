@@ -1,4 +1,6 @@
 import { Star } from "../svgs";
+import { Hero } from "./Hero";
+import { Hero2 } from "./Hero2";
 
 /*
   This example requires Tailwind CSS v2.0+ 
@@ -134,8 +136,9 @@ const dataReview = [
   export default function Example() {
     return (
       <div className="bg-white">
+        <Hero />
         <div className="max-w-4xl mx-auto lg:max-w-7xl ">
-          <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Most Popular Tours</h2>
+          
   
           <div className="mt-6 grid grid-cols-1 gap-y-4 gap-x-2 sm:grid-cols-2 lg:grid-cols-3 ">
           {products.map((item, _key) => (
