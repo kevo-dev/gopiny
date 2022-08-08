@@ -94,9 +94,9 @@ export const Carousel1 = (_props: any) => {
               <div className="relative z-10 text-center py-40 lg:py-80" >
                 <h1 className="animate-headingz text-white text-center text-6xl font-display font-bold mb-12 animate-fade-in-down">{item.name}</h1>
               
-              <p className="leading-relaxed  font-bold text-white text-lg pt-2 lg:text-4xl">
+              {/* <p className="leading-relaxed  font-bold text-white text-lg pt-2 lg:text-4xl">
                   {item.description}
-              </p>
+              </p> */}
               </div>
               <img
                 src={item.image_url}
