@@ -4,7 +4,7 @@ import { StarIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
 
 
-  type IExampleProps = {
+  type ITourDetailsProps = {
     name?: string,
     img?: string,
     price?: string,
@@ -75,7 +75,7 @@ function classNames(...classes:any) {
   return classes.filter(Boolean).join(' ')
 }
 
-const Example = (props:IExampleProps) => {
+const TourDetails = (props:ITourDetailsProps) => {
   const [selectedColor, setSelectedColor] = useState(product.colors[0])
   const [selectedSize, setSelectedSize] = useState(product.sizes[2])
 
@@ -326,4 +326,4 @@ const Example = (props:IExampleProps) => {
   )
 }
 
-export default { Example };
+export { TourDetails };

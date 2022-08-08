@@ -1,7 +1,6 @@
 import { Star } from "../svgs";
 import { Hero } from "./Hero";
 import { Hero2 } from "./Hero2";
-import ProductOverview from "./ProductOverview";
 
 /*
   This example requires Tailwind CSS v2.0+ 
