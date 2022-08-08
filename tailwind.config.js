@@ -17,7 +17,7 @@ module.exports = {
         }
       },
       animation: {
-        headingz: 'headingz 3s ease-in-out infinite ',
+        headingz: 'headingz 3s ease-in-out  ',
       }
     },
   },
