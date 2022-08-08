@@ -7,7 +7,7 @@ import CategoryPreview from './CategoryPreview';
 import { FeaturedTours } from './FeaturedDestinations/FeaturedTours';
 import ProductList from './ProductList';
 import ProductListSimple from './ProductListSimple';
-import ProductOverview from '../pages/tour_details/ProductOverview';
+import ProductOverview from './ProductOverview';
 
 
 
