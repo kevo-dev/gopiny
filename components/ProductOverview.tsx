@@ -22,8 +22,8 @@ const product = {
   price: '$192',
   href: '#',
   breadcrumbs: [
-    { id: 1, name: 'Men', href: '#' },
-    { id: 2, name: 'Clothing', href: '#' },
+    { id: 1, name: 'Tours', href: '#' },
+    { id: 2, name: 'Island Trips', href: '#' },
   ],
   images: [
     {

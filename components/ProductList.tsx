@@ -135,7 +135,7 @@ const dataReview = [
   
   export default function Example() {
     return (
-      <div className="bg-white">
+      <div className="bg-white my-2">
         <Hero />
         <div className="max-w-4xl mx-auto lg:max-w-7xl ">
           
