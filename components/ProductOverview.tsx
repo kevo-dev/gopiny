@@ -75,7 +75,7 @@ function classNames(...classes:any) {
   return classes.filter(Boolean).join(' ')
 }
 
-const TourDetails = (props:ITourDetailsProps) => {
+export default function TourDetails(props:ITourDetailsProps){
   const [selectedColor, setSelectedColor] = useState(product.colors[0])
   const [selectedSize, setSelectedSize] = useState(product.sizes[2])
 
@@ -324,6 +324,4 @@ const TourDetails = (props:ITourDetailsProps) => {
       </div>
     </div>
   )
-}
-
-export { TourDetails };
+};
