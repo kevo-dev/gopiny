@@ -326,4 +326,4 @@ const TourDetails = (props:ITourDetailsProps) => {
   )
 }
 
-export { TourDetails };
+export default { TourDetails };
