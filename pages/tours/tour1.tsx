@@ -6,10 +6,10 @@ import { AppConfig } from '../../utils/AppConfig';
 import { Tours } from '../../components/Tours';
 import ProductList from '../../components/ProductList';
 import { TourDetails } from '../../components/ProductOverview';
-import ProductFeatures from '../../components/ProductFeatures';
+import  ProductFeatures from '../../components/ProductFeatures';
 
-const TourDetail = () => {
-    return(
+const TourDetail = () => 
+    (
     <>
     <Base>
     <TourDetails
@@ -24,7 +24,6 @@ const TourDetail = () => {
     
     </Base>
     </>
-    )
-};
+    );
 
 export default TourDetail
