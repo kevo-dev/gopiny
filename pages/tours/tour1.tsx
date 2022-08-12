@@ -13,11 +13,11 @@ const TourDetail = () =>
     <>
     <Base>
     <TourDetails
-        name = 'Island Trips'
+        name = 'Daybreak in Lake Victoria'
         title = "8 Hours"
         img = 'https://i.ibb.co/ChnLRyB/136848-79bcd3f4.jpg'
         price = '180'
-        description = 'A boat trip to Ndere island national park or a fishing trip around the archipelago of six smaller islands.'
+        description = 'Watch the sunrise. Board a boat at 6:00 am from---- Cruise in the lake for about an hour. Watch this as you enjoy the morning breeze in the calm waters. Mingle with the fishermen coming from night-fishing, see the hippos from their grazing, and watch birds leave their nests in the wetlands. Cruise Up an 8 1/2 km river to a local fish market. At the clients request we do a village tour.'
         _id = '1'
             
     />
