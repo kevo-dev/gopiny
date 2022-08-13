@@ -7,6 +7,7 @@ import { Tours } from '../../components/Tours';
 import ProductList from '../../components/ProductList';
 import TourDetails  from '../../components/ProductOverview';
 import  ProductFeatures from '../../components/ProductFeatures';
+import CategoryFilter from '../../components/CategoryFilter';
 
 const TourDetail = () => 
     (
@@ -21,6 +22,7 @@ const TourDetail = () =>
         _id = '1'
             
     />
+    <CategoryFilter />
     
     </Base>
     </>

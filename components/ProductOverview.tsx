@@ -14,6 +14,7 @@ import { RadioGroup } from '@headlessui/react'
 
     
   };
+  const activities = ['Wildlife', 'Sight-seeing'];
   
 
 
@@ -180,8 +181,31 @@ export default function TourDetails(props:ITourDetailsProps){
               </div>
             </div>
 
-            <form className="mt-10">
+            <form className="mt-10 bg-gray-300 w-full mx-auto  rounded-lg">
               {/* Colors */}
+
+
+              <fieldset className=" ml-4 mx-auto mb-4">
+      <label htmlFor="where" className="block text-md text-gray-900 mt-2 mb-2">Where to</label>
+		  <input id="where" type="text" className="block w-11/12 rounded-sm  bg-white py-2 px-3 text-xl" name="destination" placeholder="Enter key-words" />
+      </fieldset>
+      
+      <fieldset className="ml-4 mb-4">
+      <label htmlFor="when" className="block text-sm text-gray-900 mb-2">When</label>
+		  <input id="when" type="date" className="block w-11/12 rounded-sm  bg-white py-2 px-3 text-xl" name="date" />
+      </fieldset>
+         
+      <fieldset className="ml-4 ">
+      <label htmlFor="type" className="block text-sm text-gray-900 mb-2">Type</label>
+      <select id="type" className="block w-11/12 rounded-sm bg-white py-2 px-3 text-xl">
+      <option>Adventure</option>
+      {activities.map((activity, index) => (
+       <option value={activity} key={index}>
+                {activity}
+              </option>
+            ))}
+          </select>
+      </fieldset>
               
             
 
