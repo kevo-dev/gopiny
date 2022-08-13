@@ -23,10 +23,10 @@ const Section = (props: ISectionProps) => (
     {(props.title || props.description) && (
       <div className="mb-2 tracking-widest text-center flex justify-between">
          {props.description && (
-          <div className="absolute font-acrosmyth h-20 -mt-10 lg:ml-80 text-xl bg-gray-200 underline">{props.description}</div>
+          <div className="absolute font-acrosmyth h-20 -mt-10 lg:ml-80 text-xl text-white underline">{props.description}</div>
         )} {props.title && (
           <>
-          <h2 className="text-2xl md:text-4xl tracking-widest text-gray-800 text-center font-bold w-full mt-20 ml-20">{props.title}</h2>
+          <h2 className="text-2xl md:text-4xl tracking-widest text-white text-center font-bold w-full mt-20 ml-20">{props.title}</h2>
           </>
         )}
 
