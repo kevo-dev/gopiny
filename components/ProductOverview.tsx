@@ -138,7 +138,8 @@ export default function TourDetails(props:ITourDetailsProps){
               />
             </div>
           </div>
-          <div className="aspect-w-4 aspect-h-5 sm:rounded-lg sm:overflow-hidden lg:aspect-w-3 lg:aspect-h-4">
+          <div className="aspect-w-4 aspect-h-5 sm:rounded-lg sm:overflow-hidde
+          n lg:aspect-w-3 lg:aspect-h-4">
             <img
               src={product.images[3].src}
               alt={product.images[3].alt}
@@ -181,7 +182,7 @@ export default function TourDetails(props:ITourDetailsProps){
               </div>
             </div>
 
-            <form className="mt-10 bg-gray-300 w-full mx-auto  rounded-lg">
+            <form className="mt-10 bg-gray-300 w-full mx-auto  rounded-lg hidden md:block">
               {/* Colors */}
 
 
