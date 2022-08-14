@@ -18,6 +18,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline'
 import { ChevronDownIcon, ChevronUpIcon, FilterIcon, MinusSmIcon, PlusSmIcon, ViewGridIcon } from '@heroicons/react/solid'
+import { ReviewScore } from './ReviewScore'
 
 const sortOptions = [
   { name: 'Most Popular', href: '#', current: true },
@@ -123,6 +124,7 @@ export default function Example() {
 
             </div>
           </section>
+          <ReviewScore />
         </main>
       </div>
     </div>
