@@ -16,9 +16,17 @@ const ReviewScore = (props: IContactProps) => {
             </div>
 
             <div className="h-3 relative max-w-xl rounded-full overflow-hidden">
-              <label className="mb-2" >Services</label>
-              <div className="w-full h-full bg-gray-200 absolute"></div>
-              <div id="bar" className="h-full bg-green-500 relative w-16"></div>
+              <div className="flex justify-between mb-1">
+                <span className="text-base font-medium text-blue-700 dark:text-white">
+                  Flowbite
+                </span>
+                <span className="text-sm font-medium text-blue-700 dark:text-white">
+                  45%
+                </span>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div className="bg-blue-600 h-2.5 rounded-full width-1/2"></div>
+              </div>
             </div>
           </div>
         </div>
