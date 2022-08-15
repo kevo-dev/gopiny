@@ -91,9 +91,9 @@ export default function Example() {
                             <span className="font-medium text-gray-900">{section.name}</span>
                             <span className="ml-6 flex items-center">
                               {open ? (
-                                <ChevronUpIcon className="h-5 w-5" aria-hidden="true" />
+                                <ChevronUpIcon className="h-5 w-5 bg-blue-600" aria-hidden="true" />
                               ) : (
-                                <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
+                                <ChevronDownIcon className="h-5 w-5 bg-blue-600" aria-hidden="true" />
                               )}
                             </span>
                           </Disclosure.Button>
