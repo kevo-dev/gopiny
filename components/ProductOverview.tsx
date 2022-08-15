@@ -1,7 +1,8 @@
 
 import { ReactNode, useState } from 'react'
-import { StarIcon } from '@heroicons/react/solid'
+import { ChevronUpIcon, StarIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
+import { ClockIcon, LocationMarkerIcon, UserIcon, UsersIcon } from '@heroicons/react/outline';
 
 
   type ITourDetailsProps = {
@@ -149,9 +150,14 @@ export default function TourDetails(props:ITourDetailsProps){
         </div>
 
         {/* Product info */}
-        <div className="max-w-2xl mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
-          <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
+        <div className="max-w-2xl  mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
+          <div className="flex lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8 bg-gray-300 justify-around">
             <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">{props.name}</h1>
+            <ChevronUpIcon className="h-16 w-16 bg-blue-600" aria-hidden="true" />
+            <UserIcon className="h-16 w-16 bg-blue-600" aria-hidden="true" />
+            <ClockIcon className="h-16 w-16 bg-blue-600" aria-hidden="true" />
+            <LocationMarkerIcon className="h-16 w-16 bg-blue-600" aria-hidden="true" />
+            
           </div>
 
           {/* Options */}
