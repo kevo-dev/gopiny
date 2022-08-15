@@ -151,7 +151,7 @@ export default function TourDetails(props:ITourDetailsProps){
 
         {/* Product info */}
         <div className="max-w-2xl  mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
-          <div className="flex py-16 lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8 bg-gray-300 justify-around">
+          <div className="flex  flex-col md:flex-row py-16 lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8 bg-gray-300 justify-center">
             <h1 className="text-2xl mr-24 font-extrabold tracking-tight text-gray-900 sm:text-3xl">{props.name}</h1>
             
             <UserIcon className="h-16 w-16 bg-blue-600" aria-hidden="true" />12yrs
