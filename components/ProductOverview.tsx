@@ -161,6 +161,8 @@ export default function TourDetails(props:ITourDetailsProps){
             
           </div>
 
+          
+
           {/* Options */}
           <div className="mt-4 lg:mt-0 lg:row-span-3">
             <h2 className="sr-only">Product information</h2>
