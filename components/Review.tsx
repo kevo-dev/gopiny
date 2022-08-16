@@ -57,7 +57,7 @@ export const PeopleReview = (_props: any) => {
     <Section
     text="Explore"
     description="Client Reviews"
-    title="What the are saying"
+    title="What they are saying"
     >
 
 
