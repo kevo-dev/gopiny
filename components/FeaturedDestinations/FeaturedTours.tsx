@@ -50,7 +50,7 @@ const FeaturedTours = (_props: any) => {
         image_url: "https://images.pexels.com/photos/2091351/pexels-photo-2091351.jpeg?cs=srgb&dl=pexels-daniel-spase-2091351.jpg&fm=jpg",
         price:100,
         description: "Watch the sunrise. Board a boat at 6:00 am from---- Cruise in the lake for about an hour. Watch this as you enjoy the morning breeze in the calm waters. Mingle with the fishermen coming from night-fishing, see the hippos from their grazing, and watch birds leave their nests in the wetlands. Cruise Up an 8 1/2 km river to a local fish market. At the clients request we do a village tour.",
-        href:'/tours/tours1'
+        href:'/tours/tour1'
     },
     {
         name: 'Forest trip',
