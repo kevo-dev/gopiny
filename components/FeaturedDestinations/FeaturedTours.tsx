@@ -168,10 +168,11 @@ const FeaturedTours = (_props: any) => {
             .map((_, index) => (
               <Star size={16} color="#FFBB0C" key={index} />
             ))}
-        </div>
+        </div> <a href={item.href} >
               <p className="absolute leading-relaxed italic font-bold text-blue-800 bg-white w-1/2 text-2xl mt-4">
                 {item.name}
-              </p>              
+              </p>
+              </a>              
               
                   <h4 className="mt-16 text-xl font-bold py-2">{item.price}<span className="font-thin">/Per Person</span></h4>
                   <p className="mt-4 py-2 pl-2 mx-auto bg-gray-200 w-1/2 ml-0">{item.duration}</p>
