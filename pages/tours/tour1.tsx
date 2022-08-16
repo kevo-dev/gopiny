@@ -8,6 +8,7 @@ import ProductList from '../../components/ProductList';
 import TourDetails  from '../../components/ProductOverview';
 import  ProductFeatures from '../../components/ProductFeatures';
 import CategoryFilter from '../../components/CategoryFilter';
+import FormLayout from '../../components/FormLayout';
 
 const TourDetail = () => 
     (
@@ -23,6 +24,7 @@ const TourDetail = () =>
             
     />
     <CategoryFilter />
+    <FormLayout />
     
     </Base>
     </>
