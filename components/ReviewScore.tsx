@@ -9,10 +9,10 @@ const ReviewScore = (props: IContactProps) => {
   return (
     <>
       <Section>
-        <div className="relative z-10 rounded-md shadow-md p-4  max-w-3xl  ">
+        <div className="relative z-10 rounded-md shadow-md p-4 bg-slate-800 max-w-3xl  ">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
             <div className="mx-auto ">
-              <h1 className="text-white font-bold text-9xl py-16">7.0</h1>{" "}
+              <h1 className="font-bold text-9xl py-16">7.0</h1>{" "}
             </div>
 
             <div className="h-full relative max-w-xl overflow-hidden  ">
@@ -86,6 +86,8 @@ const ReviewScore = (props: IContactProps) => {
               
             </div>
           </div>
+
+
         </div>
       </Section>
     </>
