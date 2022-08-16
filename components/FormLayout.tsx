@@ -18,7 +18,7 @@ export default function FormLayout() {
     return (
       <>
         <div className="max-w-7xl mx-auto" >
-            
+            <div className="grid grid-col-2" >
             <div className="mt-5 md:mt-0 md:col-span-2">
               <form action="#" method="POST">
                 <div className="shadow sm:rounded-md sm:overflow-hidden">
@@ -93,6 +93,10 @@ export default function FormLayout() {
                     </button>
                   </div>
               </form>
+            </div>
+
+            <div></div>
+
             </div>
           </div>
     

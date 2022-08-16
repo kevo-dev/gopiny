@@ -154,10 +154,10 @@ export default function TourDetails(props:ITourDetailsProps){
           <div className="flex  flex-col md:flex-row py-16 lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8 bg-gray-300 justify-center">
             <h1 className="text-2xl mr-24 font-extrabold tracking-tight text-gray-900 sm:text-3xl">{props.name}</h1>
             
-            <UserIcon className="h-20 w-20 bg-blue-600" aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg">Age</p><p className="font-semibold">12+</p></div>
-            <ClockIcon className="h-20 w-20 bg-blue-600" aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg">Duration</p><p className="font-semibold">8 Hours</p></div>
-            <LocationMarkerIcon className="h-20 w-20 bg-blue-600 font-bold" aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg">Location</p><p className="font-semibold">Dunga</p></div>
-            <TagIcon className="h-20 w-20 bg-blue-600 font-bold" aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg">Tour Type</p><p className="font-semibold">Adventure/Wildlife </p></div>
+            <UserIcon className="h-20 w-20 " aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg ">Age</p><p className="font-semibold">12+</p></div>
+            <ClockIcon className="h-20 w-20" aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg">Duration</p><p className="font-semibold">8 Hours</p></div>
+            <LocationMarkerIcon className="h-20 w-20 font-bold" aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg">Location</p><p className="font-semibold">Dunga</p></div>
+            <TagIcon className="h-20 w-20 font-bold" aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg">Tour Type</p><p className="font-semibold">Adventure/Wildlife </p></div>
             
           </div>
 
