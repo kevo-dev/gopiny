@@ -8,7 +8,7 @@ const About = () => {
     <>
     <Base>
     <Section>
-    <div className="w-full h-full bg-blue-600">
+    <div className="w-full h-full">
 
 <div className="w-full h-full relative flex items-center justify-center py-24">
 
@@ -22,7 +22,7 @@ const About = () => {
 
 </div>
    
-   	<div className="relative z-10 rounded-md shadow-md bg-[#02044A] p-4 max-w-7xl mx-auto mt-4">
+   	<div className="relative z-10 rounded-md shadow-md p-4 max-w-7xl mx-auto mt-4">
        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:ml-4">
           <img

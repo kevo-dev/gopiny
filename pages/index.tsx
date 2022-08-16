@@ -40,7 +40,7 @@ const Home: NextPage = () => {
       <PeopleReview />
       
       <Trending />
-      
+      <AblyChatComponent />
       <Footer />
     </div>
     
