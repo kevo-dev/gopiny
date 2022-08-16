@@ -24,7 +24,7 @@ const AblyChatComponent = dynamic(() => import('../components/AblyChatComponent'
 const Home: NextPage = () => {
   return(
   <>
-    <div className=" ">
+    <div className="max-w-screen mx-auto ">
       
       <Navbar />
       <Carousel1 /> 
