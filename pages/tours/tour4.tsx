@@ -11,7 +11,7 @@ import CategoryFilter from '../../components/CategoryFilter';
 import FormLayout from '../../components/FormLayout';
 
 const product = {
-    name: 'Forest Trip',
+    name: 'Kericho',
     price: '$192',
     href: '#',
     breadcrumbs: [
@@ -24,7 +24,6 @@ const TourDetail = () =>
     (
     <>
     <Base>
-    
     <nav aria-label="Breadcrumb">
           <ol role="list" className="max-w-2xl mx-auto px-4 flex items-center space-x-2 sm:px-6 lg:max-w-7xl lg:px-8">
             {product.breadcrumbs.map((breadcrumb) => (
@@ -55,12 +54,12 @@ const TourDetail = () =>
           </ol>
         </nav>
     <TourDetails
-        name = 'Kakamega Forest trip'
+        name = 'A day in Kericho'
         title = "8 Hours"
         img = 'https://i.ibb.co/ChnLRyB/136848-79bcd3f4.jpg'
         price = '180'
-        description = 'A trip to Kakamega forest. The leftover of the rain forest that stretched all the way from west Africa. Its trees species, its birds, its monkeys, lovely its memories.'
-        _id = '2'
+        description = 'A day trip to Kericho tea plantations and a tea factory on your way back its sugar cane fields and a visit to the famous Luanda Magere shrine and Luanda falls where he used to bath. The falls are breathtaking.'
+        _id = '1'
             
     />
     <CategoryFilter />

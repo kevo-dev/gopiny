@@ -9,38 +9,7 @@ import { Star } from '../svgs';
 
 
 const FeaturedTours = (_props: any) => {
-  const dataReview = [
-    {
-      image_url: '/native/ndere-island.jpg',
-      name: '$-100',
-      description:'Island',
-      duration:'9 HOURS',
-    },
-    {
-      image_url: '/native/kit-mikayi.jpg',
-      name: '$-100',
-      description:'Culture',
-      duration:'9 HOURS',
-    },
-    {
-      image_url: '/native/game-park.jpg',
-      name: '$-100',
-      description:'Game',
-      duration:'9 HOURS',
-    },
-    {
-      image_url: '/hero/herop.jpg',
-      name: '$-100',
-      description:'Hippos',
-      duration:'9 HOURS',
-    },
-    {
-      image_url: '/native/city_walk.jpeg',
-      name: '$-100',
-      description:'City',
-      duration:'9 HOURS',
-    },
-  ];
+ 
 
 
   const products = [

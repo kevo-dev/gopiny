@@ -15,8 +15,8 @@ const product = {
     price: '$192',
     href: '#',
     breadcrumbs: [
-        { id: 1, name: 'Tours', href: '/tours' },
-        { id: 2, name: 'Forest Trip', href: '/tours/tour2' },
+        { id: 1, name: 'Home', href: '/' },
+        { id: 2, name: 'Tours', href: '/tours' },
       ],
 }
 
