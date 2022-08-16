@@ -90,7 +90,7 @@ export const PeopleReview = (_props: any) => {
               <Star size={16} color="#FFBB0C" key={index} />
             ))}
         </div>
-              <p className="leading-relaxed italic font-thin text-xl p-6">
+              <p className="leading-relaxed italic font-thin text-md p-6">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis.”

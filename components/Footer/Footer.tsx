@@ -37,7 +37,7 @@ const socialLinks = [
 
 const Footer = () => (
   <Section>
-  <footer className="gradient  bg-no-repeat bg-fill w-full mx-auto text-white text-opacity-120 font-semibold uppercase text-sm tracking-widest relative -z-1000">
+  <footer className=" w-full mx-auto text-white text-opacity-120 text-sm tracking-widest relative">
     <div className="flex max-w-7xl  bg-local mx-auto">
       <div className="wrapper w-1/2 pl-12">
         <div className="section bg-blur-xl">
@@ -54,9 +54,9 @@ const Footer = () => (
       <div className="w-1/2 flex flex-wrap mt-4">
       <div className="wrapper mx-auto">
         <div className="section mb-3 ">
-          <p className="font-display text-white uppercase text-sm tracking-widest mb-6">Support</p>
+          <p className="font-display text-white uppercase text-md font-bold tracking-widest mb-6">Support</p>
           {shop.map((link, index) => (
-            <p className="link cursor-pointer mb-1" key={index}>
+            <p className="link cursor-pointer mb-1 text-sm" key={index}>
               {link}
             </p>
           ))}
@@ -64,9 +64,9 @@ const Footer = () => (
       </div>
       <div className="wrapper mx-auto ">
         <div className="section mb-8 max-w-md">
-          <p className="font-display text-white uppercase text-sm tracking-widest mb-6">Links</p>
+          <p className="font-display text-white uppercase text-md font-bold tracking-widest mb-6">Links</p>
           {interests.map((link, index) => (
-            <p className="link cursor-pointer mb-1" key={index}>
+            <p className="link cursor-pointer mb-1 text-sm" key={index}>
               {link}
             </p>
           ))}
