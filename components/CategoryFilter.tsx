@@ -108,7 +108,7 @@ export default function Example() {
                                 />
                                 <label
                                   htmlFor={`filter-${section.id}-${optionIdx}`}
-                                  className="ml-3 text-sm text-gray-600"
+                                  className="ml-3 text-lg text-gray-600"
                                 >
                                   {option.label}
                                 </label>
