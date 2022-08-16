@@ -16,6 +16,7 @@
 */
 
 import { StarIcon } from "@heroicons/react/solid";
+import { Star } from "../svgs";
 
 const reviews = { href: "#", average: 4, totalCount: 117 };
 
@@ -36,11 +37,11 @@ const activities = ["Wildlife", "Sight-seeing"];
 export default function FormLayout(props: IFormLayoutProps) {
   return (
     <>
-      <div className="">
-        <div className="flex ">
-          <div className="w-1/2">
+      <div className="max-w-4xl mx-auto">
             <form action="#" method="POST">
-              <div className="shadow sm:rounded-md sm:overflow-hidden">
+              
+
+              <div className="shadow sm:rounded-md sm:overflow-hidden ">
                 <div className="px-4 py-5 bg-white space-y-6 sm:p-6">
                   <div className="col-span-6 sm:col-span-3">
                     <label
@@ -103,7 +104,7 @@ export default function FormLayout(props: IFormLayoutProps) {
                         name="about"
                         rows={3}
                         className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
-                        placeholder="you@example.com"
+                        placeholder="Enter your comments"
                         defaultValue={""}
                       />
                     </div>
@@ -119,24 +120,7 @@ export default function FormLayout(props: IFormLayoutProps) {
                 </button>
               </div>
             </form>
-          </div>
-
-          <div className="flex w-1/2">
-            <p className="mr-80 font-bold text-md ml-20">Services</p>
-
-            {[0, 1, 2, 4, 5].map((rating) => (
-              <input
-                key={rating}
-                className={classNames(
-                  reviews.average > rating ? "text-gray-900" : "text-gray-200",
-                  "h-5 w-5 flex-shrink-0"
-                )}
-                type="checkbox"
-                aria-hidden="true"
-              />
-            ))}
-          </div>
-        </div>
+          
       </div>
     </>
   );
