@@ -168,7 +168,7 @@ const FeaturedTours = (_props: any) => {
               <Star size={16} color="#FFBB0C" key={index} />
             ))}
         </div>
-              <p className="absolute leading-relaxed italic font-bold text-blue-800 bg-white w-1/4 text-2xl mt-4">
+              <p className="absolute leading-relaxed italic font-bold text-blue-800 bg-white w-1/2 text-2xl mt-4">
                 {item.name}
               </p>              
               
