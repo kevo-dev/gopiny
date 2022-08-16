@@ -9,6 +9,7 @@
     "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^1.0.6",
     "@lottiefiles/lottie-player": "^1.5.7",
+    "ably": "1.2.5-beta.1",
     "next": "latest",
     "next-seo": "^5.4.0",
     "react": "18.1.0",

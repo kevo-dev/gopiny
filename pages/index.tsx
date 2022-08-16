@@ -17,6 +17,9 @@ import { Featured } from '../components/Featured';
 
 import { PeopleReview } from '../components/Review';
 import Header from '../components/Header';
+import dynamic from 'next/dynamic';
+
+const AblyChatComponent = dynamic(() => import('../components/AblyChatComponent'), { ssr: false });
 
 const Home: NextPage = () => {
   return(
@@ -37,8 +40,10 @@ const Home: NextPage = () => {
       <PeopleReview />
       
       <Trending />
+      
+      <Footer />
     </div>
-    <Footer />
+    
   </>
 )};
 
