@@ -23,7 +23,7 @@ const Home: NextPage = () => {
   <>
     <div className=" ">
       
-      <Header />
+      <Navbar />
       <Carousel1 /> 
       
       <Card

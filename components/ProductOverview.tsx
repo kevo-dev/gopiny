@@ -3,6 +3,7 @@ import { ReactNode, useState } from 'react'
 import { ChevronUpIcon, StarIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
 import { ClockIcon, LocationMarkerIcon, TagIcon, UserIcon, UsersIcon } from '@heroicons/react/outline';
+import { Carousel1 } from './Carousel';
 
 
   type ITourDetailsProps = {
@@ -61,7 +62,7 @@ export default function TourDetails(props:ITourDetailsProps){
   
 
   return (
-    <div className="bg-white">
+    <div className="bg-white py-8">
       <div className="pt-6">
 
 
@@ -99,6 +100,16 @@ export default function TourDetails(props:ITourDetailsProps){
             />
           </div>
         </div>
+        
+
+
+
+
+
+
+
+
+
 
         {/* Product info */}
         <div className="max-w-2xl  mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">

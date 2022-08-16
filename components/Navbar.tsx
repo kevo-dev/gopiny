@@ -50,7 +50,7 @@ export default function Navbar() {
                   />
                 </div>
                 <div className="hidden absolute right-20 sm:block sm:ml-6">
-                  <div className="flex space-x-4 ">
+                  <div className="flex space-x-4 py-4 ">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -59,7 +59,7 @@ export default function Navbar() {
                           item.current
                             ? 'bg-blue-900 text-white'
                             : 'text-gray-300 hover:bg-gray-700 hover:text-white ',
-                          'px-6 py-6 rounded-md text-md font-medium hover:border-4'
+                          'px-2 py-2 rounded-md text-md font-medium hover:border-4'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
