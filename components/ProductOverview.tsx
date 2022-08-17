@@ -4,6 +4,7 @@ import { ChevronUpIcon, StarIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
 import { ClockIcon, LocationMarkerIcon, TagIcon, UserIcon, UsersIcon } from '@heroicons/react/outline';
 import { Carousel1 } from './Carousel';
+import { Section } from './layout/Section';
 
 
   type ITourDetailsProps = {
@@ -62,7 +63,8 @@ export default function TourDetails(props:ITourDetailsProps){
   
 
   return (
-    <div className="bg-white py-8">
+    <Section>
+    <div className=" py-8">
       <div className="pt-6">
 
 
@@ -113,13 +115,13 @@ export default function TourDetails(props:ITourDetailsProps){
 
         {/* Product info */}
         <div className="max-w-2xl  mx-auto pt-10 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
-          <div className="flex  flex-col md:flex-row py-16 lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8 bg-gray-300 justify-center">
-            <h1 className="text-2xl mr-24 font-extrabold tracking-tight text-gray-900 sm:text-3xl">{props.name}</h1>
+          <div className="flex  flex-col md:flex-row py-16 lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8 justify-center">
+            <h1 className="text-2xl mr-24 mb-8 font-extrabold tracking-tight text-orange-300 sm:text-3xl">{props.name}</h1>
             
-            <UserIcon className="h-20 w-20 " aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg ">Age</p><p className="font-semibold">12+</p></div>
-            <ClockIcon className="h-20 w-20" aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg">Duration</p><p className="font-semibold">8 Hours</p></div>
-            <LocationMarkerIcon className="h-20 w-20 font-bold" aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg">Location</p><p className="font-semibold">Dunga</p></div>
-            <TagIcon className="h-20 w-20 font-bold" aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg">Tour Type</p><p className="font-semibold">Adventure/Wildlife </p></div>
+            <UserIcon className="h-10 w-10 text-white" aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg text-orange-300 ">Age</p><p className="font-semibold">12+</p></div>
+            <ClockIcon className="h-10 w-10 text-white" aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg">Duration</p><p className="font-semibold">8 Hours</p></div>
+            <LocationMarkerIcon className="h-10 w-10 font-bold text-white" aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg">Location</p><p className="font-semibold">Dunga</p></div>
+            <TagIcon className="h-10 w-10 font-bold text-white" aria-hidden="true" /><div className="flex  flex-col "><p className="font-bold text-lg">Tour Type</p><p className="font-semibold">Adventure/Wildlife </p></div>
             
           </div>
 
@@ -128,7 +130,7 @@ export default function TourDetails(props:ITourDetailsProps){
           {/* Options */}
           <div className="mt-4 lg:mt-0 lg:row-span-3">
             <h2 className="sr-only">Product information</h2>
-            <p className="text-3xl text-gray-900">{props.price}</p>
+            <p className="text-lg font-bold text-orange-200">${props.price}</p>
 
             {/* Reviews */}
             <div className="mt-6">
@@ -139,7 +141,7 @@ export default function TourDetails(props:ITourDetailsProps){
                     <StarIcon
                       key={rating}
                       className={classNames(
-                        reviews.average > rating ? 'text-gray-900' : 'text-gray-200',
+                        reviews.average > rating ? 'text-orange-400' : 'text-gray-200',
                         'h-5 w-5 flex-shrink-0'
                       )}
                       aria-hidden="true"
@@ -147,7 +149,7 @@ export default function TourDetails(props:ITourDetailsProps){
                   ))}
                 </div>
                 <p className="sr-only">{reviews.average} out of 5 stars</p>
-                <a href={reviews.href} className="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                <a href={reviews.href} className="ml-3 text-sm font-medium text-orange-100 hover:text-orange-500">
                   {reviews.totalCount} reviews
                 </a>
               </div>
@@ -198,14 +200,14 @@ export default function TourDetails(props:ITourDetailsProps){
               <h3 className="sr-only">Description</h3>
 
               <div className="space-y-6">
-                <p className="text-base text-gray-900">{props.description}</p>
+                <p className="text-base text-white">{props.description}</p>
               </div>
             </div>
 
             
 
             <div className="mt-10">
-              <h2 className="text-sm font-medium text-gray-900">Details</h2>
+              <h2 className="text-sm font-medium text-orange-400">Details</h2>
 
               
             </div>
@@ -213,5 +215,6 @@ export default function TourDetails(props:ITourDetailsProps){
         </div>
       </div>
     </div>
+    </Section>
   )
 };

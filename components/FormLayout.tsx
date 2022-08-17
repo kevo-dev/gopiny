@@ -17,6 +17,7 @@
 
 import { StarIcon } from "@heroicons/react/solid";
 import { Star } from "../svgs";
+import { Section } from "./layout/Section";
 
 const reviews = { href: "#", average: 4, totalCount: 117 };
 
@@ -37,7 +38,8 @@ const activities = ["Wildlife", "Sight-seeing"];
 export default function FormLayout(props: IFormLayoutProps) {
   return (
     <>
-      <div className="max-w-4xl mx-auto">
+    <Section>
+      <div className="max-w-4xl mx-4 rounded-xl">
             <form action="#" method="POST">
               
 
@@ -122,6 +124,7 @@ export default function FormLayout(props: IFormLayoutProps) {
             </form>
           
       </div>
+      </Section>
     </>
   );
 }
