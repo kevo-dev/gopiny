@@ -52,9 +52,9 @@ const Footer = () => (
         </div>
       </div>
       <div className="w-1/2 flex flex-wrap mt-4">
-      <div className="wrapper mx-auto">
-        <div className="section mb-3 ">
-          <p className="font-display text-white uppercase text-md font-bold tracking-widest mb-6">Support</p>
+      <div className="mx-auto">
+        <div className="mb-3 ">
+          <p className="text-white uppercase font-bold tracking-widest mb-6">Support</p>
           {shop.map((link, index) => (
             <p className="link cursor-pointer mb-1 text-sm" key={index}>
               {link}
@@ -62,9 +62,9 @@ const Footer = () => (
           ))}
         </div>
       </div>
-      <div className="wrapper mx-auto ">
-        <div className="section mb-8 max-w-md">
-          <p className="font-display text-white uppercase text-md font-bold tracking-widest mb-6">Links</p>
+      <div className="mx-auto ">
+        <div className=" mb-8 max-w-md">
+          <p className="font-display text-white uppercase font-bold tracking-widest mb-6">Links</p>
           {interests.map((link, index) => (
             <p className="link cursor-pointer mb-1 text-sm" key={index}>
               {link}
