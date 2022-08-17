@@ -59,7 +59,7 @@ export default function Navbar() {
                           item.current
                             ? 'bg-blue-900 text-white'
                             : 'text-gray-300 hover:bg-gray-700 hover:text-white ',
-                          'px-2 py-2 rounded-md text-md font-medium hover:border-4'
+                          'px-2 py-2 rounded-xl text-md font-medium hover:border-2'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -72,7 +72,7 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
-                  className="bg-gray-800 p-1 rounded-sm  text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  className="bg-white p-1 rounded-sm  text-gray-400 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
                   <span className="sr-only">View notifications</span>
                   <LoginIcon className="h-6 w-4" aria-hidden="true" />

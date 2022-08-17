@@ -77,7 +77,7 @@ export const PeopleReview = (_props: any) => {
           
         >
           {dataReview.map((item, _key) => (
-            <div className="bg-white py-2 px-4 mx-auto ">
+            <div className=" py-2 px-4 mx-auto ">
               <img
                     src={item.image_url}
                     alt=""
@@ -90,13 +90,13 @@ export const PeopleReview = (_props: any) => {
               <Star size={16} color="#FFBB0C" key={index} />
             ))}
         </div>
-              <p className="leading-relaxed italic font-thin text-md p-6">
+              <p className="leading-relaxed italic font-thin text-white text-sm p-6">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis.”
               </p>              
               
-                  <h4 className="-mt-2 text-xl font-bold text-center w-1/4 mx-auto">{item.name}</h4>
+                  <h4 className="-mt-2 text-white text-xl font-bold text-center w-1/4 mx-auto">{item.name}</h4>
             </div>
               
       

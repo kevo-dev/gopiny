@@ -99,6 +99,7 @@ export const Carousel1 = (_props: any) => {
               </p> */}
               </div>
               <img
+                key={item.name}
                 src={item.image_url}
                 alt=""
                 className="w-full h-full absolute inset-0 object-fit opacity-70 -z-1000"
