@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react';
+import { signIn, signOut, useSession } from "next-auth/react"
 
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { LoginIcon , MenuIcon, UserIcon, XIcon } from '@heroicons/react/outline';
@@ -19,6 +20,10 @@ function classNames(...classes:any) {
 }
 
 export default function Navbar() {
+  const { data: session, status } = useSession()
+  const loading = status === "loading"
+
+
   return (
     <Disclosure as="nav" className="mr-0 sticky top-0  gradient z-50 h-24 py-2 mb-8">
       {({ open }) => (
