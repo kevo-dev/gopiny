@@ -62,7 +62,7 @@ const TourDetail = () =>
         _id = '1'
             
     />
-    <CategoryFilter />
+   
     <FormLayout />
     
     </Base>
