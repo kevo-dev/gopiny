@@ -29,14 +29,14 @@ const Trending = () => (
 
   title="News and Articles">
 
-<div className=" font-acrosmyth h-20 -mt-20 justify-center lg:ml-80 text-xl text-white underline">From the blogpost</div>
+<div className=" font-acrosmyth h-20 -mt-40 justify-center lg:ml-80 text-xl text-white underline">From the blogpost</div>
     <div className="lg:grid grid-cols-3 grid-rows-1 gap-2 py-2 mx-auto mt-12 max-w-7xl">
       {stories.map(({ title, description, image }, index) => (
         <div className="mt-5 mx-auto" key={index}>
           <div className="w-full h-full mx-auto">
             <img src={image} alt={title} className="object-contain rounded-lg mx-auto" />
             <div className=" relative">
-              <p className="label text-2xl text-white font-bold mt-4 w-3/4 mx-auto">{title}</p>
+              <p className="text-xl text-white font-bold mb-4 w-3/4 mx-auto">{title}</p>
               
               <p className="mt-4 text-lg text-orange-800 w-1/4  ml-16 mx-auto">Read more</p>
             </div>
