@@ -3,15 +3,15 @@
 import { Fragment } from 'react';
 
 import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { LoginIcon , MenuIcon, XIcon } from '@heroicons/react/outline';
+import { LoginIcon , MenuIcon, UserIcon, XIcon } from '@heroicons/react/outline';
 
 const navigation = [
-  { name: 'Home', href: '/', current: false },
+  { name: 'Home ', href: '/', current: false },
   
-  { name: 'Tours', href: '/tours', current: false },
-  { name: 'About us', href: '/about', current: false },
-  { name: 'Contact us', href: '/contact', current: false },  
-  { name: 'Partner', href: '#', current: false }
+  { name: 'Tours ', href: '/tours', current: false },
+  { name: 'About us ', href: '/about', current: false },
+  { name: 'Contact us ', href: '/contact', current: false },  
+  { name: 'Partner ', href: '#', current: false }
 ];
 
 function classNames(...classes:any) {
@@ -49,7 +49,7 @@ export default function Navbar() {
                     alt="Workflow"
                   />
                 </div>
-                <div className="hidden absolute right-20 sm:block sm:ml-6">
+                <div className="hidden md:block mx-auto">
                   <div className="flex space-x-4 py-4 ">
                     {navigation.map((item) => (
                       <a
@@ -58,7 +58,7 @@ export default function Navbar() {
                         className={classNames(
                           item.current
                             ? 'bg-blue-900 text-white'
-                            : 'text-gray-300 hover:bg-gray-700 hover:text-white ',
+                            : 'text-gray-100 hover:bg-gray-700 hover:text-white ',
                           'px-2 py-2 rounded-xl text-md font-medium hover:border-2'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -69,13 +69,14 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div className="absolute  inset-y-0 right-0 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 hidden md:block">
                 <button
                   type="button"
-                  className="bg-white p-1 rounded-sm  text-gray-400 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  className="bg-white p-2 flex rounded-sm  text-indigo-400 hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
-                  <span className="sr-only">View notifications</span>
-                  <LoginIcon className="h-6 w-4" aria-hidden="true" />
+                  <UserIcon className="h-6 w-6 " aria-hidden="true" />
+            
+                  Login/Sign Up
                 </button>
 
                 {/* Profile dropdown 
@@ -164,6 +165,16 @@ export default function Navbar() {
                   {item.name}
                 </Disclosure.Button>
               ))}
+                            <div className=" inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <button
+                  type="button"
+                  className="bg-white p-2 flex rounded-sm  text-indigo-400 hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                >
+                  <UserIcon className="h-6 w-6 " aria-hidden="true" />
+            
+                  Login/Sign Up
+                </button>
+                </div>
             </div>
           </Disclosure.Panel>
         </>
