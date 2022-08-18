@@ -25,8 +25,8 @@ const Card = ({
   return (
     <Section>
       <div className="flex max-w-7xl flex-wrap mx-auto">
-        <div className="max-w-md mx-auto">
-          <div className="w-24 h-2 bg-white mb-8"></div>
+        <div className="max-w-md ml-8 lg:mx-auto ">
+          <div className="w-24 h-2 bg-white mb-8 "></div>
           <h2 className="text-orange-400 font-bold text-4xl mb-6">{title}</h2>
           <div className="flex">
             <Plus size={16} color="#FFBB0C" />
