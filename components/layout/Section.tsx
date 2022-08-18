@@ -17,7 +17,7 @@ type ISectionProps = {
 
 const Section = (props: ISectionProps) => (
   <div
-    className={` mx-auto sm:w-full lg:max-w-7xl text-[#035397] mb-1 gradient ${props.yPadding ? props.yPadding : 'py-8'} ${props.xPadding}`}
+    className={`max-w-7xl mx-auto text-[#035397] mb-1 gradient ${props.yPadding ? props.yPadding : 'py-8'} ${props.xPadding}`}
   >
    
     {(props.title || props.description) && (
@@ -26,7 +26,7 @@ const Section = (props: ISectionProps) => (
           <div className="absolute font-acrosmyth h-20 -mt-10 lg:ml-80 text-xl text-white underline">{props.description}</div>
         )} {props.title && (
           <>
-          <h2 className="text-2xl md:text-4xl tracking-widest text-white text-center font-bold w-full mt-20 mx-auto">{props.title}</h2>
+          <h2 className="text-2xl md:text-4xl tracking-widest text-white text-center font-bold  mt-20 mx-auto">{props.title}</h2>
           </>
         )}
 

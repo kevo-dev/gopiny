@@ -16,7 +16,7 @@ const Base = (props: IBaseProps) =>{
     return (
         <>
          <Meta title={AppConfig.title} description={AppConfig.description}/>
-         <main className="mx-auto">
+         <main className="max-w-full">
          <Navbar />
         <div>{props.children}</div>
          <Footer />      
