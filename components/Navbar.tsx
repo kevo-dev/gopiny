@@ -1,31 +1,33 @@
 /* eslint-disable prettier/prettier */
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react';
-import { signIn, signOut, useSession } from "next-auth/react"
+import { Fragment } from "react";
+import { signIn, signOut, useSession } from "next-auth/react";
 
-import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { LoginIcon , MenuIcon, UserIcon, XIcon } from '@heroicons/react/outline';
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { LoginIcon, MenuIcon, UserIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
-  { name: 'Home ', href: '/', current: false },
-  
-  { name: 'Tours ', href: '/tours', current: false },
-  { name: 'About us ', href: '/about', current: false },
-  { name: 'Contact us ', href: '/contact', current: false },  
-  { name: 'Partner ', href: '#', current: false }
+  { name: "Home ", href: "/", current: false },
+
+  { name: "Tours ", href: "/tours", current: false },
+  { name: "About us ", href: "/about", current: false },
+  { name: "Contact us ", href: "/contact", current: false },
+  { name: "Partner ", href: "#", current: false },
 ];
 
-function classNames(...classes:any) {
-  return classes.filter(Boolean).join(' ');
+function classNames(...classes: any) {
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
-  const { data: session, status } = useSession()
-  const loading = status === "loading"
-
+  const { data: session, status } = useSession();
+  const loading = status === "loading";
 
   return (
-    <Disclosure as="nav" className="mr-0 sticky top-0  gradient z-50 h-24 py-2 mb-8">
+    <Disclosure
+      as="nav"
+      className="mr-0 sticky top-0  gradient z-50 h-24 py-2 mb-8"
+    >
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-transparent">
@@ -44,7 +46,7 @@ export default function Navbar() {
               <div className="flex-1 flex mx-auto items-center justify-center sm:items-stretch sm:justify-end">
                 <div className="flex-shrink-0 flex items-center">
                   <img
-                    className="block lg:hidden h-16 w-auto "
+                    className="hidden h-16 w-auto "
                     src="/svgs/dark_main_logo_clear.svg"
                     alt="Workflow"
                   />
@@ -62,11 +64,11 @@ export default function Navbar() {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? 'bg-blue-900 text-white'
-                            : 'text-gray-100 hover:bg-gray-700 hover:text-white ',
-                          'px-2 py-2 rounded-xl text-md font-medium hover:border-2'
+                            ? "bg-blue-900 text-white"
+                            : "text-gray-100 hover:bg-gray-700 hover:text-white ",
+                          "px-2 py-2 rounded-xl text-md font-medium hover:border-2"
                         )}
-                        aria-current={item.current ? 'page' : undefined}
+                        aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
                       </a>
@@ -77,10 +79,9 @@ export default function Navbar() {
               <div className="absolute  inset-y-0 right-0 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 hidden md:block">
                 <button
                   type="button"
-                  className="bg-white p-2 flex rounded-sm  text-indigo-400 hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  className="bg-white w-full p-2 flex rounded-sm  text-indigo-400 hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
                   <UserIcon className="h-6 w-6 " aria-hidden="true" />
-            
                   Login/Sign Up
                 </button>
 
@@ -153,7 +154,7 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel className="sm:hidden h-screen w-screen bg-blue-800 ">
-            <div className="px-24 py-12 space-y-8 h-full ">
+            <div className="px-4 py-28 space-y-4 h-full ">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -161,25 +162,24 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? 'bg-gray-900 text-white w-1/2 text-center'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white ',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                      ? "bg-gray-900 text-white w-full text-center"
+                      : "text-gray-300 border-2 hover:text-white ",
+                    "block px-3 py-2 rounded-md text-base font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
               ))}
-                            <div className=" inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div className="w-full inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
-                  className="bg-white p-2 flex rounded-sm  text-indigo-400 hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  className="w-full justify-center text-center bg-white p-2 flex rounded-sm  text-indigo-400 hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
-                  <UserIcon className="h-6 w-6 " aria-hidden="true" />
-            
+                  <UserIcon className="h-6 w-6  " aria-hidden="true" />
                   Login/Sign Up
                 </button>
-                </div>
+              </div>
             </div>
           </Disclosure.Panel>
         </>
