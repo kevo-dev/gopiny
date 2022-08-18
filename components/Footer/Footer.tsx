@@ -64,7 +64,7 @@ const Footer = () => (
       </div>
       <div className="mx-auto ">
         <div className=" mb-8 max-w-md">
-          <p className="font-display text-white uppercase font-bold tracking-widest mb-6">Links</p>
+          <p className="font-display text-white uppercase tracking-widest mb-6">Links</p>
           {interests.map((link, index) => (
             <p className="link cursor-pointer mb-1 text-sm" key={index}>
               {link}
