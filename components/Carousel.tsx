@@ -110,7 +110,7 @@ export const Carousel1 = (_props: any) => {
             
           ))}
         </Carousel>
-        <div className="relative max-w-7xl mx-10 px-2 bg-white border-4 rounded-lg w/12 lg:mx-auto -mt-16">
+        <div className="relative max-w-7xl mx-2 px-2 bg-white border-4 rounded-lg w/12 lg:mx-auto -mt-16">
       <div className="flex flex-col mx-auto md:flex-row mt-6">
 
       <fieldset className="h-full w-full md:w-1/4 mb-4">
