@@ -39,7 +39,7 @@ const Footer = () => (
   <Section>
   <footer className=" w-full mx-auto text-white text-opacity-120 text-sm tracking-widest relative">
     <div className="flex max-w-7xl  bg-local mx-auto">
-      <div className="wrapper w-1/2 pl-12">
+      <div className="wrapper w-1/2 pl-4">
         <div className="section bg-blur-xl">
           <img src="/logo-white.svg" className="object-contain p-2 mt-4 w-28 h-28"/>
           <p className="advice p-2 mt-4 font-semibold">
@@ -64,7 +64,7 @@ const Footer = () => (
       </div>
       <div className="mx-auto ">
         <div className=" mb-8 max-w-md">
-          <p className="font-display text-white uppercase font-bold tracking-widest mb-6">Links</p>
+          <p className=" text-white uppercase font-bold tracking-widest mb-6">Links</p>
           {interests.map((link, index) => (
             <p className="cursor-pointer mb-1 text-sm" key={index}>
               {link}
