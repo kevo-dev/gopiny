@@ -3,7 +3,6 @@ import { Carousel1 } from '../components/Carousel'
 
 
 import {
-  Banner,
   Trending,
   Testimonials,
   Footer,
@@ -12,6 +11,7 @@ import {
 } from '../components';
 import Navbar from '../components/Navbar';
 import { Hero2 } from '../components/Hero2';
+import  Banner  from '../components/Banner';
 import { Hero } from '../components/Hero';
 import { Featured } from '../components/Featured';
 
@@ -26,6 +26,7 @@ const Home: NextPage = () => {
   <>
     <div className="max-w-full gradient  ">
       
+      <Banner />
       <Navbar />
       <Carousel1 /> 
       
@@ -33,7 +34,7 @@ const Home: NextPage = () => {
         
         title="Plan your epic tour with us"
         buttonLabel="Book with us"
-        subtitle="There are many variations of passages of available but the majority have suffered alteration in some form, by injected hum randomised words which don't look even slightly."
+        subtitle="We offer an all-rounded travel experience. From a simple three hour-long boat-ride to a week-long tour with multiple destinations and pleasurable experiences."
         image="/images/testimonial.png"
       />
       <FeaturedTours />

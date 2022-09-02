@@ -1,19 +1,3 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 
 import { StarIcon } from "@heroicons/react/solid";
 import { Star } from "../svgs";
@@ -39,7 +23,7 @@ export default function FormLayout(props: IFormLayoutProps) {
   return (
     <>
     <Section>
-      <div className="max-w-4xl mx-4 rounded-xl">
+      <div className="max-w-4xl mx-auto rounded-xl">
             <form action="#" method="POST">
               
 

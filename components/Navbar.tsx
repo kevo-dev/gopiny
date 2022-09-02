@@ -171,13 +171,19 @@ export default function Navbar() {
                   {item.name}
                 </Disclosure.Button>
               ))}
-              <div className="w-full inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div className="w-full inset-y-0 right-0 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
-                  className="w-full justify-center text-center bg-white p-2 flex rounded-sm  text-indigo-400 hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  className="w-full justify-center my-2 text-center bg-white p-2 flex rounded-sm  text-indigo-400 hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
                   <UserIcon className="h-6 w-6  " aria-hidden="true" />
                   Login/Sign Up
+                </button>
+                <button
+                  type="button"
+                  className="w-full font-bold text-2xl justify-center my-2 text-center bg-white px-2 py-1 flex rounded-sm  text-indigo-400 hover:text-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                >
+                  0720607010
                 </button>
               </div>
             </div>

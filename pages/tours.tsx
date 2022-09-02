@@ -6,11 +6,13 @@ import { AppConfig } from '../utils/AppConfig';
 import { Tours } from '../components/Tours';
 import ProductList from '../components/ProductList';
 import ProductFeatures from '../components/ProductFeatures';
+import { ReviewScore } from '../components/ReviewScore';
 
 const TourList = () => {
     return(
     <>
     <Base>
+    
     <ProductList />
     
     </Base>
