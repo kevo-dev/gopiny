@@ -7,7 +7,7 @@ function Banner(){
   
   return (
         
-      <div className="hidden lg:flex bg-indigo-600 text-white h-10 items-center lg:justify-between text-sm font-medium px-4 sm:px-6 lg:px-8">
+      <div className="hidden max-w-7xl mx-auto lg:flex bg-indigo-600 text-white h-10 items-center lg:justify-between text-sm font-medium px-4 sm:px-6 lg:px-8">
 <span className="mr-8 flex" >
 <PhoneIcon className="h-4 w-4 mr-2 " aria-hidden="true" />
     0720607010</span>

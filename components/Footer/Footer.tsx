@@ -37,7 +37,7 @@ const socialLinks = [
 
 const Footer = () => (
   <Section>
-  <footer className=" w-full mx-auto text-white text-opacity-120 text-sm tracking-widest relative">
+  <footer className=" w-full bg-indigo-800 mx-auto text-white text-opacity-120 text-sm tracking-widest relative">
     <div className="flex max-w-7xl  bg-local mx-auto">
       <div className="wrapper w-1/2 pl-4">
         <div className="section bg-blur-xl">
@@ -47,7 +47,7 @@ const Footer = () => (
             destination information from us
           </p>
           <p className="p-2 mt-4">
-            &copy;2022 Port Florence Lake Tours.
+            &copy;2022 Gopiny.
           </p>
         </div>
       </div>

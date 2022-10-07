@@ -26,15 +26,15 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="mr-0 sticky top-0  gradient z-50 h-24 py-2 mb-8"
+      className="mr-0 sticky top-0 py-4 z-50 bg-transparent mb-2"
     >
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-transparent">
-            <div className="relative flex items-center justify-between h-16">
+            <div className="relative flex items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center my-8 rounded-md text-slate-00 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -57,7 +57,7 @@ export default function Navbar() {
                   />
                 </div>
                 <div className="hidden md:block mx-auto">
-                  <div className="flex space-x-4 py-4 ">
+                  <div className="flex space-x-6 justify-around py-2 ">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -65,8 +65,8 @@ export default function Navbar() {
                         className={classNames(
                           item.current
                             ? "bg-blue-900 text-white"
-                            : "text-gray-100 hover:bg-gray-700 hover:text-white ",
-                          "px-2 py-2 rounded-xl text-md font-medium hover:border-2"
+                            : "text-blue-800 hover:bg-gray-700 hover:text-white ",
+                          " m-2 rounded-lg text-md font-medium hover:border-2"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
