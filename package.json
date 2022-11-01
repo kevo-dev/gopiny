@@ -1,5 +1,5 @@
 {
-  "name":"gopiny",
+  "name": "gopiny",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -7,9 +7,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^1.0.6",
     "@lottiefiles/lottie-player": "^1.5.7",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.12",
     "ably": "1.2.5-beta.1",
     "next": "latest",
     "next-auth": "^4.10.3",
