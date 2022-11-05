@@ -27,6 +27,8 @@ function ForgotPassword() {
     return errors;
   };
 
+  const submitting = false;
+
   const handleSubmit = () => {
     setSent(true);
   };
