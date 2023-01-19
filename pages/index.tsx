@@ -18,6 +18,7 @@ import Projects from '../components/Portfolio';
 import { Base } from '../components/layout/Base';
 import { FeaturedTours } from '../components/FeaturedTours';
 import { Contact } from '../components/Contact';
+import CTASection from '../components/CTASection';
 
 const Home: NextPage = () => {
   return(
@@ -26,7 +27,7 @@ const Home: NextPage = () => {
   <HeroSlide />
   <FeaturedTours />
   <PeopleReview />
-  <Promo />
+  <CTASection />
   <Contact />
   </Base>
    
