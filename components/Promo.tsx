@@ -24,37 +24,14 @@ export default function Promo() {
                       <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="w-44 h-64 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100">
                           <img
-                            src="/images/fun1.jpg"
+                            src="/native/beaubirds.jpg"
                             alt=""
                             className="w-full h-full object-center object-cover"
                           />
                         </div>
                         <div className="w-44 h-64 rounded-lg overflow-hidden">
                           <img
-                            src="/images/fun1.jpg"
-                            alt=""
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
-                      </div>
-                      <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <img
-                            src="/images/fun1.jpg"
-                            alt=""
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <img
-                            src="/images/fun1.jpg"
-                            alt=""
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <img
-                            src="/images/fun1.jpg"
+                            src="/native/dungaabeach.jpg"
                             alt=""
                             className="w-full h-full object-center object-cover"
                           />
@@ -63,14 +40,37 @@ export default function Promo() {
                       <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="w-44 h-64 rounded-lg overflow-hidden">
                           <img
-                            src="/images/fun1.jpg"
+                            src="/native/hippo_point2.jpg"
                             alt=""
                             className="w-full h-full object-center object-cover"
                           />
                         </div>
                         <div className="w-44 h-64 rounded-lg overflow-hidden">
                           <img
-                            src="/images/fun1.jpg"
+                            src="/native/dunga-bay.jpg"
+                            alt=""
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <img
+                            src="/native/cleanlake.jpg"
+                            alt=""
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <img
+                            src="/native/fishermen1.jpg"
+                            alt=""
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <img
+                            src="/native/game-park.jpg"
                             alt=""
                             className="w-full h-full object-center object-cover"
                           />
