@@ -65,6 +65,7 @@ const Card2 = ({ title, subtitle, image, children, buttonLabel, reversed }: Card
 
         <div className="lg:block">
       <Image
+      alt=""
     width={600}
     height={600} 
     className="h-full w-full object-cover mx-auto "
