@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { Section } from '../layout/Section';
+import { Section } from '../components/layout/Section';
 import { CameraIcon, MapIcon, NewspaperIcon } from '@heroicons/react/outline';
 
 const stories = [
