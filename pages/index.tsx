@@ -19,6 +19,7 @@ import { Base } from '../components/layout/Base';
 import { FeaturedTours } from '../components/FeaturedTours';
 import { Contact } from '../components/Contact';
 import CTASection from '../components/CTASection';
+import About from '../components/About';
 
 const Home: NextPage = () => {
   return(
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
   <Base>
   <HeroSlide />
   <FeaturedTours />
+  <About />
   <PeopleReview />
   <CTASection />
   <Contact />

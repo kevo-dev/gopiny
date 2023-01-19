@@ -17,11 +17,11 @@ const Contact = (props: IContactProps) => {
     >
     <div className="w-full h-full ">
 
-<div className="w-full h-full relative flex items-center justify-left py-24">
+<div className="w-full h-full relative flex items-center justify-left py-4">
 
-  <img aria-label="no idea" src="/native/cleanlake.jpg" className="absolute object-cover w-full h-full"/>
+  {/* <img aria-label="no idea" src="/native/cleanlake.jpg" className="absolute object-cover w-full h-full"/> */}
 
-  <div className="px-6 max-w-4xl relative z-10 text-center">
+  <div className="px-6 max-w-4xl mx-auto relative z-10 text-center">
     <h1 className="text-3xl md:text-4xl font-bold text-black leading-tight mb-2">Contact Us</h1>
   </div>
 

@@ -16,7 +16,7 @@ export const HeroSlide = (_props: any) => {
     },
     {
       image_url: "/hero/heros (6).jpg",
-      name: "Gypsum",
+      name: "Bird-Watching",
     },
     {
       image_url: "/hero/heros (2).jpg",
@@ -28,7 +28,7 @@ export const HeroSlide = (_props: any) => {
     },
     {
       image_url: "/hero/heroseau.jpg",
-      name: "Endless sea",
+      name: "Endless Lake",
     },
   ];
 
@@ -76,7 +76,7 @@ export const HeroSlide = (_props: any) => {
             />
             <div className="flex items-center mx-auto py-4 justify-center"></div>
 
-            <h4 className="absolute text-white top-80 text-6xl text-center w-full mx-auto">
+            <h4 className="absolute text-white top-80 font-bold text-6xl text-center w-full mx-auto">
               {item.name}
             </h4>
           </div>
