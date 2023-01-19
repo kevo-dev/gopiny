@@ -1,10 +1,10 @@
 import { ReactNode } from 'react';
 import Image from 'next/image';
-import { Section } from './../layout/Section'
+import { Section } from '../components/layout/Section'
 import Feature from '/svgs/feature.svg'
 
 
-import { Plus, Circle } from '../../svgs';
+import { Plus, Circle } from '../svgs';
 
 interface CardProps {
   title?: string;
