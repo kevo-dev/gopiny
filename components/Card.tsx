@@ -21,7 +21,7 @@ const Card = ({ title, subtitle, image, children, buttonLabel, reversed }: CardP
 
 
 
-
+    <div></div>
     <div
       className="bg-white flex max-w-7xl flex-wrap mx-auto">
 
