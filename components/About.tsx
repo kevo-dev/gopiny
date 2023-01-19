@@ -12,7 +12,7 @@ const About = () => {
               <div className="w-full h-full relative flex items-center justify-left py-4">
                 
 
-                <div className="px-6 max-w-4xl relative z-10 text-center">
+                <div className="px-4 mx-auto max-w-4xl relative z-10 text-center">
                   <h1 className="text-3xl md:text-4xl font-bold text-black leading-tight mb-2">
                     About us
                   </h1>
