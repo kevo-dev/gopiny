@@ -74,7 +74,7 @@ export default function Navbar() {
               <button
                   type="button"
                   className="border-2 w-full py-2 px-4 flex rounded-sm  text-white hover:text-grey-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                >GET QUOTE
+                >Book Now
                   <ChevronRightIcon className="h-6 w-6 " aria-hidden="true" />
                   
                 </button>

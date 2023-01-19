@@ -17,6 +17,7 @@ import Promo from '../components/Promo';
 import Projects from '../components/Portfolio';
 import { Base } from '../components/layout/Base';
 import { FeaturedTours } from '../components/FeaturedTours';
+import { Contact } from '../components/Contact';
 
 const Home: NextPage = () => {
   return(
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
   <FeaturedTours />
   <PeopleReview />
   <Promo />
+  <Contact />
   </Base>
    
   
