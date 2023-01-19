@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Section } from '../components/layout/Section'
+import { Section } from '../components/layout/Section';
 import Image from 'next/image';
 
 import Feature from '/svgs/feature.svg'
