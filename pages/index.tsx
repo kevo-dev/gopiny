@@ -1,27 +1,35 @@
-import * as React from 'react';
-import ProductCategories from './modules/views/ProductCategories';
-import ProductSmokingHero from './modules/views/ProductSmokingHero';
-import AppFooter from './modules/views/AppFooter';
-import ProductHero from './modules/views/ProductHero';
-import ProductValues from './modules/views/ProductValues';
-import ProductHowItWorks from './modules/views/ProductHowItWorks';
-import ProductCTA from './modules/views/ProductCTA';
-import AppAppBar from './modules/views/AppAppBar';
-import withRoot from './modules/withRoot';
+import type{ NextPage } from 'next';
+import {HeroSlide } from '../components/Carousel'
 
-function Index() {
-  return (
-    <React.Fragment>
-      <AppAppBar />
-      <ProductHero />
-      <ProductValues />
-      <ProductCategories />
-      <ProductHowItWorks />
-      <ProductCTA />
-      <ProductSmokingHero />
-      <AppFooter />
-    </React.Fragment>
-  );
-}
 
-export default withRoot(Index);
+
+import Navbar from '../components/Navbar';
+
+import  Hero  from '../components/Hero';
+import  Featured  from '../components/Featured';
+
+import { PeopleReview } from '../components/Review';
+import Card2 from '../components/Card2';
+
+import PortfolioGrid from '../components/Portfolio';
+import Carousel from 'react-multi-carousel';
+import Promo from '../components/Promo';
+import Projects from '../components/Portfolio';
+import { Base } from '../components/layout/Base';
+import { FeaturedTours } from '../components/FeaturedTours';
+
+const Home: NextPage = () => {
+  return(
+  <>
+  <Base>
+  <HeroSlide />
+  <FeaturedTours />
+  <PeopleReview />
+  <Promo />
+  </Base>
+   
+  
+  </>
+)};
+
+export default Home;
