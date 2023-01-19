@@ -8,7 +8,6 @@ const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Tours', href: '/', current: false },
   { name: 'Destinations', href: '#', current: false },
-  { name: 'Shop', href: '#', current: false },  
   { name: 'Blog', href: '#', current: false },
   { name: 'About', href: '/about', current: false },
   { name: 'Contact us', href: '/contact', current: false }
@@ -51,7 +50,7 @@ export default function Navbar() {
                   />
                 </div>
                 <div className="hidden w-full relative mx-auto md:block sm:ml-6">
-                  <div className="flex justify-center space-x-4 ">
+                  <div className="flex justify-center space-x-4 font-bold">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -73,7 +72,7 @@ export default function Navbar() {
               <div className="absolute hidden md:block inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <button
                   type="button"
-                  className="border-2 w-full py-2 px-4 flex rounded-sm  text-white hover:text-grey-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  className="border-2 w-full py-2 px-4 flex rounded-sm  font-bold text-white hover:text-grey-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >Book Now
                   <ChevronRightIcon className="h-6 w-6 " aria-hidden="true" />
                   
