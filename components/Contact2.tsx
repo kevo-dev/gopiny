@@ -143,8 +143,8 @@ export default function Contact2() {
                 Get in touch
               </h1>
               <p className="mt-6 max-w-3xl text-xl text-warm-gray-500">
-                Vel nunc non ut montes, viverra tempor. Proin lectus nibh phasellus morbi non morbi. In elementum urna
-                ut volutpat. Sagittis et vel et fermentum amet consequat.
+              Fill out the form below with your message and we'll get back to you as soon as we can. 
+              We always reply within 24 hours on working days.
               </p>
             </div>
           </div>
@@ -286,8 +286,7 @@ export default function Contact2() {
                   </div>
                   <h3 className="text-lg font-medium text-white">Contact information</h3>
                   <p className="mt-6 max-w-3xl text-base text-teal-50">
-                    Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
-                    lacus arcu.
+                    You can also reach out to us on social media, or you can give us a call. 
                   </p>
                   <dl className="mt-8 space-y-6">
                     <dt>
@@ -295,14 +294,14 @@ export default function Contact2() {
                     </dt>
                     <dd className="flex text-base text-teal-50">
                       <PhoneIcon className="h-6 w-6 flex-shrink-0 text-teal-200" aria-hidden="true" />
-                      <span className="ml-3">+1 (555) 123-4567</span>
+                      <span className="ml-3">+254 720607010, 0702644824</span>
                     </dd>
                     <dt>
                       <span className="sr-only">Email</span>
                     </dt>
                     <dd className="flex text-base text-teal-50">
                       <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-teal-200" aria-hidden="true" />
-                      <span className="ml-3">support@workcation.com</span>
+                      <span className="ml-3">info@gopiny.com</span>
                     </dd>
                   </dl>
                   <ul role="list" className="mt-8 flex space-x-12">
