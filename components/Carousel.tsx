@@ -2,8 +2,6 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable prettier/prettier */
 import Carousel from "react-multi-carousel";
-import { Star, Plus, Circle } from "../svgs";
-import { NewspaperIcon, StarIcon, ThumbUpIcon } from "@heroicons/react/outline";
 
 import "react-multi-carousel/lib/styles.css";
 import { Section } from "./layout/Section";
