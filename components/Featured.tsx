@@ -1,5 +1,4 @@
 
-import { AnnotationIcon, BadgeCheckIcon, ShieldCheckIcon, ScaleIcon, UsersIcon } from '@heroicons/react/outline'
 
 const features = [
   {

@@ -3,9 +3,7 @@ import {HeroSlide } from '../components/Carousel'
 
 
 
-import Navbar from '../components/Navbar';
 
-import  Hero  from '../components/Hero';
 import  Featured  from '../components/Featured';
 
 import { PeopleReview } from '../components/Review';
