@@ -21,6 +21,9 @@ import { Contact } from '../components/Contact';
 import CTASection from '../components/CTASection';
 import About from '../components/About';
 import Trending from '../components/Trending';
+import Contact2 from '../components/Contact2';
+import Trending2 from '../components/Trending2';
+import Promo2 from '../components/Promo2';
 
 const Home: NextPage = () => {
   return(
@@ -30,10 +33,9 @@ const Home: NextPage = () => {
   <FeaturedTours />
   
   <About />
-  <PeopleReview />
-  <CTASection />
-  <Trending />
-  <Contact />
+  <Promo2 />
+  <Trending2 />
+  <Contact2 />
   </Base>
    
   

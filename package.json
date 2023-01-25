@@ -10,7 +10,7 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@headlessui/react": "^1.6.4",
-    "@heroicons/react": "^1.0.6",
+    "@heroicons/react": "^2.0.13",
     "@lottiefiles/lottie-player": "^1.5.7",
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.12",

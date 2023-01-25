@@ -2,7 +2,7 @@
 import { Fragment } from 'react';
 
 import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { ArrowRightIcon, ChevronRightIcon, LoginIcon , MenuIcon, XIcon } from '@heroicons/react/outline';
+import { ArrowRightIcon, ChevronRightIcon, LoginIcon , MenuIcon, XIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
   { name: 'Home', href: '/', current: false },

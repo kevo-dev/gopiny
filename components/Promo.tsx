@@ -6,7 +6,7 @@ export default function Promo() {
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
             <div className="sm:max-w-lg">
               <h1 className="text-4xl font font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-6xl">
-                Explore Topical Islands
+                Explore Tropical Islands
               </h1>
               <p className="mt-4 text-xl text-gray-500">
                 Thrilling tours that leave you in awe.
