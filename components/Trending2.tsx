@@ -9,7 +9,7 @@ const posts = [
       date: 'Mar 16, 2020',
       datetime: '2020-03-16',
       imageUrl:
-        'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+        '/native/otherimgs1.jpeg',
       readingTime: '6 min',
       author: {
         name: 'Roel Aufderehar',
@@ -19,7 +19,7 @@ const posts = [
       },
     },
     {
-      title: 'Kisumu: 10 Places worth visiting',
+      title: 'Tips before travelling to Kisumu',
       href: '#',
       category: { name: 'Article', href: '#' },
       description:
@@ -37,15 +37,14 @@ const posts = [
       },
     },
     {
-      title: 'Kisumu: 10 Places worth visiting',
+      title: 'Interesting Facts about Lake Victoria',
       href: '#',
       category: { name: 'Article', href: '#' },
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.',
       date: 'Feb 12, 2020',
       datetime: '2020-02-12',
-      imageUrl:
-        'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+      imageUrl:'/native/dungabaych.jpg',
       readingTime: '11 min',
       author: {
         name: 'Daniela Metz',
@@ -88,18 +87,9 @@ const posts = [
                     </a>
                   </div>
                   <div className="mt-6 flex items-center">
-                    <div className="flex-shrink-0">
-                      <a href={post.author.href}>
-                        <span className="sr-only">{post.author.name}</span>
-                        <img className="h-10 w-10 rounded-full" src={post.author.imageUrl} alt="" />
-                      </a>
-                    </div>
+                    
                     <div className="ml-3">
-                      <p className="text-sm font-medium text-gray-900">
-                        <a href={post.author.href} className="hover:underline">
-                          {post.author.name}
-                        </a>
-                      </p>
+                      
                       <div className="flex space-x-1 text-sm text-gray-500">
                         <time dateTime={post.datetime}>{post.date}</time>
                         <span aria-hidden="true">&middot;</span>

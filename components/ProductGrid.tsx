@@ -1,3 +1,5 @@
+import { Section } from "./layout/Section"
+
 /*
   This example requires Tailwind CSS v2.0+ 
   
@@ -32,7 +34,7 @@ const products = [
       price: '$256',
       description: 'A trip to Kakamega forest. The leftover of the rain forest that stretched all the way from west Africa....',
       options: '10 Hours',
-      imageSrc: '/native/kkforest.jpg',
+      imageSrc: '/native/forest_trip.jpg',
       imageAlt: '',
     },
     {
@@ -80,6 +82,11 @@ const products = [
   
   export default function ProductGrid() {
     return (
+      <Section
+      text="View all"
+      description="Explore"
+      title="POPULAR TOURS">
+
       <div className="bg-white">
         <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
           <h2 className="sr-only">Products</h2>
@@ -97,7 +104,7 @@ const products = [
                     className="h-full w-full object-cover object-center sm:h-full sm:w-full"
                   />
                 </div>
-                <div className="flex flex-1 flex-col space-y-2 p-4">
+                <div className="flex flex-1 flex-col space-y-2 p-4 bg-indigo-200">
                   <h3 className="text-sm font-medium text-gray-900">
                     <a href={product.href}>
                       <span aria-hidden="true" className="absolute inset-0" />
@@ -115,6 +122,7 @@ const products = [
           </div>
         </div>
       </div>
+      </Section>
     )
   }
   

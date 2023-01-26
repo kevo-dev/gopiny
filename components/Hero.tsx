@@ -49,7 +49,7 @@ function classNames(...classes: string[]) {
 
 export default function Hero() {
   return (
-    <div className="bg-white">
+    <div className="bg-white ">
       {/* <header>
         <Popover className="relative bg-white">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
@@ -242,9 +242,9 @@ export default function Hero() {
                 <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                   <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
                     <span className="block text-white">Explore Kisumu</span>
-                    <span className="block text-indigo-200">Land of fish and lake</span>
+                    <span className="block text-indigo-200">The Lakeside City <strong className="font-bold text-black">#dala</strong></span>
                   </h1>
-                  <p className="mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
+                  <p className="mx-auto mt-6 max-w-lg text-center text-2xl text-white sm:max-w-3xl">
                     Find awesome flights, hotel, tour, car and packages.
                   </p>
                   <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
