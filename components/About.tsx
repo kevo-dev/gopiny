@@ -6,20 +6,11 @@ const About = () => {
   return (
     <>
       
-        <Section>
-          <div className="w-full h-full">
-            <div className="w-full h-full ">
-              <div className="w-full h-full relative flex items-center justify-left py-4">
-                
-
-                <div className="px-4 mx-auto max-w-4xl relative z-10 text-center">
-                  <h1 className="text-3xl md:text-4xl font-bold text-black leading-tight mb-2">
-                    About us
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
+        <Section
+          description="Our Story"
+          title="ABOUT US"
+        >
+         
 
           <div className="relative z-10 rounded-md shadow-md  p-4 max-w-7xl mx-auto mt-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -33,9 +24,7 @@ const About = () => {
               </div>
               <div className=" text-slate-900 md:h-full w-full md:flex-1 flex justify-left items-left">
                 <div className=" md:px-16">
-                  <h1 className="font-bold text-slate-900 text-4xl md:text-6xl mb-6">
-                    Our Story
-                  </h1>
+                  
 
                   <p className="mb-6 leading-normal text-slate-900 text-lg md:text-base">
                     We offer packages that are worth your money and time and that's a guarantee

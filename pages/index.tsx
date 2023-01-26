@@ -33,9 +33,11 @@ const Home: NextPage = () => {
   <Hero />
   <Popular_Tours />
   <About />
-  <Promo2 />
+  
   <ProductGrid />
+  <PeopleReview />
   <Trending2 />
+  <Promo2 />
   <Contact2 />
   </Base>
    

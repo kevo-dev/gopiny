@@ -9,19 +9,19 @@ import { Section } from "./layout/Section";
 export const PeopleReview = (_props: any) => {
   const dataReview = [
     {
-      image_url: "/images/client1.jpg",
-      name: "Allison",
+      image_url: "/native/p4.jpg",
+      name: "Dwight",
     },
     {
       image_url: "/images/client2.jpg",
-      name: "Kattie",
+      name: "Sheila",
     },
     {
-      image_url: "/images/client3.jpg",
+      image_url: "/native/p2.jpg",
       name: "Sylvia",
     },
     {
-      image_url: "/images/client4.jpg",
+      image_url: "/native/p3.jpg",
       name: "Proff",
     },
   ];
@@ -48,8 +48,7 @@ export const PeopleReview = (_props: any) => {
 
   return (
     <Section
-      
-  
+      description="Customer Review"  
       title="What they are saying"
     >
       <Carousel
