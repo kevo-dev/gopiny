@@ -25,7 +25,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="md:ml-4">
                 <img
-                  src="/images/fit5.jpg"
+                  src="/native/sightsee.jpg"
                   alt=""
                   className="w-full right-0 object-cover"
                   style={{ borderRadius: "0px 0px 0px 7rem" }}
@@ -34,7 +34,7 @@ const About = () => {
               <div className=" text-slate-900 md:h-full w-full md:flex-1 flex justify-left items-left">
                 <div className=" md:px-16">
                   <h1 className="font-bold text-slate-900 text-4xl md:text-6xl mb-6">
-                    Redefining Travel
+                    Our Story
                   </h1>
 
                   <p className="mb-6 leading-normal text-slate-900 text-lg md:text-base">
