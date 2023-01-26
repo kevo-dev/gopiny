@@ -23,16 +23,18 @@ import Contact2 from '../components/Contact2';
 import Trending2 from '../components/Trending2';
 import Promo2 from '../components/Promo2';
 import Hero from '../components/Hero';
+import Popular_Tours from '../components/Popular_Tours';
+import ProductGrid from '../components/ProductGrid';
 
 const Home: NextPage = () => {
   return(
   <>
   <Base>
   <Hero />
-  <FeaturedTours />
-  
+  <Popular_Tours />
   <About />
   <Promo2 />
+  <ProductGrid />
   <Trending2 />
   <Contact2 />
   </Base>

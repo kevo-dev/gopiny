@@ -224,7 +224,7 @@ export default function Hero() {
       </header>
       */}
 
-      <main>
+      
         <div>
           {/* Hero card */}
           <div className="relative">
@@ -244,19 +244,11 @@ export default function Hero() {
                     <span className="block text-white">Explore Kisumu</span>
                     <span className="block text-indigo-200">Land of fish and lake</span>
                   </h1>
-                  <p className="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">
+                  <p className="mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
                     Find awesome flights, hotel, tour, car and packages.
                   </p>
                   <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
-                    <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
-                      <a
-                        href="#"
-                        className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8"
-                      >
-                        Book Now
-                      </a>
-                      
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -266,7 +258,7 @@ export default function Hero() {
         </div>
 
         {/* More main page content here... */}
-      </main>
+      
     </div>
   )
 }

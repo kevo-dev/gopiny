@@ -132,9 +132,9 @@ const footerNavigation = {
 
 export default function Contact2() {
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-hidden">
       
-      <main className="overflow-hidden">
+      
         {/* Header */}
         <div className="bg-warm-gray-50">
           <div className="py-24 lg:py-32">
@@ -454,7 +454,7 @@ export default function Contact2() {
           </div>
         </section>
 
-      </main>
+    
 
       
     </div>

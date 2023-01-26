@@ -66,7 +66,7 @@ const FeaturedTours = (_props: any) => {
     <Section
     text="Book Now"
     description="Featured "
-    title="Most Popular Tours"    
+    title="Popular Tours"    
     >
       
 
