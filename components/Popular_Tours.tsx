@@ -17,26 +17,26 @@
 const products = [
     {
       id: 1,
-      name: 'Destination1',
+      name: 'Boat-Rides',
       price: '$32',
       href: '#',
-      imageSrc: '/images/d1.jpg',
+      imageSrc: '/native/boatridem.jpg',
       imageAlt: "Tour Photo",
     },
     {
       id: 2,
-      name: 'Destination2',
+      name: 'Island Trips',
       price: '$32',
       href: '#',
-      imageSrc: '/images/d2.jpg',
+      imageSrc: '/native/islandtrip.jpg',
       imageAlt: "Tour Photo",
     },
     {
       id: 3,
-      name: 'Destination3',
+      name: 'Game-Viewing',
       price: '$32',
       href: '#',
-      imageSrc: '/images/d3.jpg',
+      imageSrc: '/hero/heros2.jpg',
       imageAlt: "Tour Photo",
     },
       
