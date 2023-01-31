@@ -1,6 +1,7 @@
 import { SessionProvider } from "next-auth/react"
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps, NextWebVitalsMetric } from 'next/app'
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -9,4 +10,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     </SessionProvider>
   )
 }
+
+export function reportWebVitals(metric: NextWebVitalsMetric) {
+  console.log(metric)
+}
+
 export default MyApp
