@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First install all the dependencies:
 
 ```shell
-$ pnpm i
+$ yarn install
 ```
 
 Second, Copy the `env.example` to `.env.local`
@@ -17,7 +17,7 @@ $ cp env.example .env
 Then, run the development server:
 
 ```bash
-pnpm dev
+yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
