@@ -1,42 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div id="header" align="center">
+    <h1>Travel Agency</h1>
+</div>
 
-## Getting Started
+Travel Agency is a completely responsive marketing website, allowing customers to book trips and tours worldwide.
 
-First install all the dependencies:
 
-```shell
-$ yarn install
-```
+___
 
-Second, Copy the `env.example` to `.env.local`
+## Technologies
 
-```shell
-$ cp env.example .env
-```
+A completely responsive travel agency website, created using React & Next.js frameworks, HTML, CSS vanilla and Javascript.  
+The API calls to the backend are done using axios, while the data is fetched using PHP and SQL from a MySQL database.
+Several third side libraries were used for different goals, such as axios, swiper, form-data and more.
 
-Then, run the development server:
+The main features of this website are:
 
-```bash
-yarn dev
-```
+✅ Header with toggle menu effect using vanilla javascript.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+✅ Home section with touch slider using swiper.js
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+✅ About section using flexbox.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+✅ Reviews section with touch slider using swiper.js
 
-## Learn More
+✅ Packages section using grid.
 
-To learn more about Next.js, take a look at the following resources:
+✅ Booking form section.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+✅ Footer section using grid.
