@@ -23,22 +23,22 @@ function HomeSwiper() {
             >
                 <SwiperSlide className='swiper-slide-1'>
                     <div className="slide">
-                        <span>explore, discover, travel</span>
-                        <h3>travel around the world</h3>
+                        <span>Gopiny - Discover the Essence of Lake Victoria</span>
+                        <h3>Immerse Yourself in Unforgettable Adventures</h3>
                         <a href="/package" className="btn">discover more</a>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide-2'>
                     <div className="slide">
-                        <span>explore, discover, travel</span>
-                        <h3>discover the new places</h3>
+                        <span>Gopiny - Unleash Your Spirit of Exploration</span>
+                        <h3>Explore the Hidden Treasures of Kisumu</h3>
                         <a href="/package" className="btn">discover more</a>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide-3'>
                     <div className="slide">
-                        <span>explore, discover, travel</span>
-                        <h3>make your tour worthwhile</h3>
+                        <span>Gopiny - Your Gateway to Extraordinary Experiences</span>
+                        <h3>Embark on Memorable Journeys in Western Kenya</h3>
                         <a href="/package" className="btn">discover more</a>
                     </div>
                 </SwiperSlide>
