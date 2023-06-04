@@ -28,10 +28,10 @@ function Footer() {
             </div>
             <div className="box">
                 <h3>Contact Information</h3>
-                <a href="#"><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>+123-456-7890</a>
-                <a href="#"><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>+111-222-3333</a>
-                <a href="#"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>loremipsum@gmail.com</a>
-                <a href="#"><FontAwesomeIcon icon={faMap}></FontAwesomeIcon>New Delhi, India - 400104</a>
+                <a href="#"><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>+254-702-607010</a>
+                <a href="#"><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>+254-738-607010</a>
+                <a href="#"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>info@gopiny.com</a>
+                <a href="#"><FontAwesomeIcon icon={faMap}></FontAwesomeIcon>Kisumu, Kenya</a>
             </div>
             <div className="box">
                 <h3>Follow us</h3>
@@ -42,7 +42,7 @@ function Footer() {
             </div>
         </div>
         <div className="credit">
-            Created by <span>Morix</span> | all rights reserved
+            <span>Gopiny</span> | all rights reserved
         </div>
     </footer>
   )

@@ -21,31 +21,31 @@ function Services() {
                     <div className="img-container">
                         <Image fill src={icon2} alt="" />
                     </div>
-                    <h3>tour guide</h3>
+                    <h3>sunrise Cruises</h3>
                 </div>
                 <div className="box">
                     <div className="img-container">
                         <Image fill src={icon3} alt="" />
                     </div>
-                    <h3>trekking</h3>
+                    <h3>cultural tours</h3>
                 </div>
                 <div className="box">
                     <div className="img-container">
                         <Image fill src={icon4} alt="" />
                     </div>
-                    <h3>camp fire</h3>
+                    <h3>nature excursions</h3>
                 </div>
                 <div className="box">
                     <div className="img-container">
                         <Image fill src={icon5} alt="" />
                     </div>
-                    <h3>off road</h3>
+                    <h3>historical sites</h3>
                 </div>
                 <div className="box">
                     <div className="img-container">
                         <Image fill src={icon6} alt="" />
                     </div>
-                    <h3>camping</h3>
+                    <h3>wildlife encounters</h3>
                 </div>
             </div>
         </section>
